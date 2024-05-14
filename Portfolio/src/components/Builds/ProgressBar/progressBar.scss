@@ -1,0 +1,73 @@
+.progress {
+	background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 15px;
+	width: 100%;
+}
+
+.progress-done {
+	background: linear-gradient(to left, #191970, #ADD8E6); /* Baby blue to dark blue */
+	box-shadow: 0 3px 3px -5px #ADD8E6, 0 2px 5px #ADD8E6;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	animation: progressAnimation 1s ease-in-out;
+	filter: progid:DXImageTransform.Microsoft.gradient(
+		startColorstr='#804CADD8', /* Baby blue */
+		endColorstr='#804C1919' /* Dark blue */
+	);
+}
+
+@keyframes progressAnimation {
+	from {
+	  width: 0%;
+	}
+	to {
+	  width: calc(var(--done) * 1%);
+	}
+  }
+
+  .progress-bar-container {
+	display: flex;
+	align-items: center; /* Align items vertically */
+  }
+  
+  .progress-bar-info {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column; /* Align items vertically */
+	padding-left: 10px;
+  }
+  
+  .progress-bar-image img {
+	width: 50px;
+	height: auto;
+	border-radius: 50px;
+	border: 1px solid #e0e0e0;
+	flex-shrink: 0; 
+  }
+  
+  .progress-title {
+	font-size: 16px;
+	font-weight: 600;
+	text-align: start;
+  }
+  
+  .progress {
+	height: 10px;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+  }
+  
+  .progress-done {
+	height: 100%;
+	border-radius: 5px;
+  }

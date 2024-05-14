@@ -1,0 +1,85 @@
+.footer {
+    position: relative;
+    z-index: 2;
+    padding: 4rem 6rem;
+    background-image: url("https://www.buildredux.com/cdn/shop/files/Footer_Background_1920x.jpg?v=1614336455");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .secContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+  
+      .logoDiv {
+        .footerLogo {
+          padding-bottom: 0.5rem;
+  
+          .logo {
+            color: #ffffff;
+            font-weight: 500;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+  
+        .socials {
+          display: flex;
+          gap: 0.5rem;
+          justify-content: center;
+  
+          .icon {
+            font-size: 30px;
+            color: #fff;
+  
+            &:hover {
+              color: #adadad;
+            }
+          }
+        }
+      }
+  
+      .footerLinks {
+        display: flex;
+        gap: 2rem;
+  
+        .linksGroup {
+          .linkTitle {
+            padding-bottom: 0.5rem;
+            font-weight: 700;
+            color: #fff;
+          }
+  
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+  
+            li {
+              a {
+                color: #d7d7d7;
+                text-decoration: none;
+                transition: transform 0.3s ease;
+  
+                &:hover {
+                  color: #adadad;
+                  transform: translateX(10px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .copyright {
+      text-align: center;
+      color: #fff;
+      margin-top: 6rem;
+      font-size: 15px;
+    }
+  }

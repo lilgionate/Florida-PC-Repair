@@ -1,0 +1,96 @@
+.repairs-container {
+    position: relative; /* Set position to relative */
+    margin: 4rem 2rem;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .repairs-content {
+        align-items: center;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 1),
+          rgba(240, 240, 240, 1)
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(
+          startColorstr='#ffffff',
+          endColorstr='#f0f0f0',
+          GradientType=0
+        );
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        padding: 2rem 4rem;
+        transition: 0.3s ease-in-out;
+  }
+  
+  .officeIT-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .officeIT-des {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333;
+  }
+ 
+  
+  .repairs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    font-weight: 200;
+    color: #333;
+  }
+  
+  .repairscard {
+    position: absolute; /* Set position to absolute */
+    right: 0; /* Align it to the right */
+    width: calc(87% - 400px); /* Set width to make it larger */
+    top: 50%; /* Align it vertically */
+    transform: translateY(-50%); /* Center it vertically */
+    z-index: -1;
+  }
+  
+  .r-card {
+    display: flex;
+    align-items: center;
+  }
+  .r-image {
+    width: 100%;
+    height: 440px;
+  }
+  
+  .r-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .repairs {
+      margin: 4rem 2rem;
+      flex-direction: column;
+    }
+  
+    .repairs-content {
+      width: 100%;
+    }
+  
+    .repairscard {
+      width: 100%;
+      height: 100px;
+    }
+  
+    .r-card {
+      flex-direction: column;
+    }
+  
+    .r-image {
+      width: 100%;
+      height: 200px;
+    }
+  }

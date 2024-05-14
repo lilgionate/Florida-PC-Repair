@@ -1,0 +1,23 @@
+.videoCard {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+  }
+  .cardContent {
+    gap: 2rem;
+    padding: 2rem 1rem;
+    .cardText {
+      h2 {
+        font-weight: 600;
+        padding-top: 1rem;
+        color: #333;
+      }
+      p {
+        color: #333;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding: 1rem;
+      }
+    }
+  }

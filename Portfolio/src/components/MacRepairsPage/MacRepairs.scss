@@ -1,0 +1,257 @@
+
+
+.MacRepairContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.MacRepairsContent {
+    width: 50%;
+    padding: 5rem 3.5rem 1.5rem 3.5rem;
+    margin-top: 1rem;
+}
+
+.MacRepairsImg{
+  width: 50%;
+}
+
+.MacImg {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.MacRepairsTitle {
+    font-size: 3.2rem; /* 36px */
+    font-weight: 700;
+    margin-bottom: 1rem;
+  
+}
+
+.MacRepairsDes {
+    font-size: 1.05rem; /* 18px */
+    font-weight: 300;
+    line-height: 1.75rem; /* 28px */
+   
+}
+
+.MacRepairsButton {
+    background-color: #2b6cb0;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #2b6cb0;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+}
+
+.MacRepairsButton:hover {
+    background-color: #1b436e; 
+    border: 1px solid #1b436e;
+  }
+
+
+/*Scenarios*/
+
+.scenarios-card-container {
+    background-color: #fff;
+    border: 1px solid rgba(98, 98, 98, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 2.5rem;
+  }
+  
+  .scenarios-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .scenarios-text {
+    color: #4b5563;
+    line-height: 1.95rem;
+  }
+
+  .scenario-service-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 0 3rem 0;
+  }
+
+  .scenario-title-header {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 4rem 0 3rem 0;
+  }
+  
+  .scenario-service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .scenario-service-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+/*Middle hero*/
+
+.mac-repair-middle {
+  position: relative;
+  height: 385px;
+}
+
+.mac-repair-middle-img {
+  width: 100%;
+  height: 385px;
+  object-fit: cover;
+}
+
+.mac-middle-button {
+  position: absolute;
+  right: 2rem;
+  bottom: 12rem;
+  background-color: #2b6cb0;
+  border: 1px solid #2b6cb0;
+  color: #fff;
+  font-weight: 400;
+  padding: 0.55rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.mac-middle-button:hover {
+  background-color: #1b436e;
+}
+
+
+/*mac repairs card*/
+
+.mac-services-price-container {
+  width: 62rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .mac-services-price-container {
+    padding-left: 1.5rem; /* sm:px-6 */
+    padding-right: 1.5rem; /* sm:px-6 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .mac-services-price-container {
+    padding-left: 2rem; /* lg:px-8 */
+    padding-right: 2rem; /* lg:px-8 */
+  }
+}
+
+
+.mac-services-price-header {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  text-align: center; /* text-center */
+  margin-bottom: 3rem; /* mb-10 */
+}
+
+.mac-services-price-grid {
+  display: grid; /* grid */
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* grid-cols-1 */
+  gap: 1.8rem; /* gap-6 */
+}
+
+@media (min-width: 768px) {
+  .mac-services-price-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* md:grid-cols-3 */
+  }
+}
+
+.mac-services-price-cards {
+  background-color: #fff; /* bg-white */
+  border-radius: 0.1rem; /* rounded-lg */
+  border: 1px solid rgba(98, 98, 98, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* shadow-lg */
+}
+
+.mac-services-price-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.1rem 0.1rem 0 0 ;
+}
+
+.mac-services-price-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.mac-services-price {
+  color: #4a5568; /* text-zinc-600 */
+}
+
+
+
+/*hero bottom*/
+
+.macbook-repair-bottom-container {
+  position: relative;
+  background-color: #0b5c93; /* Blue color */
+  color: #ffffff; /* White text */
+}
+
+
+.mac-repair-img {
+  width: 100%;
+  height: 475px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.overlay-text {
+  text-align: center;
+ 
+}
+
+.overlay-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.overlay-text a {
+  background-color: #ffffff; /* Blue color */
+  color: rgba(0, 0, 0, 0.5); /* White text */
+  font-weight: 400;
+  padding: 0.55rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

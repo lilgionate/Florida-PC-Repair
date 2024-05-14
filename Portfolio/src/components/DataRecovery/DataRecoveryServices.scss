@@ -1,0 +1,736 @@
+/* DataRecoveryComponent.css */
+
+.data-hero-top {
+  position: relative;
+  z-index: 2;
+}
+
+.containerClass {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dataimg {
+    height: 90vh;
+    width: 100%;
+    filter: brightness(50%)
+  }
+
+  .dataheader {
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .textClass {
+    margin-top: 8.5rem;
+    padding-left: 6rem; 
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+  }
+
+  .list {
+    padding-bottom: 15px;
+    list-style: none;
+  }
+
+  .buttonClass {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 1.5rem;
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+  }
+  
+  .primaryButtonClass {
+    background-color: #2b6cb0; /* Blue-600 */
+    border: 2px solid #2b6cb0;
+    color: white;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  
+  .primaryButtonClass:hover {
+    background-color: #1b436e; 
+    border: 2px solid #1b436e;
+  }
+  
+  .secondaryButtonClass {
+    background-color: white;
+    border: 2px solid #2b6cb0;
+    color: #2b6cb0;
+    margin-left: 1rem;
+  }
+  
+
+.gridClasses {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .gridClasses {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .gridClasses {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridClasses {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+
+.headingClasses {
+  text-align: center;
+  color: #333;
+  font-size: 2rem; 
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.imageClasses {
+  width: 12rem;;
+  height: 8rem;
+  object-fit: contain;
+  margin: 0 auto ;
+}
+
+.containerClasses {
+  max-width: 85rem; 
+  margin: 0 auto;
+  padding-top: 2.5rem; 
+  padding-bottom: 2.5rem;
+  background-color: white; 
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 640px) {
+  .containerClasses {
+    padding-left: 1.5rem; /* sm:px-6 */
+    padding-right: 1.5rem; /* sm:px-6 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerClasses {
+    padding-left: 2rem; /* lg:px-8 */
+    padding-right: 2rem; /* lg:px-8 */
+  }
+}
+
+
+/* data-recovery-styles.css */
+
+.sectionClasses {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5rem 8rem;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.titleClasses {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* By default, single column */
+  gap: 2rem; /* Adjust as needed */
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+.textClasses {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333; /* Adjust as needed */
+}
+
+.section2Classes {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.heading2Classes {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.cardClasses {
+  margin: 0 auto;
+  padding: 5px;
+  width: 90%;
+}
+
+.dataGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 column on small screens */
+}
+
+@media (min-width: 768px) {
+  .dataGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .dataGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 columns on large screens */
+  }
+}
+
+.fullCard {
+  width: 100%;
+  height: 250px;
+}
+
+.text-card {
+  padding-top: 15px;
+  font-size: 1.50rem;
+  font-weight: 600;
+}
+
+.flex-middle {
+  text-align: center;
+  padding: 5rem 0 3rem 0;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.review-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 8rem;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.review__title{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+.review__container {
+  width: 80%;
+}
+
+.review__card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2rem;
+  border-radius: 1;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+
+}
+
+.review-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+}
+
+.review-details {
+  margin-left: 20px;
+  margin-bottom: 13px;
+}
+
+.stars {
+  display: flex;
+}
+
+.review__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+
+.review__name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.stars span {
+  font-size: 20px;
+  color: goldenrod;
+}
+
+.review__description {
+  font-size: 1rem;
+  padding-top: 1.5rem;
+}
+
+/* Swiper Class */
+.swiper-pagination-bullet {
+  background-color: #333;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ddd;
+}
+
+/* BREAKPOINTS */
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .review__container {
+      width: initial;
+  }
+
+  .review__card {
+      padding: 1.25rem 1.5rem;
+  }
+}
+
+/* processSteps.css */
+
+.process-step-container {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+  padding: 1rem 4rem 4rem 4rem;
+}
+
+.process-step-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.process-step-icon {
+  font-size: 50px;
+  color: #2b6cb0;
+  padding-top: 2rem;
+}
+
+.process-step {
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid rgba(98, 98, 98, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  width: 18rem;
+  text-align: center;
+  margin: 5px;
+}
+
+.process-step-text {
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+/* Data Services */
+
+.data-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid rgba(98, 98, 98, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 2;
+}
+
+.data-services-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid rgba(98, 98, 98, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding-bottom: 2rem;
+  bottom: 0;
+  left: 0; 
+  width: 100%;
+  position: relative;
+ z-index: 0;
+}
+
+
+.data-services-img {
+  width: 50%;
+  height: 494px;
+  object-fit: cover;
+}
+
+.data-content-container {
+  width: 50%;
+
+}
+
+.data-content-container-bottom {
+  width: 50%;
+  position: relative;
+  right: 25%;
+  z-index: 1;
+}
+
+.data-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2b6cb0;
+  padding: 4rem 0 0 3.5rem;
+}
+
+.data-title-bottom {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2b6cb0;
+  margin: 4rem 0 0 3.5rem;
+}
+
+.data-subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  padding-left: 3.5rem;
+}
+
+.data-subtitle-bottom {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  padding-left: 3.5rem;
+}
+
+
+.data-list {
+  list-style: none;
+}
+
+
+.data-items {
+  display: flex;
+  align-items: center;
+  padding-top: .3rem;
+}
+
+.data-items-checkmark {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0 0 0 1.5rem;
+}
+
+.data-items-text {
+  font-size: 1.1rem;
+  padding-left: 1rem;
+}
+
+.and-more {
+  font-size: 1.1rem;
+  padding-left: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+.view-pricing {
+  font-size: 1rem;
+  padding-left: 3.5rem;
+  margin-top: 2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*DropDown*/
+
+.dropdown {
+  position: relative;
+  display: none;
+  background-color: #fff;
+  padding: 2px;
+  margin: 1.5rem 0 0 1rem;
+  width: 95%;
+}
+
+.dropdown-open {
+  display: block;
+}
+
+.data-icon {
+  padding: 0 1rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 7px;
+  border-bottom: 1px solid #d1d1d1;
+  width: 90%;
+}
+
+.dropdown-text {
+  font-size: 16px;
+  line-height: 2rem;
+  margin: 10px 0 20px 0;
+  font-weight: 400;
+}
+
+.dropdown-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.data-img-container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.data-img-bottom{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*Data Price Container*/
+
+.dataPricingContainer {
+  position: relative;
+  z-index: 2;
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.dataPricingTitle {
+  position: relative;
+  z-index: 2;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #333;
+  background-color: #ffffff;
+}
+
+.cardDataContainerClasses {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 42px;
+  background-color: #ffffff;
+}
+
+.cardDataClasses {
+  width: 46%;
+  padding: 1rem 2rem 1.5rem 2rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  border: 2px solid #1b436e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titleDataClasses {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1b436e;
+}
+
+.sectionDataClasses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceDataClasses {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #2b6cb0;
+  padding-right: .8rem;
+
+}
+
+.data-pricing {
+  padding-left: .8rem;
+}
+
+.descriptionDataClasses {
+  margin-top: 3.5rem;
+}
+
+.data-price-des{
+  font-weight: 300;
+  font-size: 13.5px;
+  color: #939393;
+  padding-bottom: .7rem;
+}
+
+.dot {
+  font-weight: 300;
+  color: #000000;
+}
+
+/*Data Number Review*/
+
+/* Styles for DataRecoveryComponent */
+
+.data-number-container {
+  position: relative;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  background-color: #ffffff; /* White background */
+  text-align: center;
+  padding: 2.5rem 0 4rem 0; /* 40px */
+}
+
+.data-numbers-title {
+  font-size: 2rem; /* 18px */
+  font-weight: 600;
+  color: #333;
+  padding: 0 0 .5rem 0;
+}
+
+.data-item-numbers-container {
+  display: flex;
+  justify-content: center;
+}
+
+.data-item-numbers-container > * + * {
+  margin-left: 4rem;
+}
+
+.data-numbers-count {
+  font-size: 4.3rem; /* 36px */
+  font-weight: 500;
+  color: #4299e1; /* Example color */
+}
+
+.data-numbers-description {
+  font-size: 1.25rem; /* 16px */
+  color: #333; 
+}
+
+
+/* data hero buttons bottom*/
+
+.data-hero-icon {
+  width: 1.5rem; 
+  height: 1.5rem; 
+}
+
+
+.data-hero-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 15px 80px 15px 80px;
+  height: 440px;
+}
+
+.data-hero-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%)
+}
+
+
+.data-hero-bottom-container {
+  text-align: center;
+  width: 525px;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.data-hero-bottom-title-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+
+.data-icons {
+  color: #fff;
+  font-size: 2.5rem;
+  padding-right: 2rem;
+}
+
+.data-hero-bottom-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.data-hero-bottom-des {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.data-hero-bottom-button {
+  background-color: #2b6cb0;
+  color: #fff;
+  border: #2b6cb0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.data-hero-bottom-button:hover {
+  background-color: #1b436e;
+}

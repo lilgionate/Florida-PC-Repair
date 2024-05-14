@@ -1,0 +1,282 @@
+.PcRepairContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.PcRepairsContent {
+    width: 50%;
+    padding: 5rem 3.5rem 1.5rem 3.5rem;
+    margin-top: 1rem;
+}
+
+.PcRepairsImg{
+  width: 50%;
+}
+
+.PcImg {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.PcRepairsTitle {
+    font-size: 3.2rem; /* 36px */
+    font-weight: 700;
+    margin-bottom: 1rem;
+  
+}
+
+.PcRepairsDes {
+    font-size: 1.05rem; /* 18px */
+    font-weight: 300;
+    line-height: 1.75rem; /* 28px */
+   
+}
+
+.PcRepairsButton {
+    background-color: #2b6cb0;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #2b6cb0;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+}
+
+.PcRepairsButton:hover {
+    background-color: #1b436e; 
+    border: 1px solid #1b436e;
+  }
+
+/* PCSupportedIssuesList */
+
+.pc-supported-header {
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+
+.pc-supported-issues-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    font-size: 1.1rem;
+    font-weight: 400; /* Adjust font size as needed */
+    place-items: center;
+    padding: 0 15rem;
+    line-height: 1; 
+  }
+  
+  @media (min-width: 768px) {
+    .pc-supported-issues-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+.pc-issues-text {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;/* Adjust color code as needed */
+  }
+  
+
+  /*pc service container*/
+
+  .pc-repair-service-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.pc-repair-service-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 6rem 0 1rem 0;
+}
+
+.pc-repair-service-paragraph {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.85;
+    font-size: 1.03rem;
+}
+
+
+/*split repair content*/
+
+.pc-repair-split-heading-one {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+  line-height: 1.25;
+}
+
+.pc-repair-split-heading-two {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+  padding-top: 1.2rem;
+  line-height: 1.25;
+}
+
+.pc-repair-split-paragraph {
+  margin-bottom: 4px;
+  line-height: 1.85;
+}
+
+.pc-repair-split-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6rem 0;
+}
+
+.pc-repair-split-content {
+  width: 50%;
+  padding: 0 30px;
+}
+
+.pc-repair-split-img {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .pc-repair-split-img {
+      width: 50%;
+  }
+}
+
+
+.pc-repair-split-image {
+  width: 100%;
+  height: 110vh;
+  object-fit: cover;
+}
+
+
+/*pc repairs card*/
+
+.pc-services-price-container {
+  width: 62rem;
+  margin: 0 auto;
+  padding: 0 1rem 6rem 1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .pc-services-price-container {
+    padding-left: 1.5rem; /* sm:px-6 */
+    padding-right: 1.5rem; /* sm:px-6 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .pc-services-price-container {
+    padding-left: 2rem; /* lg:px-8 */
+    padding-right: 2rem; /* lg:px-8 */
+  }
+}
+
+
+.pc-services-price-header {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  text-align: center; /* text-center */
+  margin-bottom: 3rem; /* mb-10 */
+}
+
+.pc-services-price-grid {
+  display: grid; /* grid */
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* grid-cols-1 */
+  gap: 1.8rem; /* gap-6 */
+}
+
+@media (max-width: 768px) {
+  .pc-services-price-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* md:grid-cols-3 */
+  }
+}
+
+.pc-services-price-cards {
+  background-color: #fff; /* bg-white */
+  border-radius: 0.1rem; /* rounded-lg */
+  border: 1px solid rgba(98, 98, 98, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* shadow-lg */
+}
+
+.pc-services-price-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.1rem 0.1rem 0 0 ;
+}
+
+.pc-services-price-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.pc-services-price {
+  color: #4a5568; /* text-zinc-600 */
+}
+
+
+
+/*hero bottom*/
+
+.pc-repair-bottom-container {
+  position: relative;
+  background-color: #0b5c93; /* Blue color */
+  color: #ffffff; /* White text */
+}
+
+
+.pc-repair-img {
+  width: 100%;
+  height: 475px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.overlay-text {
+  text-align: center;
+ 
+}
+
+.overlay-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.overlay-text a {
+  background-color: #ffffff; /* Blue color */
+  color: rgba(0, 0, 0, 0.5); /* White text */
+  font-weight: 400;
+  padding: 0.55rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

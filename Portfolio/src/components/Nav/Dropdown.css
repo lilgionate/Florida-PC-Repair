@@ -1,0 +1,42 @@
+.submenu {
+  width: "";
+  position: absolute;
+  top: 80px;
+  list-style: none;
+  text-align: start;
+  line-height: 1;
+  z-index: 1;
+  background-color: rgba(63, 63, 63, 0.8);
+  box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.submenu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  border-width: 0 13px 10px 13px;
+  border-color: transparent transparent rgba(64, 64, 64, 0.8) transparent;
+  border-style: solid;
+}
+
+.submenu li {
+  cursor: pointer;
+}
+
+.submenu li a:hover {
+  color: rgb(142, 142, 142);
+}
+
+.submenu.clicked {
+  display: none;
+}
+
+.submenu-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 16px 30px 16px 0;
+}

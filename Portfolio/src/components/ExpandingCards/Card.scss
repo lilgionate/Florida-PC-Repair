@@ -1,0 +1,66 @@
+.ex-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    flex: 0.5;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    position: relative;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: flex 0.3s;
+}
+
+.ex-card-content {
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.ex-card h2 {
+    color: #ffffff;
+    margin-left: 1rem; /* Add margin to separate the button and the title */
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.ex-card.active {
+    flex: 5;
+}
+
+.ex-card.active h2 {
+    opacity: 1;
+}
+
+.ex-card-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    margin-bottom: 7px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    .ex-i {
+        color: #333;
+        font-size: 1.5rem;
+    }
+}
+
+.ex-card.active .ex-card-button {
+    opacity: 1;
+}

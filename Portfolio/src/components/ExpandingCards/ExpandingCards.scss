@@ -1,0 +1,17 @@
+.ex-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50%;
+    position: relative;
+    padding-top: 7rem; /* Add this */
+  }
+  
+  .expanding-cards {
+    display: flex;
+    width: 65vw;
+    position: absolute;
+    top: -240%; /* Change this */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

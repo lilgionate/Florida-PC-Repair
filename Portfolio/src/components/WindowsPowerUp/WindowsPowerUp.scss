@@ -1,0 +1,48 @@
+.MacBookPowerHero{
+    height: 400px;
+}
+
+.mac-power-container {
+    width: 70%;
+    margin: 4rem auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.20); /* Adding box shadow */
+    
+    .content-container {
+      width: 80%; /* Setting width for the content */
+      margin: 0 auto; /* Centering the content */
+      padding: 5rem 0 5rem 0;
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+    }
+
+    .power-header {
+        padding: 0 0 1rem 0;
+        font-size: 1.1rem;
+    }
+
+    .power-ul {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+  
+    .price-section {
+      // Define styles for the price section
+  
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #e0e0e0;
+        padding: 10px; /* Adding padding */
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+  
