@@ -200,7 +200,6 @@
     display: flex;
     justify-content: center; /* Horizontal center alignment */
     align-items: center; /* Vertical center alignment */
-    filter: brightness(100%);
   }
   
   .form-content {
@@ -334,27 +333,31 @@
   /* CustomPCForm.css */
 
 .custom-pc-payment-container {
-  background-color: #1a365d;
+  background-size: cover;
+  background-position: center;
   color: white;
-  font-family: sans-serif;
 }
 
 .custom-pc-payment-content {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #0f2c5c;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center; /* Horizontal center alignment */
+  align-items: center; /* Vertical center alignment */
   padding: 32px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  width: 50%; /* Adjust as needed */
+  margin-right: 2rem;
 }
 
 .custom-pc-input {
   width: 100%;
   padding: 8px;
-  border: 1px solid #0e244c;
+  border: 1px solid #ffffff;
   border-radius: 4px;
-  background-color: #0e244c;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
   margin-bottom: 16px;
 }
 

@@ -5,6 +5,8 @@ import emailjs from '@emailjs/browser';
 
 import './CustomPCPage.scss'
 
+import bgImage from '../../assets/custom-pc-warranty.jpg'
+
 const CARD_OPTIONS = {
 	iconStyle: "solid",
 	style: {
@@ -90,7 +92,7 @@ export default function CustomPCPaymentForm() {
     };
   return (
     <>
-            <div className="custom-pc-payment-container">
+            <div className="custom-pc-payment-container" style={{backgroundImage: `url(${bgImage})`}}>
                 <div className="custom-pc-payment-content">
                 {!success ? (
                     <form ref={form} onSubmit={handleSubmitSub}>
