@@ -26,12 +26,13 @@ const CARD_OPTIONS = {
 }
 
 export default function CustomPCPaymentForm() {
-    const [success, setSuccess] = useState(false)
+    const [email, setEmail] = useState('');
+    const [success, setSuccess] = useState(false);
     const stripe = useStripe()
     const elements = useElements()
     const form = useRef();
 
-    const handleSubmit = async (e) => {
+    const handleSubmitSub = async (e) => {
         e.preventDefault()
 
         emailjs
@@ -47,37 +48,52 @@ export default function CustomPCPaymentForm() {
         },
       );
 
-        const {error, paymentMethod} = await stripe.createPaymentMethod({
-            type: 'card',
-            card: elements.getElement(CardElement)
-        })
-
-        if(!error) {
-            try {
-                const {id} = paymentMethod
-                const response = await axios.post('http://localhost:4000/payment', {
-                    amount: 2500,
-                    id
-                })
-
-                if(response.data.success) {
-                    console.log('Successful payment')
-                    setSuccess(true)
-                }
-
-            } catch (error) {
-                console.log('Error', error)
+      if (!stripe || !elements) {
+        // Stripe.js has not yet loaded.
+        // Make sure to disable form submission until Stripe.js has loaded.
+        return;
+      }
+  
+      const result = await stripe.createPaymentMethod({
+        type: 'card',
+        card: elements.getElement(CardElement),
+        billing_details: {
+          email: email,
+        },
+      });
+  
+      if (result.error) {
+        console.log(result.error.message);
+      } else {
+        const res = await axios.post('http://localhost:3000/sub', {'payment_method': result.paymentMethod.id, 'email': email});
+        // eslint-disable-next-line camelcase
+        const {client_secret, status} = res.data;
+  
+        if (status === 'requires_action') {
+          stripe.confirmCardPayment(client_secret).then(function(result) {
+            if (result.error) {
+              console.log('There was an issue!');
+              console.log(result.error);
+              // Display error message in your UI.
+              // The card was declined (i.e. insufficient funds, card has expired, etc)
+            } else {
+              console.log('You got the money!');
+              // Show a success message to your customer
             }
+          });
         } else {
-            console.log(error.message)
+          console.log('You got the money!');
+          // No additional information was needed
+          // Show a success message to your customer
         }
-    }
+      }
+    };
   return (
     <>
             <div className="custom-pc-payment-container">
                 <div className="custom-pc-payment-content">
                 {!success ? (
-                    <form ref={form} onSubmit={handleSubmit}>
+                    <form ref={form} onSubmit={handleSubmitSub}>
                         <div className="mb-4">
                             <label htmlFor="name" className="custom-pc-label">Name *</label>
                             <input type="text" id="name" name='name' className="custom-pc-input" required />
