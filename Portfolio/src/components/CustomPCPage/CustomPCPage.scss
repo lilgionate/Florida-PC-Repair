@@ -329,6 +329,58 @@
     }
   }
   
+  /*custom pc payment form*/
+
+  /* CustomPCForm.css */
+
+.custom-pc-payment-container {
+  background-color: #1a365d;
+  color: white;
+  font-family: sans-serif;
+}
+
+.custom-pc-payment-content {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #0f2c5c;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-pc-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #0e244c;
+  border-radius: 4px;
+  background-color: #0e244c;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.custom-pc-label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.custom-pc-pay-button {
+  width: 100%;
+  background-color: #0053b3;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-pc-pay-button:hover {
+  background-color: #00408a;
+}
+
 
   /*custom pc payment*/
 
