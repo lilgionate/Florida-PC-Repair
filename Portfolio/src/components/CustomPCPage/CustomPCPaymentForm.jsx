@@ -96,6 +96,8 @@ export default function CustomPCPaymentForm() {
                 <div className="custom-pc-payment-content">
                 {!success ? (
                     <form ref={form} onSubmit={handleSubmitSub}>
+                        <h2 className='custom-pc-warranty-title'>Custom PC Build Warranty</h2>
+                        <p className='custom-pc-warranty-subtitle'>Want to pay annually? Click here</p>
                         <div className="mb-4">
                             <label htmlFor="name" className="custom-pc-label">Name *</label>
                             <input type="text" id="name" name='name' className="custom-pc-input" required />
@@ -115,15 +117,30 @@ export default function CustomPCPaymentForm() {
                         <div className="mb-4">
                             <label htmlFor="warranty" className="custom-pc-label">Custom PC Build Warranty - Monthly *</label>
                             <div className="flex items-center justify-between">
-                                <span className="text-sm">Price: $25.00</span>
+                                <span className="custom-pc-warranty-price">Price: $25.00</span>
                             </div>
-                            <p>All terms are listed on this site page.</p>
+                            <p className='custom-pc-warranty-text'>All terms are listed on this site page.</p>
                         </div>
                         <div className="mb-4">
                             <label htmlFor="additional-models" className="custom-pc-label">Model(s) for additional device(s)</label>
                             <input type="text" id="additional-models" name='additional-models' className="custom-pc-input" />
-                            <p>If you have more than one device, please enter the details of each device here.</p>
+                            <p className='custom-pc-warranty-text'>If you have more than one device, please enter the details of each device here.</p>
                         </div>
+                        <div className="form-row">
+                <label htmlFor="cardName">Email</label>
+                <input
+                    label='Email'
+                    id='outlined-email-input'
+                    helpertext={`Email you'll recive updates and receipts on`}
+                    margin='normal'
+                    variant='outlined'
+                    type='email'
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    fullwidth
+                />
+            </div>
                         <fieldset className="FormGroup">
                             <div className="FormRow">
                                 <CardElement options={CARD_OPTIONS} />
