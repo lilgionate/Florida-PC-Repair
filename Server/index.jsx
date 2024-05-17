@@ -15,11 +15,11 @@ app.use(bodyParser.json())
 app.use(cors())
 
 app.post('/sub', async (req, res) => {
-    const {email, payment_method} = req.body;
+    const {name, payment_method} = req.body;
   
     const customer = await stripe.customers.create({
       payment_method: payment_method,
-      email: email,
+      name: name,
       invoice_settings: {
         default_payment_method: payment_method,
       },

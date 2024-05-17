@@ -28,7 +28,7 @@ const CARD_OPTIONS = {
 }
 
 export default function CustomPCPaymentForm() {
-    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
     const [success, setSuccess] = useState(false);
     const stripe = useStripe()
     const elements = useElements()
@@ -60,14 +60,14 @@ export default function CustomPCPaymentForm() {
         type: 'card',
         card: elements.getElement(CardElement),
         billing_details: {
-          email: email,
+          name: name,
         },
       });
   
       if (result.error) {
         console.log(result.error.message);
       } else {
-        const res = await axios.post('http://localhost:3000/sub', {'payment_method': result.paymentMethod.id, 'email': email});
+        const res = await axios.post('http://localhost:3000/sub', {'payment_method': result.paymentMethod.id, 'name': name});
         // eslint-disable-next-line camelcase
         const {client_secret, status} = res.data;
   
@@ -126,21 +126,21 @@ export default function CustomPCPaymentForm() {
                             <input type="text" id="additional-models" name='additional-models' className="custom-pc-input" />
                             <p className='custom-pc-warranty-text'>If you have more than one device, please enter the details of each device here.</p>
                         </div>
-                        <div className="form-row">
-                <label htmlFor="cardName">Email</label>
-                <input
-                    label='Email'
-                    id='outlined-email-input'
-                    helpertext={`Email you'll recive updates and receipts on`}
-                    margin='normal'
-                    variant='outlined'
-                    type='email'
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    fullwidth
-                />
-            </div>
+                        <label htmlFor="creditcard" className="custom-pc-label">Credit Card *</label>
+                        <div>
+                            <input
+                                 label='Name'
+                                 id='outlined-name-input'
+                                 className="custom-pc-warranty-name custom-placeholder-color"
+                                 helpertext={`Name you'll recive updates and receipts on`}
+                                 type='name'
+                                 required
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                placeholder='Cardholder Name'
+                                
+                            />
+                        </div>
                         <fieldset className="FormGroup">
                             <div className="FormRow">
                                 <CardElement options={CARD_OPTIONS} />

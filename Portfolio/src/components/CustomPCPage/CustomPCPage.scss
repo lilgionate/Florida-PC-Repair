@@ -415,6 +415,32 @@
     align-items: center;
     margin-left: 15px;
   }
+
+  .custom-pc-warranty-name {
+    border: none;
+    outline: none;
+    background-color: #7795f8;
+    will-change: opacity, transform;
+    box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+    border-radius: 4px;
+    width: 100%;
+    padding: 9px 15px 9px 0;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .custom-placeholder-color::placeholder {
+    color: #87bbfd; /* Change color to your desired color */
+}
+
+.custom-placeholder-color {
+    padding-left: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', 'Open Sans', 'Segoe UI', sans-serif;
+    font-size: 16px;
+}
+
+
   
   .StripeElement--webkit-autofill {
     background: transparent !important;
