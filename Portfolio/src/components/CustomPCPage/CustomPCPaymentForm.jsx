@@ -18,7 +18,7 @@ const CARD_OPTIONS = {
 			fontSize: "16px",
 			fontSmoothing: "antialiased",
 			":-webkit-autofill": { color: "#fce883" },
-			"::placeholder": { color: "#87bbfd" }
+			"::placeholder": { color: "#d0e5ff" }
 		},
 		invalid: {
 			iconColor: "#ffc7ee",
@@ -67,7 +67,7 @@ export default function CustomPCPaymentForm() {
       if (result.error) {
         console.log(result.error.message);
       } else {
-        const res = await axios.post('http://localhost:3000/sub', {'payment_method': result.paymentMethod.id, 'name': name});
+        const res = await axios.post('https://localhost:3000/sub', {'payment_method': result.paymentMethod.id, 'name': name});
         // eslint-disable-next-line camelcase
         const {client_secret, status} = res.data;
   
@@ -96,7 +96,7 @@ export default function CustomPCPaymentForm() {
                 <div className="custom-pc-payment-content">
                 {!success ? (
                     <form ref={form} onSubmit={handleSubmitSub}>
-                        <h2 className='custom-pc-warranty-title'>Custom PC Build Warranty</h2>
+                        <h2 className='custom-pc-warranty-title'>Custom PC Warranty</h2>
                         <p className='custom-pc-warranty-subtitle'>Want to pay annually? Click here</p>
                         <div className="mb-4">
                             <label htmlFor="name" className="custom-pc-label">Name *</label>
@@ -123,7 +123,7 @@ export default function CustomPCPaymentForm() {
                         </div>
                         <div className="mb-4">
                             <label htmlFor="additional-models" className="custom-pc-label">Model(s) for additional device(s)</label>
-                            <input type="text" id="additional-models" name='additional-models' className="custom-pc-input" />
+                            <textarea type="text" id="additional-models" name='additional-models' className="custom-pc-input" />
                             <p className='custom-pc-warranty-text'>If you have more than one device, please enter the details of each device here.</p>
                         </div>
                         <label htmlFor="creditcard" className="custom-pc-label">Credit Card *</label>

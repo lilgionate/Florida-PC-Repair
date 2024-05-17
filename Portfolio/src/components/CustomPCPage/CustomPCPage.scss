@@ -247,9 +247,9 @@
   }
   
   .form-container {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    padding: 2rem;
+    padding: 2rem 3.5rem;
     width: 50%; /* Adjust as needed */
     margin-right: 2rem;
   }
@@ -333,7 +333,7 @@
 .custom-pc-payment-container {
   background-size: cover;
   background-position: center;
-  color: white;
+  color: #ffffff;
 }
 
 .custom-pc-payment-content {
@@ -342,7 +342,7 @@
   justify-content: center; /* Horizontal center alignment */
   align-items: center; /* Vertical center alignment */
   padding: 32px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   padding: 2rem;
   width: 50%; /* Adjust as needed */
@@ -350,7 +350,7 @@
 }
 
 .custom-pc-warranty-title {
-  padding: 3rem 0 0.5rem 0;
+  padding: 3rem 7rem 0.5rem 0;
   font-size: 2.5rem;
   font-weight: 700;
   color: #ffffff;
@@ -386,7 +386,7 @@
   border-radius: 4px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  margin-bottom: 10px;
+  resize: none;
 }
 
 .custom-pc-label {
@@ -424,13 +424,13 @@
     box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
     border-radius: 4px;
     width: 100%;
-    padding: 9px 15px 9px 0;
+    padding: 8.2px 15px 8.2px 0;
     margin-bottom: 10px;
     color: #ffffff;
   }
 
   .custom-placeholder-color::placeholder {
-    color: #87bbfd; /* Change color to your desired color */
+    color: #d0e5ff; /* Change color to your desired color */
 }
 
 .custom-placeholder-color {
