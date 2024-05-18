@@ -337,7 +337,6 @@
 }
 
 .custom-pc-payment-content {
-  margin: 0 2rem;
   display: flex;
   justify-content: center; /* Horizontal center alignment */
   align-items: center; /* Vertical center alignment */
@@ -346,7 +345,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   padding: 2rem;
   width: 50%; /* Adjust as needed */
-  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .custom-pc-warranty-title {

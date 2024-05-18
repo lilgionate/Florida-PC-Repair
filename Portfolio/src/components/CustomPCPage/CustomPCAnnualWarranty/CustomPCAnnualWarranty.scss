@@ -1,0 +1,131 @@
+.custom-pc-annual-container {
+    background-size: cover;
+    background-position: center;
+    background-color: #f6f6f6;
+    color: #000000;
+  }
+  
+  .custom-pc-annual-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 2rem;
+    margin: 0 auto; 
+}
+
+  
+  .custom-pc-warranty-annual-title {
+    padding: 7rem 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1b436e;
+  }
+  
+  .custom-pc-warranty-annual-text {
+    font-size: 0.8rem;
+    color: #000000;
+    font-weight: 400;
+    padding: 1rem 0;
+  }
+  
+  .custom-pc-warranty-annual-price {
+    font-size: 0.99rem;
+    font-weight: 500;
+    color: #000000;
+    padding: 1rem 0;
+  }
+  
+  .custom-pc-annual-input {
+    width: 800px;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    resize: none;
+  }
+  
+  .custom-pc-annual-label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  
+    /*custom pc payment*/
+
+  
+    .FormGroup-annual {
+      border-style: none;
+      background-color: #7795f8;
+      will-change: opacity, transform;
+      box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+      border-radius: 4px;
+    }
+    
+    .FormRow-annual {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-left: 15px;
+    }
+  
+    .custom-pc-warranty-annual-name {
+      border: none;
+      outline: none;
+      background-color: #7795f8;
+      will-change: opacity, transform;
+      box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+      border-radius: 4px;
+      width: 100%;
+      padding: 8.2px 15px 8.2px 0;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+  
+    .custom-placeholder-color::placeholder {
+      color: #d0e5ff; /* Change color to your desired color */
+  }
+  
+  .custom-placeholder-color {
+      padding-left: 14px;
+      font-weight: 500;
+      font-family: 'Roboto', 'Open Sans', 'Segoe UI', sans-serif;
+      font-size: 16px;
+  }
+  
+  
+    
+    .StripeElement--webkit-autofill {
+      background: transparent !important;
+    }
+    
+    .StripeElement {
+      width: 100%;
+      padding: 11px 15px 11px 0;
+    }
+    
+    .custom-pc-annual-button {
+      display: block;
+      font-size: 16px;
+      width: 100%;
+      height: 40px;
+      margin: 2rem auto;
+      background-color: #2b6cb0;
+      box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #2b6cb0;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 100ms ease-in-out;
+      will-change: transform, background-color, box-shadow;
+      border: none;
+    }
+    
+    .custom-pc-annual-button:active {
+      background-color: #1b436e;
+      box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #1b436e;
+      transform: scale(0.99);
+    }
