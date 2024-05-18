@@ -1,6 +1,8 @@
 import React from 'react'; 
 import './PcRepairs.scss';
 
+import NavSocial from '../NavSocial/NavSocial';
+
 import PCSplitImg from '../../assets/pc-split-img.avif';
 
 import PCFooter from '../../assets/pc-page-footer.jpg'
@@ -53,6 +55,7 @@ const PcRepairPage = () => {
                 <img src={MacBookCenter} alt="Pc Repair Image" className='PcImg'/>
             </div>
         </div>
+        <NavSocial />
 
         <CommonIssuesList />
 

@@ -1,0 +1,36 @@
+.contact-bar {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-links, .contact-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-social-icon {
+    width: 20px;
+    height: 20px;
+    font-size: .9rem;
+    color: #fff;
+}
+
+.nav-social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+
+.nav-social-link:hover,
+.nav-social-link:hover + .nav-social-icon,
+.nav-social-icon:hover,
+.nav-social-icon:hover + .nav-social-link {
+    color: #adadad;
+}
+

@@ -121,7 +121,7 @@ export default function CustomPCPaymentForm() {
                         </div>
                         <div className="mb-4">
                             <label htmlFor="additional-models" className="custom-pc-annual-label">Model(s) for additional device(s)</label>
-                            <textarea type="text" id="additional-models" name='additional-models' className="custom-pc-annual-input" />
+                            <textarea type="text" id="additional-models" name='additional-models' className="custom-pc-annual-textarea" />
                             <p className='custom-pc-warranty-annual-text'>If you have more than one device, please enter the details of each device here.</p>
                         </div>
                         <label htmlFor="creditcard" className="custom-pc-annual-label">Credit Card *</label>

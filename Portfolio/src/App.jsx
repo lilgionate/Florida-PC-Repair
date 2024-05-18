@@ -62,6 +62,7 @@ import MacRepairsPage from './routes/MacRepairsPage'
 import PcRepairPage from './routes/PcRepairsPage'
 import CustomPCBuild from './routes/CustomPCBuild'
 import CustomPCAnnual from './routes/CustomPCAnnual'
+import MailinService from './routes/MailinService'
 
 function App() {
 
@@ -126,6 +127,7 @@ function App() {
         <Route path="/pc-repairs" element={<PcRepairPage/>}/>
         <Route path="/custom-pc-build" element={<CustomPCBuild/>}/>
         <Route path="/custom-pc-build-annual-warranty" element={<CustomPCAnnual/>}/>
+        <Route path="/mail-in-to-florida-pc-support" element={<MailinService/>}/>
       </Routes>
     </div>
   )
