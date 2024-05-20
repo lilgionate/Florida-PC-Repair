@@ -1,36 +1,63 @@
 .contact-bar {
-    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-    padding: 5px 16px;
+    padding: 20px 10px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Change from row to column */
+    align-items: center; /* Align items vertically centered */
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0 50px 50px 0;
+    white-space: nowrap;
+    border: none;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 9999;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-bar.hidden {
+    transform: translate(-100%, -50%);
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 20px;
     align-items: center;
 }
 
-.contact-links, .contact-icons {
-    display: flex;
-    gap: 16px;
-}
-
 .nav-social-icon {
-    width: 20px;
-    height: 20px;
-    font-size: .9rem;
+    font-size: 15px;
     color: #fff;
+    transition: ease-in-out 0.3s;
 }
 
-.nav-social-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: .8rem;
-    font-weight: 600;
-}
-
-
-.nav-social-link:hover,
-.nav-social-link:hover + .nav-social-icon,
-.nav-social-icon:hover,
-.nav-social-icon:hover + .nav-social-link {
+.nav-social-icon:hover {
     color: #adadad;
 }
 
+.toggle-button {
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    left: 0%;
+    top: 90%;
+    transform: translateY(-50%);
+    border-radius: 0 50px 50px 0;
+    white-space: nowrap;
+    border: none;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 9999;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+}
+ .toggle-button:hover {
+    color: #adadad;
+ }
