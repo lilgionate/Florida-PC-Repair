@@ -9,6 +9,7 @@ import Supported from '../components/Supported/SupportedCarousel';
 import ExpandingCards from '../components/ExpandingCards/ExpandingCards';
 import OurServices from '../components/OurServices/OurServices';
 import Footer from '../components/Footer/Footer';
+import NavSocial from '../components/NavSocial/NavSocial';
 import img1 from '../assets/warranty.jpeg';
 import img2 from '../assets/IT-Support.jpg';
 import img3 from '../assets/onsite.jpg';
@@ -68,6 +69,7 @@ function Home () {
   return (
     <>
       <Navbar />
+      <NavSocial />
       <HeroTop 
       cName="hero"
       heroImg={HomeImg}

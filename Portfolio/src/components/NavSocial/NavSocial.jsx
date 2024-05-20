@@ -14,7 +14,7 @@ const contactIcons = [
 ];
 
 const ContactBar = () => {
-    const [isVisible, setIsVisible] = useState(true);
+    const [isVisible, setIsVisible] = useState(false);
 
     const toggleNavbar = () => {
         setIsVisible(!isVisible);
@@ -23,7 +23,7 @@ const ContactBar = () => {
     return (
         <div>
             <button className="toggle-button" onClick={toggleNavbar}>
-                <i className={`fas ${isVisible ? 'fas fa-arrow-right' : 'fas fa-arrow-left'}`}></i>
+                <i className={`fas ${isVisible ? 'fa-chevron-right' : 'fa-chevron-left'}`}></i>
             </button>
             <div className={`contact-bar ${isVisible ? 'visible' : 'hidden'}`}>
                 <div className="contact-icons">
