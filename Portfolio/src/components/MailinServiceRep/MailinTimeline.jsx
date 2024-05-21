@@ -1,10 +1,10 @@
 import React from 'react';
 import './MailinServiceRep.scss';
 
-const Step = ({ stepNumber, title, title2, subtitle, subtitle2, description, isActive }) => {
+const Step = ({ stepNumber, title, title2, subtitle, subtitle2, description }) => {
   return (
     <div className="step-container">
-      <div className={`step-icon ${isActive ? 'active' : ''}`}>
+      <div className="step-icon">
         <i className="fa-solid fa-calendar"></i>
       </div>
       <div className="step-content-container">
