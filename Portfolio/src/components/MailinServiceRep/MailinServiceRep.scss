@@ -85,12 +85,13 @@
     top: 5%;
     bottom: 0;
     width: 0.2rem; /* w-1 */
-    background-color: #2b6cb0;
+    background-color: #b1d7ff;
     border-width: 4px; /* border-4 */
-    border: 1px solid #2b6cb0; /* border-blue-500 */
+    border: 1px solid #b1d7ff; /* border-blue-500 */
     align-items: center;
     overflow: hidden;
-    height: 1490px; /* To contain the pseudo-element */
+    height: 1490px;
+    z-index: -1; /* To contain the pseudo-element */
   }
 
   .steps-line::before {
@@ -99,8 +100,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 0; /* Initial height is 0, will be updated via JS */
-    background-color: #1b436e; /* The color for the progress indicator */
+    height: var(--progress-height, 0); /* Initial height is 0, will be updated via JS */
+    background-color: #2b6cb0; /* The color for the progress indicator */
     transition: height 0.3s ease; /* Smooth transition */
 }
   
@@ -119,10 +120,10 @@
     width: 3rem; /* w-6 */
     height: 3rem; /* h-6 */
     border-radius: 50%; /* rounded-full */
-    background-color: #2b6cb0;
+    background-color: #b1d7ff;
     color: #fff;
     border-width: 4px; /* border-4 */
-    border: 1px solid #2b6cb0; /* border-blue-500 */
+    border: 1px solid #b1d7ff; /* border-blue-500 */
     display: flex;
     align-items: center; /* items-center */
     justify-content: center; /* justify-center */
@@ -130,8 +131,8 @@
 }
 
 .step-icon.active {
-    background-color: #1b436e; /* Color for active icon */
-    border-color: #1b436e;
+    background-color: #2b6cb0; /* Color for active icon */
+    border-color: #2b6cb0;
 }
 
   
