@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './MailinServiceRep.scss';
 import MailinRep from '../../assets/mail-in-repair.avif';
 import Step from './MailinTimeline';
+import ShippingNote from './MailinNotes';
 
 const PcRepairPage = () => {
     const [scrollProgress, setScrollProgress] = useState(0);
@@ -107,6 +108,23 @@ const PcRepairPage = () => {
           />
         </div>
       </div>
+
+    <div className="notes-container">
+      <h2 className="notes-header">Important Shipping Notes</h2>
+        <ShippingNote
+          title="Only ship the whole device, not parts:"
+          content="We do not accept just motherboards or logic boards or other failed parts. We’ll require the whole computer or device to work with."
+        />
+        <ShippingNote
+          title="Only ship if within the United States:"
+          content="This is a nationwide service. We will happily service any state. If you are international, please do not ship to us. Apologies but international shipping costs are too high and customs and paperwork are too time consuming."
+        />
+        <ShippingNote
+          title="Free shipping and label eligible only for:"
+          content="Laptops, tablets, phones, hard drives, external drives, thumb drives, and devices as large or smaller than laptops. You're welcome to ship items larger than laptops, but you'll be responsible for shipping both ways."
+        />
+    </div>
+
     </>
   );
 };
