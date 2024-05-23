@@ -10,8 +10,9 @@ const PcRepairPage = () => {
     useEffect(() => {
       const handleScroll = () => {
         const winHeight = window.innerHeight;
-        const halfwayPoint = winHeight * 0.6;
+        const halfwayPoint = winHeight * 0.7;
         const steps = document.querySelectorAll('.step-icon');
+        console.log(steps);
         let activeStepIndex = -1;
   
         steps.forEach((step, index) => {

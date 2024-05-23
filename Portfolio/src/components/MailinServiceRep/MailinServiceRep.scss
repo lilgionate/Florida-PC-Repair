@@ -1,234 +1,236 @@
 .MailRepairContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 95vh;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
 }
 
 .MailRepairsContent {
-    width: 50%;
-    padding: 5rem 3.5rem 1.5rem 3.5rem;
-    margin-top: 1rem;
+  width: 50%;
+  padding: 5rem 3.5rem 1.5rem 3.5rem;
+  margin-top: 1rem;
 }
 
 .MailRepairsImg{
-  width: 50%;
+width: 50%;
 }
 
 .MailImg {
-  height: 95vh;
-  width: 100%;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+height: 95vh;
+width: 100%;
+object-fit: cover;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .MailRepairsTitle {
-    font-size: 3.2rem; /* 36px */
-    font-weight: 700;
-    margin-bottom: 1rem;
-  
+  font-size: 3.2rem; /* 36px */
+  font-weight: 700;
+  margin-bottom: 1rem;
+
 }
 
 .MailRepairsDes {
-    font-size: 1.05rem; /* 18px */
-    font-weight: 300;
-    line-height: 1.75rem; /* 28px */
-   
+  font-size: 1.05rem; /* 18px */
+  font-weight: 300;
+  line-height: 1.75rem; /* 28px */
+ 
 }
 
 .MailRepairsButton {
-    background-color: #2b6cb0;
-    color: #fff;
-    font-weight: 400;
-    margin-top: 2rem;
-    padding: 0.5rem 1.5rem;
-    border-radius: 1rem;
-    border: 1px solid #2b6cb0;
-    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  background-color: #2b6cb0;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #2b6cb0;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
 }
 
 .MailRepairsButton:hover {
-    background-color: #1b436e; 
-    border: 1px solid #1b436e;
-  }
+  background-color: #1b436e; 
+  border: 1px solid #1b436e;
+}
 
 /*Steps component*/
 
 .steps-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem; /* py-8 px-4 */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 1rem; /* py-8 px-4 */
+}
 
-  .steps-title {
-    font-size: 2rem; /* text-4xl */
-    font-weight: 700; /* font-bold */
-    margin-bottom: 1rem;
-    margin-top: 4rem; /* mb-8 */
-  }
-  
-  .steps-content {
-    position: relative;
-    width: 69rem; /* max-w-4xl */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .steps-line-container {
-    position: absolute;
-    left: 8.4rem; /* Adjust left position as needed */
-    top: 5%;
-    bottom: 0;
-    width: 0.2rem; /* w-1 */
-    background-color: #b1d7ff;
-    border-width: 4px; /* border-4 */
-    border: 1px solid #b1d7ff; /* border-blue-500 */
-    align-items: center;
-    height: 1600px;
-    z-index: -1; /* To contain the pseudo-element */
-  }
+.steps-title {
+  font-size: 2rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 1rem;
+  margin-top: 4rem; /* mb-8 */
+}
+
+.steps-content {
+  position: relative;
+  width: 69rem; /* max-w-4xl */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps-line-container {
+  position: absolute;
+  left: 8.4rem; /* Adjust left position as needed */
+  top: 5%;
+  bottom: 0;
+  width: 0.2rem; /* w-1 */
+  background-color: #b1d7ff;
+  border-width: 4px; /* border-4 */
+  border: 1px solid #b1d7ff; /* border-blue-500 */
+  align-items: center;
+  height: 1600px;
+  z-index: -1; 
+}
 
 .steps-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px; /* Adjust as needed */
-  background-color: #2b6cb0; /* The color for the progress indicator */
-  z-index: 999; /* Ensure it's above other elements */
+position: absolute;
+top: 0;
+left: 0;
+width: 2px; /* Adjust as needed */
+background-color: #2b6cb0; /* The color for the progress indicator */
 }
-  
-  .step-container {
-    position: relative;
-    margin-bottom: 1.5rem; /* mb-10 */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-  }
-  
+
+.step-container {
+  position: relative;
+  margin-bottom: 1.5rem; /* mb-10 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
 .step-icon {
-    position: absolute; 
-    margin-left: 7rem; /* Adjust left position to align with the line */
-    width: 3rem; /* w-6 */
-    height: 3rem; /* h-6 */
-    border-radius: 50%; /* rounded-full */
-    background-color: #b1d7ff;
-    color: #fff;
-    border-width: 4px; /* border-4 */
-    border: 1px solid #b1d7ff; /* border-blue-500 */
-    display: flex;
-    align-items: center; /* items-center */
-    justify-content: center; /* justify-center */
-    transition: background-color 0.3s ease; /* Smooth transition */
+  position: absolute; 
+  margin-left: 7rem; /* Adjust left position to align with the line */
+  width: 3rem; /* w-6 */
+  height: 3rem; /* h-6 */
+  border-radius: 50%; /* rounded-full */
+  background-color: #b1d7ff;
+  color: #fff;
+  border-width: 4px; /* border-4 */
+  border: 1px solid #b1d7ff; /* border-blue-500 */
+  display: flex;
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  transition: background-color 0.3s ease, border-color 0.3s ease-in-out; /* Smooth transition */
 }
 
-.step-icon.active {
-    background-color: #2b6cb0; /* Color for active icon */
-    border-color: #2b6cb0;
+
+.step-content-container {
+  display: flex;
+  align-items: center;
+  margin-left: 12rem; /* Adjust margin-left to create space for the icon */
+  width: 100%;
 }
 
-  
-  .step-content-container {
-    display: flex;
-    align-items: center;
-    margin-left: 12rem; /* Adjust margin-left to create space for the icon */
-    width: 100%;
-  }
-  
-  .step-content {
-    background-color: #f5f5f5; /* bg-zinc-100 */
-    padding: 2rem; /* p-4 */
-    border-radius: 0.5rem; /* rounded-lg */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    max-width: calc(100% - 7rem); /* Adjust to ensure the content doesn't overlap with the icon */
-    position: relative; /* Needed for the pseudo-element */
-  }
+.step-content {
+  background-color: #f5f5f5; /* bg-zinc-100 */
+  padding: 2rem; /* p-4 */
+  opacity: 0.5; /* 90% opacity */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: calc(100% - 7rem); /* Adjust to ensure the content doesn't overlap with the icon */
+  position: relative; 
+  transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
 
-  .step-content::before {
-    content: '';
-    position: absolute;
-    left: -1rem; /* Adjust to position the arrow */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0; 
-    height: 0; 
-    border-top: .8rem solid transparent;
-    border-bottom: .8rem solid transparent;
-    border-right: .8rem solid #2b6cb0; /* Same color as the background */
-  }
-  
-  .step-number {
-    font-size: 1.125rem; /* text-lg */
-    font-weight: 600; /* font-semibold */
-  }
-  
-  .step-title {
-    color: #2b6cb0; /* text-blue-600 */
-    font-weight: 600; /* font-semibold */
-  }
-  
-  .step-subtitle, .step-description {
-    margin-bottom: 1.5rem; /* Optional, add if needed for spacing */
-  }
+.step-content::before {
+  content: '';
+  position: absolute;
+  left: -1rem; /* Adjust to position the arrow */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-top: .8rem solid transparent;
+  border-bottom: .8rem solid transparent;
+  border-right: .8rem solid #2b6cb0; /* Same color as the background */
+}
+
+.step-number {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+}
+
+.step-title {
+  color: #2b6cb0; /* text-blue-600 */
+  font-weight: 600; /* font-semibold */
+}
+
+.step-subtitle, .step-description {
+  margin-bottom: 1.5rem; /* Optional, add if needed for spacing */
+}
 
 .step-subtitle-two {
-    margin-bottom: 1.5rem;
-    width: 30%;
+  margin-bottom: 1.5rem;
+  width: 30%;
 }
 
 .highlight .step-icon {
-  background-color: #2b6cb0;
-  border-color: #2b6cb0;
+background-color: #2b6cb0;
+border-color: #2b6cb0;
 }
+
+.highlight .step-content {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  opacity: 1;
+  }
 
 /*Shipping Notes */
 
 .notes-container {
-  padding: 2rem; /* This is equivalent to p-6 in Tailwind CSS */
-  background-color: white;
-  color: #27272a;
-  width: 70%;
-  margin: 0 auto;
+padding: 2rem; /* This is equivalent to p-6 in Tailwind CSS */
+background-color: white;
+color: #27272a;
+width: 70%;
+margin: 0 auto;
 }
 
 .notes-header {
-  font-size: 1.7rem; 
-  font-weight: 700;
-  color: #27272a; 
-  margin-bottom: 2rem; 
+font-size: 1.7rem; 
+font-weight: 700;
+color: #27272a; 
+margin-bottom: 2rem; 
 }
 
 .notes-content {
-  display: flex; /* This is equivalent to flex in Tailwind CSS */
-  align-items: flex-start;
-  margin-bottom: 1rem;
+display: flex; /* This is equivalent to flex in Tailwind CSS */
+align-items: flex-start;
+margin-bottom: 1rem;
 }
 
 .text-notes-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #1c1c1c;
-  line-height: 0;
+font-size: 1rem;
+font-weight: 700;
+color: #1c1c1c;
+line-height: 0;
 }
 
 .text-notes-content {
-  font-size: 1rem;
-  color: #757575;
+font-size: 1rem;
+color: #757575;
 }
 
 .notes-check {
-  padding: 4px 4px 3px 4px;
-  margin-top: .5rem;
-  margin-right: .5rem;
-  background-color: #2b6cb0;
-  border-radius: 50%;
-  text-align: center;
-  color: white;
-  font-size: .8rem;
+padding: 4px 4px 3px 4px;
+margin-top: .5rem;
+margin-right: .5rem;
+background-color: #2b6cb0;
+border-radius: 50%;
+text-align: center;
+color: white;
+font-size: .8rem;
 }
