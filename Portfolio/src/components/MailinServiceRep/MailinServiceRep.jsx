@@ -4,7 +4,7 @@ import MailinRep from '../../assets/mail-in-repair.avif';
 import Step from './MailinTimeline';
 import ShippingNote from './MailinNotes';
 
-const PcRepairPage = () => {
+const MailinService = () => {
     const [highlightedStep, setHighlightedStep] = useState(-1);
 
     useEffect(() => {
@@ -140,4 +140,4 @@ const PcRepairPage = () => {
   );
 };
 
-export default PcRepairPage;
+export default MailinService;

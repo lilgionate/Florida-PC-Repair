@@ -15,7 +15,7 @@ export const walkInDropdown = [
 
 export const mailInDropdown = [
   { id: 1, title: "Mail in your device", path: "./mail-in-to-florida-pc-support", cName: "submenu-item" },
-  { id: 2, title: "Device Pickup - Messenger Service", path: "./services2", cName: "submenu-item" },
+  { id: 2, title: "Device Pickup - Messenger Service", path: "./device-pick-messenger-service", cName: "submenu-item" },
 ];
 
 export const itSupportDropdown = [
