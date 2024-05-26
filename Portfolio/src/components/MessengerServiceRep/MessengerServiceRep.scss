@@ -54,3 +54,69 @@
     background-color: #1b436e; 
     border: 1px solid #1b436e;
   }
+
+/*Messenger Pricing*/
+
+.MessengerContentContainer {
+  display: flex;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 7rem;
+  background-color: #f4f4f5; /* Equivalent to bg-zinc-100 */
+}
+
+.MessengerSection {
+  width: 50%;
+  padding: 2rem;
+}
+
+.MessengerTitle {
+  font-size: 1.7rem; /* Equivalent to text-2xl */
+  font-weight: 400;
+  color: #27272a; 
+  line-height: 2.2rem;
+}
+
+.MessengerContent {
+  color: #52525b;
+  line-height: 1.7rem;
+}
+
+.MessengerPriceContainer {
+  width: 50%;
+  padding: 1rem;
+  margin-top: 1.5rem; /* Equivalent to mt-6 */
+}
+
+.MessengerPrice {
+  background-color: #3b82f6;
+  height: 375px; 
+  width: 450px;
+  color: #ffffff; /* Equivalent to text-white */
+  padding: 1.5rem; /* Equivalent to p-6 */
+  border-radius: 2rem; /* Equivalent to rounded-lg */
+  border-width: 3px; /* Equivalent to border-2 */
+  border-style: dashed; /* Equivalent to border-dashed */
+  border-color: #282828; /* Equivalent to border-zinc-300 */
+  margin-left: 3rem;
+}
+
+.MessengerTitleTwo {
+  font-size: 1.8rem; /* Equivalent to text-xl */
+  font-weight: bold;
+  margin-bottom: 0.5rem; 
+  width: 90%;
+  text-align: center;
+  margin: 1.5rem auto;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.MessengerContentTwo {
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  padding: 0 1rem 1rem 1rem;
+  width: 75%;
+}

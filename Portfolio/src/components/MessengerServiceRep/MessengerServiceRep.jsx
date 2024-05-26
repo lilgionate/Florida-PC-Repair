@@ -16,6 +16,25 @@ const MessengerService = () => {
           <img src={MessengerRep} alt="Pc Repair Image" className='MessengerImg' />
         </div>
       </div>
+
+
+      <div className="MessengerContentContainer">
+        <div className="MessengerSection">
+          <h2 className="MessengerTitle">
+            Not able to visit us? Or have us visit you? No worries. We’re here to accommodate!
+          </h2>
+          <p className="MessengerContent">
+            Just request a messenger to pick up your computer or device. Then, we’ll provide a free diagnostic, repair it upon approval, and courier it back to you. We’ll do all the legwork for you along with fixing your computer.
+          </p>
+        </div>
+        <div className="MessengerPriceContainer">
+          <div className="MessengerPrice">
+            <h3 className="MessengerTitleTwo">CONVENIENT MESSENGER SERVICE</h3>
+            <p className="MessengerContentTwo">SPECIAL: Just $20 One-Way from North to South Miami.</p>
+          </div>
+        </div>
+      </div>
+
     </>
   );
 };
