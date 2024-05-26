@@ -1,6 +1,7 @@
 import React from 'react';
 import './MessengerServiceRep.scss';
 import MessengerRep from '../../assets/home-pickup.jpg';
+import ServiceSection from './ServicesInclude';
 
 const MessengerService = () => {
 
@@ -34,6 +35,8 @@ const MessengerService = () => {
           </div>
         </div>
       </div>
+
+      <ServiceSection />
 
     </>
   );

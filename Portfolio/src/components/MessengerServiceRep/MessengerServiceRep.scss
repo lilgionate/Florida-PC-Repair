@@ -120,3 +120,90 @@
   padding: 0 1rem 1rem 1rem;
   width: 75%;
 }
+
+
+/*Your Services Include*/
+.MessengerServicesContainer {
+  background-color: #f4f4f5; // Equivalent to bg-zinc-100
+}
+
+
+.MessengerServicesItems {
+  max-width: 80rem; // Equivalent to max-w-7xl
+  margin-left: auto; // Equivalent to mx-auto
+  margin-right: auto; // Equivalent to mx-auto
+  padding-top: 2rem; // Equivalent to py-8
+  padding-bottom: 2rem; // Equivalent to py-8
+  padding-left: 1rem; // Equivalent to px-4
+  padding-right: 1rem; // Equivalent to px-4
+}
+
+@media (min-width: 640px) {
+  .MessengerServicesItems {
+    padding-left: 1.5rem; // Equivalent to sm:px-6
+    padding-right: 1.5rem; // Equivalent to sm:px-6
+  }
+}
+
+@media (min-width: 1024px) {
+  .MessengerServicesItems {
+    padding-left: 2rem; // Equivalent to lg:px-8
+    padding-right: 2rem; // Equivalent to lg:px-8
+  }
+}
+
+.MessengerServicesTitle {
+  font-size: 1.5rem; // Equivalent to text-2xl
+  font-weight: bold; // Equivalent to font-bold
+  text-align: center; // Equivalent to text-center
+  color: #27272a; // Equivalent to text-zinc-800
+  margin-bottom: 2rem; // Equivalent to mb-8
+}
+
+
+.MessengerServicesCards {
+  display: grid; // Equivalent to grid
+  grid-gap: 1.5rem; // Equivalent to gap-6
+}
+
+@media (min-width: 640px) {
+  .MessengerServicesCards {
+    grid-template-columns: repeat(1, minmax(0, 1fr)); // Equivalent to sm:grid-cols-1
+  }
+}
+
+@media (min-width: 768px) {
+  .MessengerServicesCards {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); // Equivalent to md:grid-cols-3
+  }
+}
+
+.MessengerServicesContent {
+  background-color: #ffffff; // Equivalent to bg-white
+  dark-mode {
+    background-color: #27272a; // Equivalent to dark:bg-zinc-800
+  }
+  padding: 1.5rem; // Equivalent to p-6
+  border-radius: 0.5rem; // Equivalent to rounded-lg
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Equivalent to shadow-md
+  text-align: center; // Equivalent to text-center
+}
+
+.MessengerServicesImg {
+  margin-left: auto; // Equivalent to mx-auto
+  margin-right: auto; // Equivalent to mx-auto
+  margin-bottom: 1rem; // Equivalent to mb-4
+}
+
+.MessengerServicesIcon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #555;
+}
+
+.MessengerServicesDes {
+  font-size: 1.125rem; // Equivalent to text-lg
+  font-weight: 600; // Equivalent to font-semibold
+  color: #27272a; // Equivalent to text-zinc-800
+}
+
