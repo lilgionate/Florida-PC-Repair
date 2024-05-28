@@ -90,7 +90,7 @@
 }
 
 .MessengerPrice {
-  background-color: #3b82f6;
+  background-color: #2b6cb0;
   height: 375px; 
   width: 450px;
   color: #ffffff; /* Equivalent to text-white */
@@ -124,18 +124,14 @@
 
 /*Your Services Include*/
 .MessengerServicesContainer {
-  background-color: #f4f4f5; // Equivalent to bg-zinc-100
+  background-color: #f4f4f5;
 }
 
 
 .MessengerServicesItems {
-  max-width: 80rem; // Equivalent to max-w-7xl
-  margin-left: auto; // Equivalent to mx-auto
-  margin-right: auto; // Equivalent to mx-auto
-  padding-top: 2rem; // Equivalent to py-8
-  padding-bottom: 2rem; // Equivalent to py-8
-  padding-left: 1rem; // Equivalent to px-4
-  padding-right: 1rem; // Equivalent to px-4
+  padding: 6rem 1rem; 
+  width: 83%;
+  margin: 0 auto;
 }
 
 @media (min-width: 640px) {
@@ -153,17 +149,17 @@
 }
 
 .MessengerServicesTitle {
-  font-size: 1.5rem; // Equivalent to text-2xl
-  font-weight: bold; // Equivalent to font-bold
-  text-align: center; // Equivalent to text-center
-  color: #27272a; // Equivalent to text-zinc-800
-  margin-bottom: 2rem; // Equivalent to mb-8
+  font-size: 1.8rem; 
+  font-weight: 700; 
+  text-align: center;
+  color: #333; 
+  margin-bottom: 4rem; 
 }
 
 
 .MessengerServicesCards {
   display: grid; // Equivalent to grid
-  grid-gap: 1.5rem; // Equivalent to gap-6
+  grid-gap: 4rem; 
 }
 
 @media (min-width: 640px) {
@@ -180,30 +176,23 @@
 
 .MessengerServicesContent {
   background-color: #ffffff; // Equivalent to bg-white
-  dark-mode {
-    background-color: #27272a; // Equivalent to dark:bg-zinc-800
-  }
-  padding: 1.5rem; // Equivalent to p-6
-  border-radius: 0.5rem; // Equivalent to rounded-lg
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Equivalent to shadow-md
-  text-align: center; // Equivalent to text-center
-}
-
-.MessengerServicesImg {
-  margin-left: auto; // Equivalent to mx-auto
-  margin-right: auto; // Equivalent to mx-auto
-  margin-bottom: 1rem; // Equivalent to mb-4
+  padding: 0 2.5rem;
+  border-radius: 1.5rem; // Equivalent to rounded-lg
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); // Equivalent to shadow-md
+  text-align: center;
 }
 
 .MessengerServicesIcon {
-  font-size: 2rem;
-  margin-right: 1rem;
-  color: #555;
+  font-size: 3rem;
+  color: #2b6cb0;
+  margin: 2rem 0 1rem 0;
 }
 
 .MessengerServicesDes {
-  font-size: 1.125rem; // Equivalent to text-lg
-  font-weight: 600; // Equivalent to font-semibold
-  color: #27272a; // Equivalent to text-zinc-800
+  font-size: 1.5rem; // Equivalent to text-lg
+  font-weight: 700; // Equivalent to font-semibold
+  color: #1b436e;
+  line-height: 1.9rem;
+  margin-bottom: 2rem; // Equivalent to text-zinc-800
 }
 
