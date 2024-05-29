@@ -39,6 +39,7 @@
     color: #adadad;
 }
 
+
 .toggle-button {
     color: #fff;
     padding: 5px 20px;
@@ -55,8 +56,33 @@
     position: fixed;
     z-index: 9999;
     align-items: center;
-    transition: ease-in-out 0.3s;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
 }
- .toggle-button:hover {
-    background-color: rgba(48, 48, 48, 0.8);
- }
+
+.contact-bar-container {
+    position: relative;
+    &:hover .toggle-button {
+        opacity: 1;
+    }
+}
+
+.button-container.visible .toggle-button {
+    opacity: 1;
+}
+
+@keyframes arrow-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.toggle-button.animating i {
+    animation: arrow-animation 0.3s ease-in-out;
+}

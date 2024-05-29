@@ -136,6 +136,8 @@ const MailinService = () => {
           content="Laptops, tablets, phones, hard drives, external drives, thumb drives, and devices as large or smaller than laptops. You're welcome to ship items larger than laptops, but you'll be responsible for shipping both ways."
         />
       </div>
+
+      /* Aucity Scheduling Here */
     </>
   );
 };

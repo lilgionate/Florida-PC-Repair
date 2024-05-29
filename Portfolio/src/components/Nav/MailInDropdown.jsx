@@ -15,7 +15,11 @@ function MailInDropdown() {
         {mailInDropdown.map((item) => {
           return (
             <li key={item.id}>
-              <Link to={item.path} className={item.cName} onClick={() => setDropdown(false)}>
+              <Link 
+              to={item.path.replace(/^\./, '')} 
+              className={item.cName} 
+              onClick={() => setDropdown(false)}
+              >
                 {item.title}
               </Link>
             </li>

@@ -2,6 +2,8 @@ import React from 'react';
 import './MessengerServiceRep.scss';
 import MessengerRep from '../../assets/home-pickup.jpg';
 import ServiceSection from './ServicesInclude';
+import HowItWorks from './HowItWorks';
+import MessengerBottom from './MessengerBottom';
 
 const MessengerService = () => {
 
@@ -37,6 +39,12 @@ const MessengerService = () => {
       </div>
 
       <ServiceSection />
+
+      /* Aucity Scheduling Here */
+
+      <HowItWorks />
+
+      <MessengerBottom/>
 
     </>
   );

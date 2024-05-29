@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './NavSocial.scss';
 
 const contactIcons = [
@@ -14,17 +14,34 @@ const contactIcons = [
 ];
 
 const ContactBar = () => {
+    
     const [isVisible, setIsVisible] = useState(false);
+    const [isAnimating, setIsAnimating] = useState(false);
 
     const toggleNavbar = () => {
+        setIsAnimating(true);
         setIsVisible(!isVisible);
     };
 
+    useEffect(() => {
+        if (isAnimating) {
+            const timeout = setTimeout(() => {
+                setIsAnimating(false);
+            }, 300); // Duration of the animation in ms
+            return () => clearTimeout(timeout);
+        }
+    }, [isAnimating]);
+
     return (
-        <div>
-            <button className="toggle-button" onClick={toggleNavbar}>
-                <i className={`fas ${isVisible ? 'fa-chevron-right' : 'fa-chevron-left'}`}></i>
-            </button>
+        <div className="contact-bar-container">
+            <div className={`button-container ${isVisible ? 'visible' : ''}`}>
+                <button
+                    className={`toggle-button ${isAnimating ? 'animating' : ''}`}
+                    onClick={toggleNavbar}
+                >
+                    <i className={`fas ${isVisible ? 'fa-chevron-right' : 'fa-chevron-left'}`}></i>
+                </button>
+            </div>
             <div className={`contact-bar ${isVisible ? 'visible' : 'hidden'}`}>
                 <div className="contact-icons">
                     {contactIcons.map((icon, index) => (
