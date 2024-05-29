@@ -19,7 +19,7 @@ export const mailInDropdown = [
 ];
 
 export const itSupportDropdown = [
-  { id: 1, title: "Onsite Tech Visit", path: "/product1", cName: "submenu-item" },
+  { id: 1, title: "Onsite Tech Visit", path: "/schedule-a-service/office-visit/", cName: "submenu-item" },
   { id: 2, title: "Remote Support", path: "/product2", cName: "submenu-item" },
 ];
 
