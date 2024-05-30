@@ -1,6 +1,8 @@
 import React from 'react';
 import './OnSiteTechPage.scss';
 import OnSiteRep from '../../assets/OnsiteRep.jpg';
+import ITSpecialist from './ITSpecialist';
+import OnSiteVisit from './OnSiteVisit';
 
 
 
@@ -19,7 +21,9 @@ const OnSiteTechPage = () => {
         </div>
       </div>
 
+      <ITSpecialist />
 
+      <OnSiteVisit />
     </>
   );
 };

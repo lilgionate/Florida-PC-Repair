@@ -28,7 +28,7 @@
     font-size: 3.2rem; /* 36px */
     font-weight: 700;
     margin-bottom: 1rem;
-  
+    color: #333;
   }
   
   .MessengerRepairsDes {
@@ -54,3 +54,164 @@
     background-color: #1b436e; 
     border: 1px solid #1b436e;
   }
+
+/*IT Specialist*/
+
+.it-specialties-container {
+    width: 88%;
+    margin: 0 auto;
+    padding: 3rem 1rem; /* py-12 px-4 */
+  @media (min-width: 640px) {
+    padding: 3rem 1.5rem; /* sm:px-6 */
+  }
+  @media (min-width: 1024px) {
+    padding: 3rem 2rem; /* lg:px-8 */
+  }
+}
+  
+  .it-specialties-heading {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 800; /* font-extrabold */
+    text-align: center;
+    color: #333; /* text-zinc-900 */
+  
+  }
+  
+  .it-specialties-grid {
+    margin-top: 2.5rem; /* mt-10 */
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.2rem; /* gap-8 */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr)); /* md:grid-cols-3 */
+    }
+  }
+  
+  .it-specialist-card {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .it-specialist-image {
+    width: 100%;
+    height: 15rem; /* h-48 */
+    object-fit: cover; /* object-cover */
+  }
+  
+  .it-specialist-title {
+    margin-top: 1rem; /* mt-4 */
+    font-size: 1.05rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: #333; /* text-zinc-900 */
+  
+  }
+
+  /*OnSite Visit*/
+
+  .onsite-visit-container {
+    width: 85.5%;
+    margin: 0 auto; 
+    margin-top: 1.5rem;
+    padding: 1.5rem; /* p-6 */
+    background-color: #ffffff; /* bg-white */
+  }
+  
+  .onsite-visit-heading {
+    font-size: 1.8rem; /* text-2xl */
+    font-weight: bold; /* font-bold */
+    text-align: center; /* text-center */
+    margin-bottom: 3.7rem; /* mb-6 */
+    color: #27272a; /* text-zinc-800 */
+  }
+  
+  .onsite-visit-as-needed {
+    padding: 1.65rem 0; /* py-4 */
+    text-align: center; /* text-center */
+    background-color: #414141; /* bg-zinc-500 */
+    color: #ffffff; /* text-white */
+  }
+
+  .onsite-visit-title {
+    font-size: 1.5rem; /* text-xl */
+    font-weight: 600; /* font-bold */
+    text-align: center; /* text-center */
+    color: #ffffff; /* text-zinc-800 */
+  }
+  
+  .onsite-visit-price {
+    font-size: 2.4rem; /* text-4xl */
+    font-weight: 800; /* font-bold */
+    text-align: center; /* text-center */
+    color: #333; /* text-zinc-800 */
+    line-height: 0.2rem;
+    margin-top: 3rem;
+  }
+
+  .onsite-visit-sub {
+    text-align: center;
+    color: #71717a;
+  }
+
+  .onsite-visit-dollar {
+    font-size: 1rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+    color: #333; /* text-zinc-800 */
+  }
+  
+  .onsite-visit-info {
+    text-align: center; /* text-center */
+    margin-bottom: 1.5rem; /* mb-6 */
+    color: #71717a; /* text-zinc-600 */
+  }
+  
+  .onsite-visit-list {
+    list-style: none;
+    margin: 2rem auto 1.5rem auto; /* Center the list horizontally and add bottom margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .onsite-visit-list-item {
+    display: flex;
+    align-items: center; /* items-center */
+    color: #27272a; /* text-zinc-800 */
+    font-size: 0.9rem;
+    margin-right: 12px; /* Add some space between items */
+  }
+
+  .onsite-visit-icon {
+    margin-right: 0.8rem; /* mr-2 */
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .onsite-visit-divider {
+    width: 80%;
+    border: 1.4px solid #d7d9dd;
+    margin: 1rem 0; /* Adjust spacing as needed */
+  }
+
+  .onsite-visit-button {
+    background-color: #2b6cb0;
+    color: #fff;
+    font-weight: 400;
+    padding: 0.6rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid #2b6cb0;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+
+  .onsite-visit-button:hover {
+    background-color: #1b436e; 
+    border: 1px solid #1b436e;
+  }
+  
+  .onsite-visit-note {
+    text-align: center; /* text-center */
+    color: #71717a; /* text-zinc-600 */
+    line-height: 0;
+    margin-bottom: 4rem;
+    font-size: 0.9rem;
+  }
+  
