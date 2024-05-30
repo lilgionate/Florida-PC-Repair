@@ -1,11 +1,13 @@
 import React from 'react';
 
 import RemoteITHeader from './RemoteITHeader';
+import RemoteITPricing from './RemoteITPricing';
 
 const RemoteITPage = () => {
   return (
-    <>
-   <RemoteITHeader />
+   <>
+    <RemoteITHeader />
+    <RemoteITPricing />
    </>
   );
 };
