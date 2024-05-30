@@ -65,6 +65,7 @@ import CustomPCAnnual from './routes/CustomPCAnnual'
 import MailinService from './routes/MailinService'
 import MessengerService from './routes/MessengerService'
 import OnSiteTech from './routes/OnSiteTech'
+import RemoteIT from './routes/RemoteIT'
 
 function App() {
 
@@ -132,6 +133,7 @@ function App() {
         <Route path="/mail-in-to-florida-pc-support" element={<MailinService/>}/>
         <Route path="/device-pick-messenger-service" element={<MessengerService/>}/>
         <Route path="/schedule-a-service/office-visit/" element={<OnSiteTech/>}/>
+        <Route path="/schedule-a-service/remote-it-computer-support-service" element={<RemoteIT/>}/>
       </Routes>
     </div>
   )

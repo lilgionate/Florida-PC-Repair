@@ -1,0 +1,39 @@
+/* Remote IT Header */
+.remote-support-section {
+  background-color: #f5f5f5; /* bg-zinc-100 */
+  padding: 2rem;
+  text-align: center;
+  margin-top: 7rem;
+}
+  
+  .section-title {
+    font-size: 3.2rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 1rem; /* mb-4 */
+    color: #333; /* text-zinc-900 */
+
+  }
+  
+  .feature-container {
+    display: flex; /* flex */
+    justify-content: center; /* justify-center */
+    gap: 3rem; /* space-x-8 */
+  }
+  
+  .remote-support-feature {
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    gap: 1rem; /* space-x-2 */
+  }
+  
+  .remote-support-icon {
+    color: #2b6cb0;
+    font-size: 1.3rem; 
+  }
+  
+.feature-text {
+  color: #333; /* text-zinc-700 */
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+  
