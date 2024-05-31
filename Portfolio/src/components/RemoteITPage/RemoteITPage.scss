@@ -297,3 +297,100 @@
     color: #ffffff; /* text-white */
   }
 }
+
+
+/*FAQ*/
+
+.remote-it-faq__subtitle-bottom {
+  font-size: 1.9rem; /* text-2xl */
+  font-weight: 600; /* font-bold */
+  color: #1b436e; /* text-blue-800 */
+  margin-bottom: 1rem; /* mb-6 */
+  text-align: center;
+}
+
+.remote-it-faq__container {
+  padding-top: 6rem;
+}
+
+.remote-it-faq__dropdown {
+  position: relative;
+  display: none;
+  background-color: #fff;
+  padding: 2px;
+  margin: 1.5rem 0 0 1rem;
+  width: 95%;
+}
+
+.remote-it-faq__dropdown-open {
+  display: block;
+}
+
+.remote-it-faq__icon {
+  padding: 0 1rem;
+}
+
+.remote-it-faq__cursor-pointer {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  font-size: 16.5px;
+  padding: 11px 0;
+  border-bottom: 1px solid #d1d1d1;
+  width: 59.6%;
+  margin: 0 auto;
+}
+
+.remote-it-faq__dropdown-text {
+  font-size: 16px;
+  line-height: 2rem;
+  margin: 10px 0 20px 0;
+  font-weight: 400;
+}
+
+
+
+
+/*RemoteITHome*/
+
+.remote-it-home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 2rem 6rem 2rem; /* py-8 */
+}
+
+.remote-it-home-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2.6px solid #333; /* border-zinc-300 */
+  border-radius: 1.4rem; /* rounded-lg */
+  padding: 2rem; /* p-8 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  width: 62.5%; /* max-w-md */
+  height: 280px;
+  text-align: center;
+}
+
+.remote-it-home-title {
+  font-size: 1.8rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  color: #1b436e; /* text-zinc-800 */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.remote-it-home-button {
+  background-color: #2b6cb0; /* bg-blue-500 */
+  border: #2b6cb0;
+  color: #ffffff; /* text-white */
+  padding: 0.7rem 1.8rem; /* px-6 py-2 */
+  border-radius: 1rem; /* rounded-full */
+  transition:  0.3s ease-in-out; /* transition duration-300 */
+}
+
+.remote-it-home-button:hover {
+  background-color: #1b436e; /* hover:bg-blue-600 */
+}
+
