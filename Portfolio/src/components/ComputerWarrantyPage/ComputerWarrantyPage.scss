@@ -262,4 +262,311 @@
     position: relative;
 }
   
- 
+/*Tech Support*/
+
+.all-in-one-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5; /* bg-zinc-100 */
+    padding: 3.3rem 6rem; /* p-6 */
+  
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  
+  .all-in-one-image {
+    width: 100%;
+    max-width: 670px; /* md:max-w-md */
+   
+  }
+  
+  .all-in-one-content {
+    width: 50%;
+    margin-left: 5rem; /* md:ml-6 */
+    text-align: left; /* md:text-left */
+  }
+  
+  .all-in-one-title {
+    font-size: 1.8rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    color: #1b436e; /* text-zinc-800 */
+    line-height: 0.6;
+  }
+  
+.all-in-one-text {
+    margin-top: 2.5rem;
+    color: #333; 
+}
+  
+  .all-in-one-text-sm {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333; 
+  }
+  
+  .all-in-one-button {
+    background-color: #2b6cb0; /* bg-blue-500 */
+    border: #2b6cb0;
+    color: #ffffff; /* text-white */
+    padding: 0.7rem 1.5rem; /* px-4 py-2 */
+    border-radius: 1rem; /* rounded-lg */
+    transition: 0.3s ease-in-out;
+  
+    &:hover {
+      background-color: #1b436e; /* bg-blue-500 */
+      border: #1b436e;
+      color: #ffffff; /* text-white */
+    }
+  }
+
+/*Computer Reviews*/
+
+.google-review-card {
+    width: 27.2%; /* w-full */
+    background-color: #ffffff; /* bg-white */
+    padding: 2rem; /* p-6 */
+    margin: 0.8rem; /* Add margin for spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 0.25rem;
+    position: relative;
+  }
+  
+  .google-review-card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem; /* mb-4 */
+  }
+  
+  .google-review-card-avatar {
+    width: 3.62rem; /* w-12 */
+    height: 3.65rem; /* h-12 */
+    font-family: 'Roboto', sans-serif;
+    border-radius: 9999px; /* rounded-full */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* text-white */
+    font-size: 2.1rem; /* text-xl */
+  }
+  
+  .google-review-card-info {
+    margin-left: 1rem; /* ml-4 */
+    line-height: 0.7;
+  }
+  
+  .google-review-card-name-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .google-review-card-name {
+    font-size: 1rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    color: #1a202c; /* text-zinc-900 */
+  }
+  
+  .google-review-card-avatar-img {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.8rem;
+    height: 27px;
+  }
+  
+  .google-review-card-rating-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .google-review-card-rating {
+    display: flex;
+    color: #f59e0b; /* text-yellow-500 */
+  }
+  
+  .google-review-card-date {
+    margin-left: 0.5rem; /* ml-2 */
+    color: #4a5568; /* text-zinc-600 */
+    font-size: 0.875rem; /* text-sm */
+  }
+  
+  .google-review-card-content {
+    color: #4a5568; /* text-zinc-700 */
+    margin-bottom: 1rem; /* mb-4 */
+    line-height: 1.7;
+  }
+  
+  .google-review-card-link {
+    color: #2563eb; /* text-blue-600 */
+  }
+  
+  .google-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 0 4rem 0; /* p-4 */
+    background-color: #f5f5f5;
+  }
+  
+  /* Dark mode variables */
+  :root {
+    --color-bg-white: #ffffff;
+    --color-text-primary: #1a202c;
+    --color-text-secondary: #4a5568;
+    --color-text-content: #4a5568;
+    --color-text-link: #2563eb;
+}
+  
+
+/*3 easy steps*/
+
+.computer-steps-container {
+    width: 1280px; /* max-w-7xl */
+    margin: 3rem auto; /* mx-auto */
+    padding: 1.5rem 4rem; /* p-6 */
+  }
+  
+  .computer-steps-title {
+    font-size: 1.8rem; /* text-2xl */
+    font-weight: 600; /* font-bold */
+    color: #1b436e; /* text-blue-800 */
+    margin-bottom: 2rem; /* mb-6 */
+  }
+  
+  .computer-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+    gap: 1.5rem; /* gap-6 */
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .computer-step-card {
+    background-color: #f9fcff; /* bg-blue-50 */
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.8rem; /* rounded-lg */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15); /* shadow-md */
+  }
+  
+  .computer-step-card-title {
+    font-size: 1rem; /* text-sm */
+    font-weight: 500; /* font-semibold */
+    color: #6b7280; /* text-zinc-500 */
+    margin-bottom: 0.5rem; /* mb-2 */
+    line-height: 0.8rem;
+  }
+  
+  .computer-step-card-subtitle {
+    color: #1b436e; /* text-blue-800 */
+    font-size: 1.25rem; /* text-sm */
+    font-weight: 500;
+  }
+
+.computer-step-card-text {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-top: 0.5rem;
+}
+
+
+
+/*Computer FAQ*/
+
+.remote-it-faq__subtitle-bottom {
+    font-size: 1.9rem; /* text-2xl */
+    font-weight: 600; /* font-bold */
+    color: #1b436e; /* text-blue-800 */
+    margin-bottom: 1rem; /* mb-6 */
+    text-align: center;
+  }
+  
+  .remote-it-faq__container {
+    padding-top: 5.5rem;
+    background-color: #f5f5f5;
+  }
+  
+  .remote-it-faq__dropdown {
+    position: relative;
+    display: none;
+    background-color: #fff;
+    padding: 2px;
+    margin: 1.5rem 0 0 1rem;
+    width: 95%;
+  }
+  
+  .remote-it-faq__dropdown-open {
+    display: block;
+  }
+  
+  .remote-it-faq__icon {
+    padding: 0 1rem;
+  }
+  
+  .remote-it-faq__cursor-pointer {
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    font-size: 16.5px;
+    padding: 11px 0;
+    border-bottom: 1px solid #d1d1d1;
+    width: 59.6%;
+    margin: 0 auto;
+  }
+  
+  .remote-it-faq__dropdown-text {
+    font-size: 16px;
+    line-height: 2rem;
+    margin: 10px 0 20px 0;
+    font-weight: 400;
+  }
+  
+  
+  
+  
+  /*RemoteITHome*/
+  
+  .remote-it-home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5rem 2rem 6rem 2rem; /* py-8 */
+    background-color: #f5f5f5;
+  }
+  
+  .remote-it-home-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2.6px solid #333; /* border-zinc-300 */
+    border-radius: 1.4rem; /* rounded-lg */
+    padding: 2rem; /* p-8 */
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    width: 62.5%; /* max-w-md */
+    height: 280px;
+    text-align: center;
+  }
+  
+  .remote-it-home-title {
+    font-size: 1.8rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: #1b436e; /* text-zinc-800 */
+    margin-bottom: 1.5rem; /* mb-6 */
+  }
+  
+  .remote-it-home-button {
+    background-color: #2b6cb0; /* bg-blue-500 */
+    border: #2b6cb0;
+    color: #ffffff; /* text-white */
+    padding: 0.7rem 1.8rem; /* px-6 py-2 */
+    border-radius: 1rem; /* rounded-full */
+    transition:  0.3s ease-in-out; /* transition duration-300 */
+  }
+  
+  .remote-it-home-button:hover {
+    background-color: #1b436e; /* hover:bg-blue-600 */
+  }
+  
+  
