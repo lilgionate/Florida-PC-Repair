@@ -66,6 +66,7 @@ import MailinService from './routes/MailinService'
 import MessengerService from './routes/MessengerService'
 import OnSiteTech from './routes/OnSiteTech'
 import RemoteIT from './routes/RemoteIT'
+import ComputerWarranty from './routes/ComputerWarranty'
 
 function App() {
 
@@ -134,6 +135,7 @@ function App() {
         <Route path="/device-pick-messenger-service" element={<MessengerService/>}/>
         <Route path="/schedule-a-service/office-visit/" element={<OnSiteTech/>}/>
         <Route path="/schedule-a-service/remote-it-computer-support-service" element={<RemoteIT/>}/>
+        <Route path="/warranty-protection-plan/" element={<ComputerWarranty/>}/>
       </Routes>
     </div>
   )

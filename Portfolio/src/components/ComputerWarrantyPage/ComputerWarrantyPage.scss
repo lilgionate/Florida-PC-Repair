@@ -1,0 +1,265 @@
+.computer-warranty-section {
+    background-color: #f5f5f5; /* bg-zinc-100 */
+    text-align: center;
+    padding-top: 8rem;
+}
+    
+.computer-warranty-title {
+    font-size: 3.2rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    margin-bottom: 1rem; /* mb-4 */
+    color: #333; /* text-zinc-900 */
+}
+    
+.computer-warranty-container {
+    display: flex; /* flex */
+    justify-content: center; /* justify-center */
+    gap: 3rem; /* space-x-8 */
+}
+    
+.computer-warranty-feature {
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    gap: 1rem; /* space-x-2 */
+  
+}
+    
+.computer-warranty-icon {
+    color: #2b6cb0;
+    font-size: 1.3rem; 
+}
+    
+.computer-warranty-text {
+    color: #333; /* text-zinc-700 */
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*Computer Warranty Pricing*/
+
+.tech-pricing-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.3rem; 
+    padding: 1.5rem; 
+    background-color: #f5f5f5;
+  }
+  
+  
+  .tech-pricing-card {
+    background-color: #ffffff;
+    width: 399.5px;
+  }
+  
+  .tech-pricing-card-header {
+    background-color: #1b436e; /* bg-zinc-900 */
+    color: #ffffff; /* text-white */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .tech-pricing-img {
+    margin-bottom: 1rem; /* mb-4 */
+    height: 5.5rem;
+  }
+  
+  .tech-pricing-title {
+    font-size: 1.5rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+    color: #ffffff;
+  }
+  
+  .tech-pricing-des {
+    color: #ffffff;
+    font-size: 0.83rem;
+    font-weight: 300;
+    line-height: 0.5;
+  }
+  
+  .tech-pricing-card-content {
+    padding: 1rem; /* p-6 */
+  }
+  
+  .tech-pricing-price-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.9;
+  }
+  
+  .tech-pricing-price {
+    font-size: 4rem; /* text-4xl */
+    font-weight: 800;
+    padding-top: 1.5rem; /* font-bold */
+    color: #333;
+  }
+  
+  .tech-price-dollar {
+    font-size: 1rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+    color: #333; /* text-zinc-800 */
+  }
+  
+  .tech-pricing-sub {
+    color: #6b7280;
+    font-size: 0.95rem;
+  }
+  
+  .tech-pricing-feature-list {
+    margin: 3rem auto 1.7rem auto;
+  }
+  
+  .tech-pricing-feature-item {
+    display: flex;
+    align-items: center; 
+    font-size: 0.9rem;
+    color: #2b6cb0
+  }
+  
+  .tech-pricing-icon {
+    margin-right: 1rem; /* mr-2 */
+    color: #2b6cb0; /* text-blue-500 */
+    font-size: 1.1rem;
+  }
+  
+  .tech-pricing-divider {
+    width: 83%;
+    border: 1.4px solid #d7d9dd;
+    margin: 0.8rem auto; 
+  }
+  .tech-pricing-text-center {
+    text-align: center;
+  }
+
+  .tech-plus {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  
+  .tech-pricing-button {
+    background-color: #2b6cb0; /* bg-blue-500 */
+    border: #2b6cb0;
+    color: #ffffff; /* text-white */
+    padding: 0.7rem 1.5rem; /* px-4 py-2 */
+    border-radius: 1rem; /* rounded-lg */
+    transition: 0.3s ease-in-out;
+  }
+  
+  .tech-pricing-button:hover {
+    background-color: #1b436e; /* bg-blue-500 */
+    border: #1b436e;
+    color: #ffffff; /* text-white */
+  }
+  
+  .tech-pricing-sub-text {
+    font-size: 0.8rem;
+    color: #6b7280; /* text-zinc-500 */
+    padding-top: 0.8rem;
+  }
+
+/*Computer extras*/
+
+.ComputerExtrasContainer {
+    position: relative;
+    padding: 1.5rem 0 3.5rem 0;
+    background-color: #f5f5f5;
+}
+  
+  .ComputerExtrasCardData {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+  }
+  
+  .ExtraCard {
+    width: 95.3%;
+    padding: 2rem 4rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    border: 2px solid #1b436e;
+   
+  }
+  
+  .Extra-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: start;
+    color: #1b436e;
+    padding-top: 1rem;
+  }
+  
+  .Extra-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Extra-price {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #2b6cb0;
+    padding-right: .8rem;
+  
+  }
+  
+  .Extra-data-pricing {
+    padding-left: .8rem;
+    font-weight: 600;
+    color: #1b436e;
+  }
+  
+  .Extra-description {
+    margin-top: 2rem;
+  }
+  
+  .Extra-data-price-des{
+    font-weight: 300;
+    font-size: 13.5px;
+    color: #939393;
+    padding-bottom: 1rem;
+  }
+  
+  .Extra-dot {
+    font-weight: 300;
+    color: #000000;
+  }
+
+/*Brands we work with*/
+
+
+.computer-brand-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+} 
+
+.computer-brand-heading {
+    text-align: center;
+    color: #1b436e;
+    font-size: 1.8rem; 
+    font-weight: 600;
+}
+  
+.computer-brand-image {
+    width: 10rem;
+    height: 6.5rem;
+    object-fit: contain;
+    margin: 0 auto;
+}
+  
+.computer-brand-container {
+    width: 80%; 
+    margin: 0 auto;
+    padding-top: 2.5rem; 
+    padding-bottom: 2.5rem;
+    background-color: white; 
+    position: relative;
+}
+  
+ 
