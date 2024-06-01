@@ -25,6 +25,6 @@ export const itSupportDropdown = [
 
 export const warrantyDropdown = [
   { id: 1, title: "Computer Warranty", path: "/warranty-protection-plan/", cName: "submenu-item" },
-  { id: 2, title: "Cyber Security Protection", path: "./product2", cName: "submenu-item" },
+  { id: 2, title: "Cyber Security Protection", path: "/cyber-computer-security-protection-plan/", cName: "submenu-item" },
 
 ];
