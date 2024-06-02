@@ -1,4 +1,4 @@
-.MessengerRepairContainer {
+.cyber-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,38 +7,38 @@
     width: 100%;
   }
   
-  .MessengerRepairsContent {
+  .cyber-header-content {
     width: 50%;
     padding: 5rem 3.5rem 1.5rem 3.5rem;
     margin-top: 1rem;
   }
   
-  .MessengerRepairsImg{
+  .cyber-header-img{
   width: 50%;
   }
   
-  .MessengerImg {
+  .cyber-header-image {
   height: 95vh;
   width: 100%;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   }
   
-  .MessengerRepairsTitle {
+  .cyber-header-title {
     font-size: 3.2rem; /* 36px */
     font-weight: 700;
     margin-bottom: 1rem;
     color: #333;
   }
   
-  .MessengerRepairsDes {
+  .cyber-header-des {
     font-size: 1.05rem; /* 18px */
     font-weight: 300;
     line-height: 1.75rem; /* 28px */
    
   }
   
-  .MessengerRepairsButton {
+  .cyber-header-button {
     background-color: #2b6cb0;
     color: #fff;
     font-weight: 400;
@@ -50,7 +50,322 @@
   
   }
   
-  .MessengerRepairsButton:hover {
+  .cyber-header-button:hover {
     background-color: #1b436e; 
     border: 1px solid #1b436e;
   }
+
+  /*Steps Header*/
+  .cyber-timeline-header-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding-top: 6rem;
+  }
+  
+  .cyber-timeline-header-content {
+    max-width: 72rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  .cyber-timeline-header-text {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+
+  .cyber-timeline-header-title-one {
+    text-align: end;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #a1a1aa;
+  }
+  
+.cyber-timeline-header-title-two {
+    text-align: start;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #2b6cb0;
+}
+
+.cyber-timeline-header-description-one {
+  margin-top: 0.5rem;
+  text-align: end;
+}
+
+.cyber-timeline-header-description-two {
+  margin-top: 0.5rem;
+  text-align: start;
+}
+
+  
+
+/*Steps component*/
+
+.steps-wrapper-uno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 2rem 13rem; /* py-8 px-4 */
+}
+
+.steps-wrapper-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 13rem 2rem 1rem; /* py-8 px-4 */
+}
+
+.steps-title-uno {
+  font-size: 2rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 1rem;
+  margin-top: 4rem; /* mb-8 */
+}
+
+.steps-title-two {
+  font-size: 2rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 1rem;
+  margin-top: 4rem; /* mb-8 */
+}
+
+.steps-content-uno {
+  position: relative;
+  width: 40rem; /* max-w-4xl */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps-content-two {
+  position: relative;
+  width: 40rem; /* max-w-4xl */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps-line-container-uno {
+  position: absolute;
+  right: 7rem;
+  top: 5%;
+  bottom: 0;
+  width: 0.2rem; /* w-1 */
+  background-color: #b1d7ff;
+  border-width: 4px; /* border-4 */
+  border: 1px solid #b1d7ff; /* border-blue-500 */
+  align-items: center;
+  height: 1830px;
+  z-index: -1; 
+}
+
+.steps-line-container-two {
+  position: absolute;
+  left: 7rem; /* Adjust left position as needed */
+  top: 5%;
+  bottom: 0;
+  width: 0.2rem; /* w-1 */
+  background-color: #b1d7ff;
+  border-width: 4px; /* border-4 */
+  border: 1px solid #b1d7ff; /* border-blue-500 */
+  align-items: center;
+  height: 1830px;
+  z-index: -1; 
+}
+
+.steps-line-uno {
+position: absolute;
+top: 0;
+left: 0;
+width: 2px; /* Adjust as needed */
+background-color: #2b6cb0; /* The color for the progress indicator */
+}
+
+.steps-line-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px; /* Adjust as needed */
+  background-color: #2b6cb0; /* The color for the progress indicator */
+  }
+
+.step-container-uno {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+.step-container-two {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+.step-icon-uno {
+  position: absolute; 
+  right: 10%;
+  width: 3rem; /* w-6 */
+  height: 3rem; /* h-6 */
+  border-radius: 50%; /* rounded-full */
+  background-color: #b1d7ff;
+  color: #fff;
+  border-width: 4px; /* border-4 */
+  border: 1px solid #b1d7ff; /* border-blue-500 */
+  display: flex;
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  transition: background-color 0.3s ease, border-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.step-icon-two {
+  position: absolute;
+  left: -9%;
+  width: 3rem; /* w-6 */
+  height: 3rem; /* h-6 */
+  border-radius: 50%; /* rounded-full */
+  background-color: #b1d7ff;
+  color: #fff;
+  border-width: 4px; /* border-4 */
+  border: 1px solid #b1d7ff; /* border-blue-500 */
+  display: flex;
+  align-items: center; /* items-center */
+  justify-content: center; /* justify-center */
+  transition: background-color 0.3s ease, border-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+.step-content-container-uno {
+  display: flex;
+  align-items: center;
+  margin-right: 10rem; /* Adjust margin-left to create space for the icon */
+  width: 100%;
+}
+
+.step-content-container-two {
+  display: flex;
+  align-items: center;
+  margin-left: 10rem; /* Adjust margin-left to create space for the icon */
+  width: 100%;
+}
+
+.step-content-uno {
+  background-color: #f5f5f5; /* bg-zinc-100 */
+  padding: 2rem; /* p-4 */
+  opacity: 0.5; /* 90% opacity */
+  width: 100%;
+  position: relative; 
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.step-content-two {
+  background-color: #f5f5f5; /* bg-zinc-100 */
+  padding: 2rem; /* p-4 */
+  opacity: 0.5; /* 90% opacity */
+  width: 100%;
+  position: relative; 
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.step-content-uno::before {
+  content: '';
+  position: absolute;
+  right: -1rem; /* Adjust to position the arrow */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-top: .8rem solid transparent;
+  border-bottom: .8rem solid transparent;
+  border-left: .8rem solid #2b6cb0; /* Same color as the background */
+}
+
+.step-content-two::before {
+  content: '';
+  position: absolute;
+  left: -1rem; /* Adjust to position the arrow */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-top: .8rem solid transparent;
+  border-bottom: .8rem solid transparent;
+  border-right: .8rem solid #2b6cb0; /* Same color as the background */
+}
+
+.step-number-uno {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+}
+
+.step-number-two {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+}
+
+.step-title-uno {
+  color: #2b6cb0; /* text-blue-600 */
+  font-weight: 600; /* font-semibold */
+}
+
+.step-title-two {
+  color: #2b6cb0; /* text-blue-600 */
+  font-weight: 600; /* font-semibold */
+}
+
+.step-subtitle-uno, .step-description-uno {
+  margin-bottom: 1.5rem; /* Optional, add if needed for spacing */
+}
+
+.step-subtitle-two, .step-description-two {
+  margin-bottom: 1.5rem; /* Optional, add if needed for spacing */
+}
+
+.step-subtitle-two-uno {
+  margin-bottom: 1.5rem;
+  width: 30%;
+}
+
+.step-subtitle-two-dos {
+  margin-bottom: 1.5rem;
+  width: 30%;
+}
+
+.highlight .step-icon-uno {
+background-color: #2b6cb0;
+border-color: #2b6cb0;
+}
+
+.highlight .step-icon-two {
+  background-color: #2b6cb0;
+  border-color: #2b6cb0;
+  }
+
+.highlight .step-content-uno {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  opacity: 1;
+  }
+
+  .highlight .step-content-two {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    opacity: 1;
+    }
+
+    .cyber-timeline-components {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      width: 95%; /* Optional: set a max-width */
+      margin: 0 auto; /* Center the grid container */
+    }
+    
