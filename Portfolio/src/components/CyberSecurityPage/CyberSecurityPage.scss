@@ -105,37 +105,34 @@
 
 /*Steps component*/
 
+.cyber-timeline-components {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-content: center; /* Center horizontally */
+  align-items: stretch; /* Center vertically */
+  width: 100%; /* Optional: set a max-width */
+  margin: 0 auto; /* Center the grid container */
+}
+
 .steps-wrapper-uno {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem 2rem 13rem; /* py-8 px-4 */
+  background-color: #f5f5f5;
+  padding: 2rem 0 2rem 12rem; /* py-8 px-4 */
 }
 
 .steps-wrapper-two {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 13rem 2rem 1rem; /* py-8 px-4 */
-}
-
-.steps-title-uno {
-  font-size: 2rem; /* text-4xl */
-  font-weight: 700; /* font-bold */
-  margin-bottom: 1rem;
-  margin-top: 4rem; /* mb-8 */
-}
-
-.steps-title-two {
-  font-size: 2rem; /* text-4xl */
-  font-weight: 700; /* font-bold */
-  margin-bottom: 1rem;
-  margin-top: 4rem; /* mb-8 */
+  background-color: #f5f5f5;
+  padding: 2rem 12rem 2rem 0; /* py-8 px-4 */
 }
 
 .steps-content-uno {
   position: relative;
-  width: 40rem; /* max-w-4xl */
+  width: 38rem; /* max-w-4xl */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,7 +140,7 @@
 
 .steps-content-two {
   position: relative;
-  width: 40rem; /* max-w-4xl */
+  width: 38rem; /* max-w-4xl */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,44 +148,38 @@
 
 .steps-line-container-uno {
   position: absolute;
-  right: 7rem;
-  top: 5%;
+  right: 17.7%; /* Adjust left position as needed */
+  top: 11%;
   bottom: 0;
   width: 0.2rem; /* w-1 */
   background-color: #b1d7ff;
   border-width: 4px; /* border-4 */
   border: 1px solid #b1d7ff; /* border-blue-500 */
   align-items: center;
-  height: 1830px;
-  z-index: -1; 
+  height: 700px;
 }
 
 .steps-line-container-two {
   position: absolute;
-  left: 7rem; /* Adjust left position as needed */
-  top: 5%;
+  left: 17.7%; /* Adjust left position as needed */
+  top: 11%;
   bottom: 0;
   width: 0.2rem; /* w-1 */
   background-color: #b1d7ff;
   border-width: 4px; /* border-4 */
   border: 1px solid #b1d7ff; /* border-blue-500 */
   align-items: center;
-  height: 1830px;
-  z-index: -1; 
+  height: 710px;
 }
 
 .steps-line-uno {
 position: absolute;
-top: 0;
-left: 0;
 width: 2px; /* Adjust as needed */
 background-color: #2b6cb0; /* The color for the progress indicator */
 }
 
 .steps-line-two {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 2px; /* Adjust as needed */
   background-color: #2b6cb0; /* The color for the progress indicator */
   }
@@ -211,7 +202,7 @@ background-color: #2b6cb0; /* The color for the progress indicator */
 
 .step-icon-uno {
   position: absolute; 
-  right: 10%;
+  right: 14%;
   width: 3rem; /* w-6 */
   height: 3rem; /* h-6 */
   border-radius: 50%; /* rounded-full */
@@ -222,12 +213,13 @@ background-color: #2b6cb0; /* The color for the progress indicator */
   display: flex;
   align-items: center; /* items-center */
   justify-content: center; /* justify-center */
-  transition: background-color 0.3s ease, border-color 0.3s ease-in-out; /* Smooth transition */
+  transition: background-color 0.3s ease, border-color 0.3s ease-in-out;
+  z-index: 2; /* Smooth transition */
 }
 
 .step-icon-two {
   position: absolute;
-  left: -9%;
+  left: 14%;
   width: 3rem; /* w-6 */
   height: 3rem; /* h-6 */
   border-radius: 50%; /* rounded-full */
@@ -238,7 +230,8 @@ background-color: #2b6cb0; /* The color for the progress indicator */
   display: flex;
   align-items: center; /* items-center */
   justify-content: center; /* justify-center */
-  transition: background-color 0.3s ease, border-color 0.3s ease-in-out; /* Smooth transition */
+  transition: background-color 0.3s ease, border-color 0.3s ease-in-out;
+  z-index: 2;
 }
 
 
@@ -257,7 +250,7 @@ background-color: #2b6cb0; /* The color for the progress indicator */
 }
 
 .step-content-uno {
-  background-color: #f5f5f5; /* bg-zinc-100 */
+  background-color: #ffffff; /* bg-zinc-100 */
   padding: 2rem; /* p-4 */
   opacity: 0.5; /* 90% opacity */
   width: 100%;
@@ -266,7 +259,7 @@ background-color: #2b6cb0; /* The color for the progress indicator */
 }
 
 .step-content-two {
-  background-color: #f5f5f5; /* bg-zinc-100 */
+  background-color: #ffffff; /* bg-zinc-100 */
   padding: 2rem; /* p-4 */
   opacity: 0.5; /* 90% opacity */
   width: 100%;
@@ -300,42 +293,40 @@ background-color: #2b6cb0; /* The color for the progress indicator */
   border-right: .8rem solid #2b6cb0; /* Same color as the background */
 }
 
-.step-number-uno {
-  font-size: 1.125rem; /* text-lg */
-  font-weight: 600; /* font-semibold */
-}
-
-.step-number-two {
-  font-size: 1.125rem; /* text-lg */
-  font-weight: 600; /* font-semibold */
-}
-
 .step-title-uno {
   color: #2b6cb0; /* text-blue-600 */
-  font-weight: 600; /* font-semibold */
+  font-weight: 400; /* font-semibold */
+  text-align: end;
+  font-size: 1.1rem;
 }
 
 .step-title-two {
   color: #2b6cb0; /* text-blue-600 */
-  font-weight: 600; /* font-semibold */
+  font-weight: 400; /* font-semibold */
+  text-align: start;
+  font-size: 1.1rem;
 }
 
-.step-subtitle-uno, .step-description-uno {
+.step-description-uno {
+  margin-bottom: 1.5rem; /* Optional, add if needed for spacing */
+  text-align: end;
+}
+
+.step-description-two {
   margin-bottom: 1.5rem; /* Optional, add if needed for spacing */
 }
 
-.step-subtitle-two, .step-description-two {
-  margin-bottom: 1.5rem; /* Optional, add if needed for spacing */
+.step-subtitle-uno {
+  text-align: end;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1b436e;
 }
 
-.step-subtitle-two-uno {
-  margin-bottom: 1.5rem;
-  width: 30%;
-}
-
-.step-subtitle-two-dos {
-  margin-bottom: 1.5rem;
-  width: 30%;
+.step-subtitle-dos {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1b436e;
 }
 
 .highlight .step-icon-uno {
@@ -346,26 +337,19 @@ border-color: #2b6cb0;
 .highlight .step-icon-two {
   background-color: #2b6cb0;
   border-color: #2b6cb0;
-  }
+}
 
 .highlight .step-content-uno {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border-radius: 10px;
   opacity: 1;
-  }
+}
 
-  .highlight .step-content-two {
-    background-color: #f5f5f5;
+.highlight .step-content-two {
+    background-color: #ffffff;
     border-radius: 10px;
     opacity: 1;
-    }
+}
 
-    .cyber-timeline-components {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
-      width: 95%; /* Optional: set a max-width */
-      margin: 0 auto; /* Center the grid container */
-    }
+
     

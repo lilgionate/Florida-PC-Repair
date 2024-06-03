@@ -37,66 +37,38 @@ export default function CyberTimeline() {
         <div className="steps-content-two">
           <div className={`step-container-two ${highlightedStep === 0 ? 'highlight' : ''}`}>
             <StepTwo
-              stepNumber={1}
-              title="Fill out the form below"
-              subtitle="Complete the form. You’ll be emailed confirmation of your form."
-              description={[]}
+              title="PROACTIVE VIRUS PROTECTION"
+              subtitle="Proactively remove & protect against current and future viruses"
+              description={['Constant monitoring, monthly reporting, easy remote fixes, and one low monthly fee.']}
               isActive={highlightedStep === 0}
             />
           </div>
           <div className={`step-container-two ${highlightedStep === 1 ? 'highlight' : ''}`}>
             <StepTwo
-              stepNumber={2}
-              title="Receive free shipping label and free shipping box"
-              subtitle="Upon requesting a free shipping label, you will receive a label via email. Also, upon requesting a free shipping box, you will receive a box within 2 days to your address."
+              title="ALL-IN-ONE SOLUTION"
+              subtitle="All security software is included"
               description={[
-                "If you prefer to use your own box or label, please leave the appropriate box unchecked.",
-                "Please note the free label and box is for United States residents only and applies to laptops or smaller devices."
+                'You’ll receive anti-virus, firewall, VPN, patch management, browser extension security, and content filtering.'
               ]}
               isActive={highlightedStep === 1}
             />
           </div>
           <div className={`step-container-two ${highlightedStep === 2 ? 'highlight' : ''}`}>
             <StepTwo
-              stepNumber={3}
-              title="Ship out your box"
-              subtitle="Upon receiving the box, include your device and affix the emailed shipping label."
+              title="LIGHT-WEIGHT -> FAST"
+              subtitle="Experience cloud speed"
               description={[
-                "Address to ship to is:",
+                "We don’t weigh you down with heavy apps.  Instead, our security apps are stored on our cloud server for you.  That means more speed for you.",
               ]}
-              title2="Florida PC Support"
-              subtitle2="ATT: Mail-in Department
-              198 West 21th Street, Suite 721 New York NY 10016"
               isActive={highlightedStep === 2}
             />
           </div>
           <div className={`step-container-two ${highlightedStep === 3 ? 'highlight' : ''}`}>
             <StepTwo
-              stepNumber={4}
-              title="Receive a free diagnostic or free recycling"
-              subtitle="Upon receipt, we’ll create a ticket during the intake process. You’ll receive an e-receipt of this. Then, expect a free diagnostic, relaying the cost for your approval before we begin the repair. Or if you choose to recycle your laptop, we will send you a receipt once done."
-              description={[]}
+              title="ONE MONTHLY LOW FEE"
+              subtitle="Simple affordable billing"
+              description={['Pay one simple low monthly flat rate fee to remove current and future viruses & malware.  Get a complimentary install.']}
               isActive={highlightedStep === 3}
-            />
-          </div>
-          <div className={`step-container-two ${highlightedStep === 4 ? 'highlight' : ''}`}>
-            <StepTwo
-              stepNumber={5}
-              title="Device is repaired. Or device is recycled if preferred."
-              subtitle="Upon approval, we’ll repair your device. You’ll receive a message when it’s completed."
-              description={[]}
-              isActive={highlightedStep === 4}
-            />
-          </div>
-          <div className={`step-container-two ${highlightedStep === 5 ? 'highlight' : ''}`}>
-            <StepTwo
-              stepNumber={6}
-              title="Payment is due for approved computer repair"
-              subtitle="You’ll receive an invoice via email through our ticketing system. Pay the repair charge online."
-              description={[
-                "Additionally, the return shipping fee is $25. Heavier, larger equipment may carry extra costs as deemed by the carrier."
-              ]}
-              isActive={highlightedStep === 5}
             />
           </div>
           <div className="steps-line-container-two">

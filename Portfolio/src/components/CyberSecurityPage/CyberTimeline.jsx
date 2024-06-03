@@ -40,66 +40,38 @@ export default function CyberTimeline() {
           </div>
           <div className={`step-container-uno ${highlightedStep === 0 ? 'highlight' : ''}`}>
             <Step
-              stepNumber={1}
-              title="Fill out the form below"
-              subtitle="Complete the form. You’ll be emailed confirmation of your form."
-              description={[]}
+              title="REACTIVE VIRUS PROTECTION"
+              subtitle="Reactively attempt to remove viruses"
+              description={['Got a virus?  Pay out of pocket for a security company to remove it for each virus outbreak.']}
               isActive={highlightedStep === 0}
             />
           </div>
           <div className={`step-container-uno ${highlightedStep === 1 ? 'highlight' : ''}`}>
             <Step
-              stepNumber={2}
-              title="Receive free shipping label and free shipping box"
-              subtitle="Upon requesting a free shipping label, you will receive a label via email. Also, upon requesting a free shipping box, you will receive a box within 2 days to your address."
+              title="LOTS OF EXTRA FEES"
+              subtitle="Pay extra for firewall & security protection"
               description={[
-                "If you prefer to use your own box or label, please leave the appropriate box unchecked.",
-                "Please note the free label and box is for United States residents only and applies to laptops or smaller devices."
+                'Typically, firewall, VPN, pop-up blockers and other apps are extra costs.'
               ]}
               isActive={highlightedStep === 1}
             />
           </div>
           <div className={`step-container-uno ${highlightedStep === 2 ? 'highlight' : ''}`}>
             <Step
-              stepNumber={3}
-              title="Ship out your box"
-              subtitle="Upon receiving the box, include your device and affix the emailed shipping label."
+              title="SLOW"
+              subtitle="Traditional security software is slow"
               description={[
-                "Address to ship to is:",
+                "The old way installs the full suite of anti-virus software and security add-ons on your computer.  Your whole computer is slowed down.",
               ]}
-              title2="Florida PC Support"
-              subtitle2="ATT: Mail-in Department
-              198 West 21th Street, Suite 721 New York NY 10016"
               isActive={highlightedStep === 2}
             />
           </div>
           <div className={`step-container-uno ${highlightedStep === 3 ? 'highlight' : ''}`}>
             <Step
-              stepNumber={4}
-              title="Receive a free diagnostic or free recycling"
-              subtitle="Upon receipt, we’ll create a ticket during the intake process. You’ll receive an e-receipt of this. Then, expect a free diagnostic, relaying the cost for your approval before we begin the repair. Or if you choose to recycle your laptop, we will send you a receipt once done."
-              description={[]}
+              title="PAY PER ISSUE"
+              subtitle="Pay every time for an issue"
+              description={['Got a virus every few months?  Pay every time.']}
               isActive={highlightedStep === 3}
-            />
-          </div>
-          <div className={`step-container-uno ${highlightedStep === 4 ? 'highlight' : ''}`}>
-            <Step
-              stepNumber={5}
-              title="Device is repaired. Or device is recycled if preferred."
-              subtitle="Upon approval, we’ll repair your device. You’ll receive a message when it’s completed."
-              description={[]}
-              isActive={highlightedStep === 4}
-            />
-          </div>
-          <div className={`step-container-uno ${highlightedStep === 5 ? 'highlight' : ''}`}>
-            <Step
-              stepNumber={6}
-              title="Payment is due for approved computer repair"
-              subtitle="You’ll receive an invoice via email through our ticketing system. Pay the repair charge online."
-              description={[
-                "Additionally, the return shipping fee is $25. Heavier, larger equipment may carry extra costs as deemed by the carrier."
-              ]}
-              isActive={highlightedStep === 5}
             />
           </div>
         </div>
