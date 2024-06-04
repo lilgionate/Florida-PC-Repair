@@ -119,7 +119,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #f5f5f5;
-  padding: 2rem 0 2rem 12rem; /* py-8 px-4 */
+  padding: 2rem 0.5rem 2rem 12rem; /* py-8 px-4 */
 }
 
 .steps-wrapper-two {
@@ -127,12 +127,12 @@
   flex-direction: column;
   align-items: center;
   background-color: #f5f5f5;
-  padding: 2rem 12rem 2rem 0; /* py-8 px-4 */
+  padding: 2rem 12rem 2rem 0.5rem; /* py-8 px-4 */
 }
 
 .steps-content-uno {
   position: relative;
-  width: 38rem; /* max-w-4xl */
+  width: 39rem; /* max-w-4xl */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,7 +140,7 @@
 
 .steps-content-two {
   position: relative;
-  width: 38rem; /* max-w-4xl */
+  width: 39rem; /* max-w-4xl */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,7 +148,7 @@
 
 .steps-line-container-uno {
   position: absolute;
-  right: 17.7%; /* Adjust left position as needed */
+  right: 17.6%; /* Adjust left position as needed */
   top: 11%;
   bottom: 0;
   width: 0.2rem; /* w-1 */
@@ -156,12 +156,12 @@
   border-width: 4px; /* border-4 */
   border: 1px solid #b1d7ff; /* border-blue-500 */
   align-items: center;
-  height: 700px;
+  height: 560px;
 }
 
 .steps-line-container-two {
   position: absolute;
-  left: 17.7%; /* Adjust left position as needed */
+  left: 17.6%; /* Adjust left position as needed */
   top: 11%;
   bottom: 0;
   width: 0.2rem; /* w-1 */
@@ -169,20 +169,22 @@
   border-width: 4px; /* border-4 */
   border: 1px solid #b1d7ff; /* border-blue-500 */
   align-items: center;
-  height: 710px;
+  height: 610px;
 }
 
 .steps-line-uno {
-position: absolute;
-width: 2px; /* Adjust as needed */
-background-color: #2b6cb0; /* The color for the progress indicator */
+  position: absolute;
+  width: 2px; /* Adjust as needed */
+  background-color: #2b6cb0;
+  border-color: #2b6cb0; 
 }
 
 .steps-line-two {
   position: absolute;
   width: 2px; /* Adjust as needed */
-  background-color: #2b6cb0; /* The color for the progress indicator */
-  }
+  background-color: #2b6cb0; 
+  border-color: #2b6cb0;
+}
 
 .step-container-uno {
   position: relative;
@@ -238,32 +240,32 @@ background-color: #2b6cb0; /* The color for the progress indicator */
 .step-content-container-uno {
   display: flex;
   align-items: center;
-  margin-right: 10rem; /* Adjust margin-left to create space for the icon */
   width: 100%;
+  margin-right: 10rem; /* Adjust margin-left to create space for the icon */
 }
 
 .step-content-container-two {
   display: flex;
   align-items: center;
-  margin-left: 10rem; /* Adjust margin-left to create space for the icon */
   width: 100%;
+  margin-left: 10rem; /* Adjust margin-left to create space for the icon */
 }
 
 .step-content-uno {
-  background-color: #ffffff; /* bg-zinc-100 */
-  padding: 2rem; /* p-4 */
-  opacity: 0.5; /* 90% opacity */
-  width: 100%;
+  background-color: #ffffff; 
+  opacity: 0.5; 
   position: relative; 
+  padding: 1.7rem 2.4rem;
+  width: 100%;
   transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .step-content-two {
-  background-color: #ffffff; /* bg-zinc-100 */
-  padding: 2rem; /* p-4 */
-  opacity: 0.5; /* 90% opacity */
+  background-color: #ffffff; 
+  opacity: 0.5; 
+  position: relative;
+  padding: 1.7rem 2.4rem; 
   width: 100%;
-  position: relative; 
   transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
@@ -298,6 +300,7 @@ background-color: #2b6cb0; /* The color for the progress indicator */
   font-weight: 400; /* font-semibold */
   text-align: end;
   font-size: 1.1rem;
+  margin: 0;
 }
 
 .step-title-two {
@@ -305,28 +308,32 @@ background-color: #2b6cb0; /* The color for the progress indicator */
   font-weight: 400; /* font-semibold */
   text-align: start;
   font-size: 1.1rem;
+  margin: 0;
 }
 
 .step-description-uno {
-  margin-bottom: 1.5rem; /* Optional, add if needed for spacing */
   text-align: end;
+  color: #333;
 }
 
 .step-description-two {
-  margin-bottom: 1.5rem; /* Optional, add if needed for spacing */
+  color: #333;
 }
+
 
 .step-subtitle-uno {
   text-align: end;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #1b436e;
+  margin: 0;
 }
 
 .step-subtitle-dos {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #1b436e;
+  margin: 0;
 }
 
 .highlight .step-icon-uno {
@@ -340,14 +347,10 @@ border-color: #2b6cb0;
 }
 
 .highlight .step-content-uno {
-  background-color: #ffffff;
-  border-radius: 10px;
   opacity: 1;
 }
 
 .highlight .step-content-two {
-    background-color: #ffffff;
-    border-radius: 10px;
     opacity: 1;
 }
 
