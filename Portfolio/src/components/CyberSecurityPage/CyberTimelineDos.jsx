@@ -5,7 +5,7 @@ const Step = ({ title, subtitle, description }) => {
   return (
     <div className="step-container-two">
       <div className="step-icon-two">
-        <i className="fa-solid fa-calendar"></i>
+        <i className="fa-solid fa-check"></i>
       </div>
       <div className="step-content-container-two">
         <div className="step-content-two">

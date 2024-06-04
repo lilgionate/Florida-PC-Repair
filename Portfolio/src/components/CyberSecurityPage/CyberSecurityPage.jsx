@@ -2,6 +2,7 @@ import React from 'react';
 import './CyberSecurityPage.scss';
 import TimelineUno from './CyberTimeline';
 import TimelineDos from './CyberTimelineTwo';
+import FeatureList from './CyberTimelineHeader';
 
 import CyberSecurity from '../../assets/Cyber-security.jpg';
 
@@ -19,6 +20,8 @@ const CyberSecurityPage = () => {
           <img src={CyberSecurity} alt="Pc Repair Image" className='cyber-header-image' />
         </div>
       </div>
+
+      <FeatureList />
 
       <div className='cyber-timeline-components'>
       <TimelineUno />
