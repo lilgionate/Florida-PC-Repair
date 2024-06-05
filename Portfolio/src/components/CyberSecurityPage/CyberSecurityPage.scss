@@ -376,58 +376,160 @@ border-color: grey;
 .cyber-security-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns */
+  gap: 3rem; /* Gap between columns */
   color: white; /* White text color */
-  padding: 1.5rem; /* Padding */
-  gap: 1.5rem; /* Space between items */
-}
-
-/* Flex item styles */
-.cyber-security-flex-item {
-  flex: 1;
+  margin: 0 6rem;
+  padding-top: 2rem;
+  padding-bottom: 3.5rem;
 }
 
 /* List styles */
 .cyber-security-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  gap: 1rem; /* Space between list items */
+  margin: 0 auto;
+  gap: 0.5rem;
   display: flex;
   flex-direction: column;
 }
 
-/* Individual list item styles */
+
 .cyber-security-list-item {
   display: flex;
   align-items: flex-start;
+  text-align: start;
+  padding: 0.45rem 0.45rem 0.5rem 0;
+  border-bottom: 1px solid #ffffff; /* White border */
 }
 
-/* Icon styles */
+
 .cyber-security-icon {
-  margin-right: 0.5rem; /* Margin right */
+  margin-right: 1.5rem; /* Margin right */
+  font-size: 1.3rem;
 }
 
-/* Link styles */
-.cyber-security-link {
-  color: #1d4ed8; /* Blue color */
-  text-decoration: none;
-}
-
-.cyber-security-link:hover {
-  text-decoration: underline;
-}
-
-/* White background container */
 .cyber-security-bg-white {
   background-color: white; /* White background color */
-  color: #1e3a8a; /* Dark blue text color */
-  padding: 1.5rem; /* Padding */
-  border-radius: 0.5rem; /* Rounded corners */
+  padding: 1.5rem 2rem; /* Padding */
+
 }
 
 /* Title styles */
 .cyber-security-title {
-  font-size: 1.125rem; /* Font size */
+  text-align: start;
+  font-size: 1.25rem; /* Font size */
   font-weight: 600; /* Font weight */
   margin-bottom: 1rem; /* Margin bottom */
+  color: #2b6cb0;
 }
+
+.cyber-security-dropdown {
+  position: relative;
+  display: none;
+  background-color: #fff;
+  padding: 2px;
+  margin: 1.3rem 0 0 1rem;
+}
+
+.cyber-security-dropdown-open {
+  display: block;
+  
+}
+
+.cyber-security-data-icon {
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.cyber-security-cursor-pointer {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #d1d1d1;
+  width: 95%;
+  text-align: start;
+  margin: 0 auto;
+  color: #2b6cb0;
+}
+
+.cyber-security-dropdown-title {
+  text-decoration: underline;
+}
+
+.cyber-security-dropdown-text {
+  font-size: 16px;
+  line-height: 2rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.dropdown-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+
+/*Cyber Table*/
+
+.cyber-table-title {
+  font-size: 1.8rem; /* 20px */
+  font-weight: 700;
+  margin: 0;
+  color: #1b436e;
+  padding: 6rem 1rem 2rem 1rem;
+  text-align: center;
+}
+
+.cyber-table {
+  width: 83%;
+  border-collapse: collapse;
+  margin: 0 auto;
+
+}
+
+
+.cyber-table-cell {
+  padding: 1rem;
+  border: 1px solid #bec1c7; /* Zinc border color */
+  font-weight: 700;
+}
+
+.cyber-table-title-cell {
+  padding: 1rem 0;
+  border: 1px solid #bec1c7; /* Zinc border color */
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.cyber-table-header-cell {
+  padding: 1rem;
+  border: 1px solid #bec1c7; /* Zinc border color */
+  background-color: #edeef1; /* Zinc-100 background color */
+}
+
+/* Active and inactive cell styles */
+.cyber-table-active-cell {
+  color: #ffffff; /* Blue-600 text color */
+  background-color: #2b6cb0; /* Blue-100 background color */
+}
+
+.cyber-table-grey-row {
+  background-color: #edeef1; /* Zinc-100 background color */
+}
+
+.cyber-table-icon {
+  font-size: 1rem;
+}
+
+.cyber-table-inactive-cell {
+  background-color: transparent; /* No background color */
+}
+
+.cyber-table-centered-cell {
+  text-align: center;
+}
+
