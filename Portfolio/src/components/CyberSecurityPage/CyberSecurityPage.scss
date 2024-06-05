@@ -533,3 +533,196 @@ border-color: grey;
   text-align: center;
 }
 
+/*Cyber Notes*/
+
+.note-container {
+  padding: 1rem 0;
+  width: 83%;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+
+.note-title {
+  font-size: 1.55rem;
+  font-weight: 500;
+  color: #1b436e; 
+  margin-bottom: 1rem;
+}
+
+.note-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  
+}
+
+.note-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.35rem 0;
+}
+
+.note-bullet {
+  color: #ffffff;
+  background-color: #2b6cb0;
+  border-radius: 50%;
+  font-size: 1rem; 
+  width: 1.5rem; 
+  height: 1.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.note-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  color: #1b436e; 
+}
+
+ /*custom pc payment form*/
+
+ .custom-pc-payment-container {
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.custom-pc-payment-content {
+  display: flex;
+  justify-content: center; /* Horizontal center alignment */
+  align-items: center; /* Vertical center alignment */
+  padding: 32px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  width: 50%; /* Adjust as needed */
+  margin-left: 2rem;
+}
+
+.custom-pc-warranty-title {
+  padding: 3rem 7rem 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.custom-pc-warranty-subtitle {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.custom-pc-warranty-text {
+  font-size: 0.8rem;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.custom-pc-warranty-price {
+  font-size: 0.99rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+.custom-pc-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  resize: none;
+}
+
+.custom-pc-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+
+
+  /*custom pc payment*/
+
+  .FormGroup {
+    border-style: none;
+    background-color: #7795f8;
+    will-change: opacity, transform;
+    box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+    border-radius: 4px;
+  }
+  
+  .FormRow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .custom-pc-warranty-name {
+    border: none;
+    outline: none;
+    background-color: #7795f8;
+    will-change: opacity, transform;
+    box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
+    border-radius: 4px;
+    width: 100%;
+    padding: 8.2px 15px 8.2px 0;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .custom-placeholder-color::placeholder {
+    color: #d0e5ff; /* Change color to your desired color */
+}
+
+.custom-placeholder-color {
+    padding-left: 14px;
+    font-weight: 500;
+    font-family: 'Roboto', 'Open Sans', 'Segoe UI', sans-serif;
+    font-size: 16px;
+}
+
+
+  
+  .StripeElement--webkit-autofill {
+    background: transparent !important;
+  }
+  
+  .StripeElement {
+    width: 100%;
+    padding: 11px 15px 11px 0;
+  }
+  
+  .custom-pc-button {
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    margin: 2rem auto;
+    background-color: #2b6cb0;
+    box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #2b6cb0;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+    will-change: transform, background-color, box-shadow;
+    border: none;
+  }
+  
+  .custom-pc-button:active {
+    background-color: #1b436e;
+    box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #1b436e;
+    transform: scale(0.99);
+  }
