@@ -3,6 +3,7 @@ import './CyberSecurityPage.scss';
 import TimelineUno from './CyberTimeline';
 import TimelineDos from './CyberTimelineTwo';
 import FeatureList from './CyberTimelineHeader';
+import ProtectionPlan from './CyberProtectionPlan';
 
 import CyberSecurity from '../../assets/Cyber-security.jpg';
 
@@ -27,6 +28,8 @@ const CyberSecurityPage = () => {
       <TimelineUno />
       <TimelineDos />
       </div>
+
+      <ProtectionPlan />
    </>
   );
 };

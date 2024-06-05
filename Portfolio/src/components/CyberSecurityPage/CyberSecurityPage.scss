@@ -50,55 +50,9 @@
   
   }
   
-  .cyber-header-button:hover {
+.cyber-header-button:hover {
     background-color: #1b436e; 
     border: 1px solid #1b436e;
-  }
-
-  /*Steps Header*/
-  .cyber-timeline-header-container {
-    display: flex;
-    justify-content: center;
-    background-color: #f5f5f5;
-    padding-top: 6rem;
-  }
-  
-  .cyber-timeline-header-content {
-    max-width: 72rem;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
-  
-  .cyber-timeline-header-text {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2.5rem;
-  }
-
-  .cyber-timeline-header-title-one {
-    text-align: end;
-    font-size: 1.875rem;
-    font-weight: 700;
-    color: #a1a1aa;
-  }
-  
-.cyber-timeline-header-title-two {
-    text-align: start;
-    font-size: 1.875rem;
-    font-weight: 700;
-    color: #2b6cb0;
-}
-
-.cyber-timeline-header-description-one {
-  margin-top: 0.5rem;
-  text-align: end;
-}
-
-.cyber-timeline-header-description-two {
-  margin-top: 0.5rem;
-  text-align: start;
 }
 
 /*Timeline Header*/
@@ -115,14 +69,14 @@
 .cyber-timeline-header-text-title {
   color: grey; 
   text-align: end;
-  font-size: 2rem; 
+  font-size: 1.8rem; 
   font-weight: 700;
 }
 
 .cyber-timeline-header-text-title-two {
   color: #2b6cb0;
   text-align: start;
-  font-size: 2rem; 
+  font-size: 1.8rem; 
   font-weight: 700;
 }
 .cyber-timeline-header-text-title-des{
@@ -152,7 +106,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #f5f5f5;
-  padding: 0 0.5rem 2rem 12rem; /* py-8 px-4 */
+  padding: 0 0.5rem 0 12rem; /* py-8 px-4 */
 }
 
 .steps-wrapper-two {
@@ -160,7 +114,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #f5f5f5;
-  padding: 0 12rem 2rem 0.5rem; /* py-8 px-4 */
+  padding: 0 12rem 0 0.5rem; /* py-8 px-4 */
 }
 
 .steps-content-uno {
@@ -387,5 +341,93 @@ border-color: grey;
     opacity: 1;
 }
 
+/* Cyber Security Protection */
+.cyber-protection-plan-container {
+  background-color: #1b436e; /* Background color */
+  text-align: center; /* Center-align text */
+  padding: 5rem 2rem 2rem 2rem; /* Padding */
+}
 
-    
+.cyber-protection-title {
+  font-size: 1.8rem; /* Font size */
+  font-weight: 600; /* Font weight */
+  margin: 0;
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+
+.cyber-protection-body {
+  font-size: 1.5rem; /* Font size */
+  font-weight: 500;
+  margin: 0;
+  color: #ffffff;
+  line-height: 1.9rem;
+}
+
+.cyber-protection-price {
+  padding-top: 1rem; /* Margin top */
+  font-size: 1.7rem; /* Font size */
+  font-weight: 600; /* Font weight */
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Container for the security features section */
+.cyber-security-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns */
+  color: white; /* White text color */
+  padding: 1.5rem; /* Padding */
+  gap: 1.5rem; /* Space between items */
+}
+
+/* Flex item styles */
+.cyber-security-flex-item {
+  flex: 1;
+}
+
+/* List styles */
+.cyber-security-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem; /* Space between list items */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual list item styles */
+.cyber-security-list-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Icon styles */
+.cyber-security-icon {
+  margin-right: 0.5rem; /* Margin right */
+}
+
+/* Link styles */
+.cyber-security-link {
+  color: #1d4ed8; /* Blue color */
+  text-decoration: none;
+}
+
+.cyber-security-link:hover {
+  text-decoration: underline;
+}
+
+/* White background container */
+.cyber-security-bg-white {
+  background-color: white; /* White background color */
+  color: #1e3a8a; /* Dark blue text color */
+  padding: 1.5rem; /* Padding */
+  border-radius: 0.5rem; /* Rounded corners */
+}
+
+/* Title styles */
+.cyber-security-title {
+  font-size: 1.125rem; /* Font size */
+  font-weight: 600; /* Font weight */
+  margin-bottom: 1rem; /* Margin bottom */
+}
