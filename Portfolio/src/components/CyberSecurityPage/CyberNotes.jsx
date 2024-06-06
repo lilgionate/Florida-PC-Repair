@@ -6,7 +6,7 @@ const Note = () => {
     <div className="note-container">
       <h2 className="note-title">Note:</h2>
       <div className="note-list">
-        <NoteItem text="The tech insurance would be for remote service or at our repair center, 53 East 34th Street, Fl 3." />
+        <NoteItem text="The tech insurance would be for remote service or at our repair center, 3750 Inverrary Dr, Lauderhill, FL 33319" />
         <NoteItem text="It does not include onsite support at customer's location." />
         <NoteItem text="Minimum of 1-year term is required." />
       </div>

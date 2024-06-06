@@ -116,7 +116,7 @@ export const RemoteITFAQ = () => {
           {dropdownStates.dropdown6 && (
             <ul className="computer-faq__dropdown computer-faq__dropdown-open">
               <p className="computer-faq__dropdown-text">
-              All Plans are redeemable at NYCH repair centers. Plus, Tech+ & Tech+ Shield may be remotely supported (NYCH will remote into your computer) when possible.
+              All Plans are redeemable at FPCS repair centers. Plus, Tech+ & Tech+ Shield may be remotely supported (FPCS will remote into your computer) when possible.
               </p>
             </ul>
           )}
@@ -221,7 +221,7 @@ export const RemoteITFAQ = () => {
             <ul className="computer-faq__dropdown computer-faq__dropdown-open">
               <p className="computer-faq__dropdown-text">
               If you’re a first-time, first year, first issue Tech Protection Plan member, 
-              and NYCH has deemed the device unfixable on this first issue, if there’s no 
+              and FPCS has deemed the device unfixable on this first issue, if there’s no 
               viable solution, such as another device replacement at same or less cost, then you are entitled to a refund of the payment made so far for that 
               first issue payment and monthly charge.  We aim for 100% satisfaction guarantee!
               </p>
@@ -256,7 +256,7 @@ export const RemoteITFAQ = () => {
           {dropdownStates.dropdown14 && (
             <ul className="computer-faq__dropdown computer-faq__dropdown-open">
               <p className="computer-faq__dropdown-text">
-              Technically no. Why? Because we have already provided a serious discount by opting into this membership plan. But, if you’d like to pay the remainder of your Year 1 term due to a validated reason, NYCH chooses the right to approve this. 
+              Technically no. Why? Because we have already provided a serious discount by opting into this membership plan. But, if you’d like to pay the remainder of your Year 1 term due to a validated reason, FPCS chooses the right to approve this. 
               </p>
             </ul>
           )}
@@ -271,7 +271,7 @@ export const RemoteITFAQ = () => {
           {dropdownStates.dropdown15 && (
             <ul className="computer-faq__dropdown computer-faq__dropdown-open">
               <p className="computer-faq__dropdown-text">
-              After Year 1, you may email support@newyorkcomputerhelp.com; reply to a previous ticket; or call 212-599-0339.
+              After Year 1, you may email info@floridapcsupport.com; reply to a previous ticket; or call (786) 674-1176.
               </p>
             </ul>
           )}
