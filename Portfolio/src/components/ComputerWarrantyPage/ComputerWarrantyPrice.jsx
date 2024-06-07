@@ -36,7 +36,9 @@ const RemoteServiceCard = () => {
             </li>
           </div>
           <div className="tech-pricing-text-center">
-            <button className="tech-pricing-button">Choose Plan</button>
+            <a href="/warranty-protection-plan/tech-plan-signup">
+              <button className="tech-pricing-button">Choose Plan</button>
+            </a>
             <p className="tech-pricing-sub-text">*Extras: part costs, data recovery, Outlook/email fixes</p>
           </div>
         </div>
