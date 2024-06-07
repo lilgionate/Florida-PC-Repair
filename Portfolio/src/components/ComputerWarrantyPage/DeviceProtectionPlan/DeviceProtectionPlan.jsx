@@ -7,6 +7,7 @@ import './DeviceProtectionPlan.scss';
 
 import ShieldCheck from '../../../assets/shield-check.png';
 import Check from '../../../assets/check.png';
+import SSLEncrypt from '../../../assets/ssl-encryption.png';
 
 
 const CARD_OPTIONS = {
@@ -150,15 +151,15 @@ export default function DeviceProtectionPlan() {
             <div className="device-protection-tech-addons">
               <div className="device-protection-tech-addon-item">
                 <input type="checkbox" id="email-specialist" className="device-protection-tech-checkbox" />
-                <label htmlFor="email-specialist" className="device-protection-tech-addon-label">Email Specialist +$100.00</label>
+                <label htmlFor="email-specialist" className="device-protection-tech-addon-label">Email Specialist <span className='device-protection-tech-addon-price'> +$100.00</span></label>
               </div>
               <div className="device-protection-tech-addon-item">
                 <input type="checkbox" id="onsite-tech" className="device-protection-tech-checkbox" />
-                <label htmlFor="onsite-tech" className="device-protection-tech-addon-label">Onsite Tech Maintenance +$150.00</label>
+                <label htmlFor="onsite-tech" className="device-protection-tech-addon-label">Onsite Tech Maintenance <span className='device-protection-tech-addon-price'> +$150.00</span></label>
               </div>
               <div className="device-protection-tech-addon-item">
                 <input type="checkbox" id="website-specialist" className="device-protection-tech-checkbox" />
-                <label htmlFor="website-specialist" className="device-protection-tech-addon-label">Website Specialist +$150.00</label>
+                <label htmlFor="website-specialist" className="device-protection-tech-addon-label">Website Specialist <span className='device-protection-tech-addon-price'> +$150.00</span></label>
               </div>
             </div>
           </div>
@@ -190,6 +191,7 @@ export default function DeviceProtectionPlan() {
                         </fieldset>
                         <button className='custom-pc-annual-button'>Pay</button>
                         </div>
+                        <img src={SSLEncrypt} alt="ssl-encryption" className='device-protection-tech-encryption' />
                     </form>
                     ) : (
                         <div>

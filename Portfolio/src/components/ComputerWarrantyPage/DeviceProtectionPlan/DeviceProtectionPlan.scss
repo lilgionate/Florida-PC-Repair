@@ -1,10 +1,11 @@
 .device-protection-tech-container {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 1rem;
-    border: 2.5px solid #333;
+    border: 2px solid #333;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
     width: 85%;
@@ -18,6 +19,10 @@
     padding: 4rem 3.1rem;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
+    height: 425px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 20px; 
   }
 
   
@@ -101,8 +106,8 @@
   
   .device-protection-tech-label {
     display: block;
-    font-size: 0.875rem;
-    font-weight: 600;
+    font-size: 1.03rem;
+    font-weight: 700;
     margin-bottom: 0.25rem;
     color: #374151;
   }
@@ -120,6 +125,7 @@
     font-size: 0.875rem;
     color: #374151;
     margin-top: 1rem;
+    line-height: 0.5;
   }
  
   .device-protection-tech-addons {
@@ -129,14 +135,26 @@
   .device-protection-tech-addon-item {
     display: flex;
     align-items: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
   }
   
   .device-protection-tech-addon-label {
     margin-left: 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     color: #374151;
   }
+
+.device-protection-tech-addon-price {
+    color: #2b6cb0;
+  }
+  
+  .device-protection-tech-addon-checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #2563eb;
+    border-color: #d1d5db;
+    transition: border-color 0.3s ease;
+}
   
   .device-protection-tech-input {
     margin-top: 0.25rem;
@@ -157,18 +175,16 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
   
-  
-  .device-protection-tech-checkbox-label {
-    font-size: 0.875rem;
-    color: #374151;
-    margin-bottom: 0.25rem;
- }
-  
   .device-protection-tech-checkbox {
-    width: 1rem;
-    height: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
     color: #2563eb;
     border-color: #d1d5db;
-    border-radius: 0.25rem;
     transition: border-color 0.3s ease;
+  }
+
+  .device-protection-tech-encryption {
+    height: 46px;
+    width: 137px;
+    margin: 1rem 0;
   }
