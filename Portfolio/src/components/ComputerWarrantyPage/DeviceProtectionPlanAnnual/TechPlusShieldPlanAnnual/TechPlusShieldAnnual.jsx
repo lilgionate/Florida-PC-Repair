@@ -3,11 +3,11 @@ import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 import axios from 'axios'
 import emailjs from '@emailjs/browser';
 
-import './DeviceProtectionPlan.scss';
+import './TechPlusShieldAnnual.scss';
 
-import ShieldCheck from '../../../assets/shield-check.png';
-import Check from '../../../assets/check.png';
-import SSLEncrypt from '../../../assets/ssl-encryption.png';
+import ShieldCheck from '../../../../assets/shield-check.png';
+import Check from '../../../../assets/check.png';
+import SSLEncrypt from '../../../../assets/ssl-encryption.png';
 
 const CARD_OPTIONS = {
 	iconStyle: "solid",
@@ -53,10 +53,10 @@ export default function DeviceProtectionPlan() {
     };
 
     const calculateTotal = () => {
-        let total = 15.00; // base price
-        if (addons.emailSpecialist) total += 100.00;
-        if (addons.onsiteTech) total += 150.00;
-        if (addons.websiteSpecialist) total += 150.00;
+        let total = 600.00; // base price
+        if (addons.emailSpecialist) total += 1200.00;
+        if (addons.onsiteTech) total += 1800.00;
+        if (addons.websiteSpecialist) total += 1800.00;
         return total.toFixed(2);
     };
 
@@ -91,7 +91,7 @@ export default function DeviceProtectionPlan() {
         if (result.error) {
             console.log(result.error.message);
         } else {
-            const res = await axios.post('http://localhost:3000/sub5', {
+            const res = await axios.post('http://localhost:3000/sub10', {
                 payment_method: result.paymentMethod.id,
                 name: name,
                 email: email,
@@ -121,27 +121,6 @@ export default function DeviceProtectionPlan() {
 
     return (
         <div className="device-protection-tech-container">
-            <div className="device-protection-tech-info-section">
-                <div className="device-protection-tech-header">
-                    <img src={ShieldCheck} alt="shield icon" className="device-protection-tech-shield-icon" />
-                    <h2 className="device-protection-tech-title">Keep your devices safe with our tech protection plans</h2>
-                </div>
-                <ul className="device-protection-tech-benefits-list">
-                    <li className="device-protection-tech-benefit-item">
-                        <img src={Check} alt="check icon" className="device-protection-tech-check-icon" />
-                        Day 1 Fixes, No Wait Time
-                    </li>
-                    <li className="device-protection-tech-benefit-item">
-                        <img src={Check} alt="check icon" className="device-protection-tech-check-icon" />
-                        Unlimited Repairs & Services
-                    </li>
-                    <li className="device-protection-tech-benefit-item">
-                        <img src={Check} alt="check icon" className="device-protection-tech-check-icon" />
-                        Skip The Claim Process
-                    </li>
-                </ul>
-                <button className="device-protection-tech-cta-button">Want to pay annually instead?</button>
-            </div>
             <div className="device-protection-tech-form-section">
                 {!success ? (
                     <form className='device-protection-tech-form' ref={form} onSubmit={handleSubmitSub}>
@@ -197,7 +176,7 @@ export default function DeviceProtectionPlan() {
                             <label htmlFor="warranty" className="device-protection-tech-label">Full Computer Warranty - Protection Plan (Monthly)*</label>
                             <div className="device-protection-tech-input-group">
                                 <span className="device-protection-tech-text">Price</span>
-                                <input type="text" id="warranty" value="$15.00" className="device-protection-tech-input-price" readOnly />
+                                <input type="text" id="warranty" value="$600.00" className="device-protection-tech-input-price" readOnly />
                             </div>
                             <p className='device-protection-tech-terms-text'>All terms are listed on this site page.</p>
                         </div>
@@ -214,7 +193,7 @@ export default function DeviceProtectionPlan() {
                                         onChange={handleAddonsChange}
                                     />
                                     <label htmlFor="email-specialist" className="device-protection-tech-addon-label">
-                                        Email Specialist <span className='device-protection-tech-addon-price'> +$100.00</span>
+                                        Email Specialist <span className='device-protection-tech-addon-price'> +$1,200.00</span>
                                     </label>
                                 </div>
                                 <div className="device-protection-tech-addon-item">
@@ -227,7 +206,7 @@ export default function DeviceProtectionPlan() {
                                         onChange={handleAddonsChange}
                                     />
                                     <label htmlFor="onsite-tech" className="device-protection-tech-addon-label">
-                                        Onsite Tech Maintenance <span className='device-protection-tech-addon-price'> +$150.00</span>
+                                        Onsite Tech Maintenance <span className='device-protection-tech-addon-price'> +$1,800.00</span>
                                     </label>
                                 </div>
                                 <div className="device-protection-tech-addon-item">
@@ -240,7 +219,7 @@ export default function DeviceProtectionPlan() {
                                         onChange={handleAddonsChange}
                                     />
                                     <label htmlFor="website-specialist" className="device-protection-tech-addon-label">
-                                        Website Specialist <span className='device-protection-tech-addon-price'> +$150.00</span>
+                                        Website Specialist <span className='device-protection-tech-addon-price'> +$1,800.00</span>
                                     </label>
                                 </div>
                             </div>
@@ -278,6 +257,26 @@ export default function DeviceProtectionPlan() {
                         <h2>Payment successful</h2>
                     </div>
                 )}
+            </div>
+            <div className="device-protection-tech-info-section">
+                <div className="device-protection-tech-header">
+                    <img src={ShieldCheck} alt="shield icon" className="device-protection-tech-shield-icon" />
+                    <h2 className="device-protection-tech-title">Keep your devices safe with our tech protection plans</h2>
+                </div>
+                <ul className="device-protection-tech-benefits-list">
+                    <li className="device-protection-tech-benefit-item">
+                        <img src={Check} alt="check icon" className="device-protection-tech-check-icon" />
+                        Day 1 Fixes, No Wait Time
+                    </li>
+                    <li className="device-protection-tech-benefit-item">
+                        <img src={Check} alt="check icon" className="device-protection-tech-check-icon" />
+                        Unlimited Repairs & Services
+                    </li>
+                    <li className="device-protection-tech-benefit-item">
+                        <img src={Check} alt="check icon" className="device-protection-tech-check-icon" />
+                        Skip The Claim Process
+                    </li>
+                </ul>
             </div>
         </div>
     );

@@ -67,9 +67,15 @@ import MessengerService from './routes/MessengerService'
 import OnSiteTech from './routes/OnSiteTech'
 import RemoteIT from './routes/RemoteIT'
 import ComputerWarranty from './routes/ComputerWarranty'
-import DeviceProtection from './routes/DeviceProtection'
+import Tech from './routes/Tech'
+import TechAnnual from './routes/TechAnnual'
+import TechPlus from './routes/TechPlus'
+import TechPlusAnnual from './routes/TechPlusAnnual'
+import TechPlusShield from './routes/TechPlusShield'
+import TechPlusShieldAnnual from './routes/TechPlusShieldAnnual'
 import CyberSecurity from './routes/CyberSecurity'
 import CyberAnnualPlan from './routes/CyberAnnualPlan'
+
 
 function App() {
 
@@ -139,7 +145,12 @@ function App() {
         <Route path="/schedule-a-service/office-visit/" element={<OnSiteTech/>}/>
         <Route path="/schedule-a-service/remote-it-computer-support-service" element={<RemoteIT/>}/>
         <Route path="/warranty-protection-plan/" element={<ComputerWarranty/>}/>
-        <Route path="/warranty-protection-plan/tech-plan-signup" element={<DeviceProtection/>}/>
+        <Route path="/warranty-protection-plan/tech-plan-signup" element={<Tech/>}/>
+        <Route path="/warranty-protection-plan/tech-plan-signup-annual/" element={<TechAnnual/>}/>
+        <Route path="/warranty-protection-plan/tech-plus-plan-signup/" element={<TechPlus/>}/>
+        <Route path="/warranty-protection-plan/tech-plus-plan-signup-annual/" element={<TechPlusAnnual/>}/>
+        <Route path="/warranty-protection-plan/tech-plus-shield-plan-signup/" element={<TechPlusShield/>}/>
+        <Route path="/warranty-protection-plan/tech-plus-shield-plan-signup-annual/" element={<TechPlusShieldAnnual/>}/>
         <Route path="/cyber-computer-security-protection-plan/" element={<CyberSecurity/>}/>
         <Route path="/cyber-security-annual-plan/" element={<CyberAnnualPlan/>}/>
       </Routes>

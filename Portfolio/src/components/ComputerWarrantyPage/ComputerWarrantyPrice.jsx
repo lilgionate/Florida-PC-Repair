@@ -72,7 +72,9 @@ const RemoteServiceCard = () => {
             </li>
           </div>
           <div className="tech-pricing-text-center">
+            <a href="/warranty-protection-plan/tech-plus-plan-signup/">
             <button className="tech-pricing-button">Choose Plan</button>
+            </a>
             <p className="tech-pricing-sub-text">*Up to 12 remote sessions per year</p>
           </div>
         </div>
@@ -105,7 +107,9 @@ const RemoteServiceCard = () => {
             </li>
           </div>
           <div className="tech-pricing-text-center">
+            <a href="/warranty-protection-plan/tech-plus-shield-plan-signup/">
             <button className="tech-pricing-button">Choose Plan</button>
+            </a>
           </div>
         </div>
       </div>
