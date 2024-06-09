@@ -67,7 +67,9 @@ const RemoteServiceCard = () => {
             </li>
           </div>
           <div className="it-pricing-text-center">
+            <a href="/schedule-a-service/remote-it-computer-support-service/remote-support-plan-annual/">
             <button className="it-pricing-button">Choose Plan</button>
+            </a>
             <p className="it-pricing-sub-text">*Up to 12 remote sessions per year on 1 computer</p>
           </div>
         </div>

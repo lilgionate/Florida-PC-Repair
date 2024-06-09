@@ -66,6 +66,7 @@ import MailinService from './routes/MailinService'
 import MessengerService from './routes/MessengerService'
 import OnSiteTech from './routes/OnSiteTech'
 import RemoteIT from './routes/RemoteIT'
+import RemoteITAnnualPlan from './routes/RemoteITAnnualPlan'
 import ComputerWarranty from './routes/ComputerWarranty'
 import Tech from './routes/Tech'
 import TechAnnual from './routes/TechAnnual'
@@ -144,6 +145,7 @@ function App() {
         <Route path="/device-pick-messenger-service" element={<MessengerService/>}/>
         <Route path="/schedule-a-service/office-visit/" element={<OnSiteTech/>}/>
         <Route path="/schedule-a-service/remote-it-computer-support-service" element={<RemoteIT/>}/>
+        <Route path='/schedule-a-service/remote-it-computer-support-service/remote-support-plan-annual/' element={<RemoteITAnnualPlan/>}/>
         <Route path="/warranty-protection-plan/" element={<ComputerWarranty/>}/>
         <Route path="/warranty-protection-plan/tech-plan-signup" element={<Tech/>}/>
         <Route path="/warranty-protection-plan/tech-plan-signup-annual/" element={<TechAnnual/>}/>
