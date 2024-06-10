@@ -1,31 +1,117 @@
 import React, { useState } from "react";
-import Card from "./Card";
-import "./ExpandingCards.scss";  
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
-const ExpandingCards = (props) => {
+const Slider = ({ data, activeSlide }) => {
+  const [activeSlideState, setActiveSlideState] = useState(activeSlide);
 
-    const [data, setData] = useState(props.data);
+  const next = () =>
+    activeSlideState < data.length - 1 && setActiveSlideState(activeSlideState + 1);
 
-    const onCardClick = (id) => {
-        const newState = [...data];
-        newState.map((item) => item.id === id ? item.active = true : item.active = false);
-        setData(newState);
-    }
+  const prev = () => activeSlideState > 0 && setActiveSlideState(activeSlideState - 1);
 
-    if (!data || data.length <= 0) {
-        return "No data to render cards!";
-    }
+  const getStyles = (index) => {
+    if (activeSlideState === index)
+      return {
+        opacity: 1,
+        transform: "translateX(0px) translateZ(0px) rotateY(0deg)",
+        zIndex: 10
+      };
+    else if (activeSlideState - 1 === index)
+      return {
+        opacity: 1,
+        transform: "translateX(-240px) translateZ(-400px) rotateY(35deg)",
+        zIndex: 9
+      };
+    else if (activeSlideState + 1 === index)
+      return {
+        opacity: 1,
+        transform: "translateX(240px) translateZ(-400px) rotateY(-35deg)",
+        zIndex: 9
+      };
+    else if (activeSlideState - 2 === index)
+      return {
+        opacity: 1,
+        transform: "translateX(-480px) translateZ(-500px) rotateY(35deg)",
+        zIndex: 8
+      };
+    else if (activeSlideState + 2 === index)
+      return {
+        opacity: 1,
+        transform: "translateX(480px) translateZ(-500px) rotateY(-35deg)",
+        zIndex: 8
+      };
+    else if (index < activeSlideState - 2)
+      return {
+        opacity: 0,
+        transform: "translateX(-480px) translateZ(-500px) rotateY(35deg)",
+        zIndex: 7
+      };
+    else if (index > activeSlideState + 2)
+      return {
+        opacity: 0,
+        transform: "translateX(480px) translateZ(-500px) rotateY(-35deg)",
+        zIndex: 7
+      };
+  };
 
-    return (
-        <div className="ex-body">
-        <div className="expanding-cards">
-            {
-                data.map((card) => <Card key={card.id} 
-                data={card} onCardClick={onCardClick} /> )
-            }
-        </div>
-        </div>
-    );
-    };
+  return (
+    <div className="home-page">
+      {/* carousel */}
+      <div className="slideC">
+        {data.map((item, i) => (
+          <React.Fragment key={item.id}>
+            <div
+              className="slide"
+              style={{
+                background: item.bgColor,
+                boxShadow: `0 5px 20px ${item.bgColor}033`,
+                ...getStyles(i)
+              }}
+            >
+              <div className="slideImage" style={{ backgroundImage: `url(${item.src})` }}></div>
+              <SliderContent {...item} />
+            </div>
+            <div
+              className="reflection"
+              style={{
+                background: `linear-gradient(to bottom, ${item.bgColor}033, transparent)`,
+                ...getStyles(i)
+              }}
+            />
+          </React.Fragment>
+        ))}
+      </div>
+      {/* carousel */}
 
-    export default ExpandingCards;
+      <div className="btns">
+        <FontAwesomeIcon
+          className="btn"
+          onClick={prev}
+          icon={faChevronLeft}
+          color="#fff"
+          size="2x"
+        />
+        <FontAwesomeIcon
+          className="btn"
+          onClick={next}
+          icon={faChevronRight}
+          color="#fff"
+          size="2x"
+        />
+      </div>
+    </div>
+  );
+};
+
+const SliderContent = (props) => {
+  return (
+    <div className="sliderContent">
+      {props.icon}
+      <h3 className="header-slider-title">{props.title}</h3>
+      <p className="header-slider-des">{props.desc}</p>
+    </div>
+  );
+};
+
+export default Slider;
