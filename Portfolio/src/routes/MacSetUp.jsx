@@ -11,7 +11,7 @@ function MacSetUp () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Set Up New Mac"/>
       <MacNewSetUp />

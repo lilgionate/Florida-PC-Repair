@@ -11,7 +11,7 @@ function MacTouchpadTrackpad () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Touchpad / Trackpad Replacement"/>
       <MacTouchpadTrackpadRep />

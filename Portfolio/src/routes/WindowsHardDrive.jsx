@@ -11,7 +11,7 @@ function WindowsHardDrive () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="PC Hard Drive Replacements And Upgrades"/>
       <WindowsHardDriveRep />

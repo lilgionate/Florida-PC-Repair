@@ -71,7 +71,7 @@ function Navbar() {
                 return (
                   <li
                     key={item.id}
-                    className={item.cName}
+                    className={item.className}
                     onMouseEnter={handleWalkInHover}
                     onMouseLeave={handleMouseLeave}
                   >
@@ -83,7 +83,7 @@ function Navbar() {
                 return (
                   <li
                     key={item.id}
-                    className={item.cName}
+                    className={item.className}
                     onMouseEnter={handleMailInHover}
                     onMouseLeave={handleMouseLeave}
                   >
@@ -95,7 +95,7 @@ function Navbar() {
                 return (
                   <li
                     key={item.id}
-                    className={item.cName}
+                    className={item.className}
                     onMouseEnter={handleITSupportHover}
                     onMouseLeave={handleMouseLeave}
                   >
@@ -107,7 +107,7 @@ function Navbar() {
                 return (
                   <li
                     key={item.id}
-                    className={item.cName}
+                    className={item.className}
                     onMouseEnter={handleWarrantyHover}
                     onMouseLeave={handleMouseLeave}
                   >
@@ -117,7 +117,7 @@ function Navbar() {
                 );
               }
               return (
-                <li key={item.id} className={item.cName}>
+                <li key={item.id} className={item.className}>
                   <Link className="nav-links" to={item.path}>
                     {item.title}
                   </Link>

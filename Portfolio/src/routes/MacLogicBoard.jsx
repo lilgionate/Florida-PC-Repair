@@ -11,7 +11,7 @@ function MacLogicBoard () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Logic Board Replacement"/>
       <MacLogicBoardRep />

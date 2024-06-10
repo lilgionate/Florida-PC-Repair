@@ -11,7 +11,7 @@ function WindowsSetup () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Set Up New PC"/>
       <WindowsSetupNew />

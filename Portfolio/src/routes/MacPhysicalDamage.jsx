@@ -11,7 +11,7 @@ function MacPhysicalDamage () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Mac Physical Damage Repair"/>
       <MacPhysicalDamageRep />

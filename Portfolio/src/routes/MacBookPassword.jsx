@@ -11,7 +11,7 @@ function MacBookPasswordReset () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Password Reset"/>
       <MacBookPasswordRep />

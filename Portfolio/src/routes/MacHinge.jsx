@@ -11,7 +11,7 @@ function MacHinge () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Hinge Replacement"/>
       <MacHingeRep />

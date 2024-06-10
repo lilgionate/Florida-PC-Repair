@@ -11,7 +11,7 @@ function MacBookHardDrive () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="MacBook Hard Drive Replacements & Upgrades"/>
       <MacBookHardDriveRep />

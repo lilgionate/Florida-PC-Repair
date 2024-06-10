@@ -11,7 +11,7 @@ function MacBookDvdDrive () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="DVD Drive Replacement"/>
       <MacBookDvdDriveRep />

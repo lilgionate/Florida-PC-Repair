@@ -11,7 +11,7 @@ function MacInstallWindows () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Install Windows On Mac"/>
       <MacInstallWindowsRep />

@@ -11,7 +11,7 @@ function MacBookData () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="MacBook Data Recovery"/>
       <MacBookDataRec />

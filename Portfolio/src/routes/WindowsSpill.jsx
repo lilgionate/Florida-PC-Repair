@@ -11,7 +11,7 @@ function WindowsSpill () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Laptop Spill Repair"/>
       <WindowsSpillRep />

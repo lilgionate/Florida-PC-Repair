@@ -17,7 +17,7 @@ function MailInDropdown() {
             <li key={item.id}>
               <Link 
               to={item.path.replace(/^\./, '')} 
-              className={item.cName} 
+              className={item.className} 
               onClick={() => setDropdown(false)}
               >
                 {item.title}

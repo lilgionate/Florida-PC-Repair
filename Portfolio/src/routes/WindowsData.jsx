@@ -11,7 +11,7 @@ function WindowsData () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Windows Data Recovery"/>
       <WindowsDataRec />

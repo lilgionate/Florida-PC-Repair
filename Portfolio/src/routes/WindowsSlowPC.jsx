@@ -11,7 +11,7 @@ function WindowsSlowPC () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Slow PC Issue"/>
       <WindowsSlowPCIssue />

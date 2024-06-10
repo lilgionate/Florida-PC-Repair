@@ -11,7 +11,7 @@ function WindowsRunsLoud () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="PC Runs Loud And Noisy"/>
       <WindowsRunsLoudRep />

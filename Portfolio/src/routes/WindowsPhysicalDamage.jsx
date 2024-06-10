@@ -11,7 +11,7 @@ function WindowsPhysicalDamage () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="PC Physical Damage Repair"/>
       <WindowsPhysicalDamageRep />

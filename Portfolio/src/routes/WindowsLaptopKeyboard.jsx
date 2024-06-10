@@ -11,7 +11,7 @@ function WindowsLaptopKeyboard () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Laptop Keyboard Replacement"/>
       <WindowsLaptopKeyboardRep />

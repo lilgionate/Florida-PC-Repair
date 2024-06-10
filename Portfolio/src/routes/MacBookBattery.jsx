@@ -11,7 +11,7 @@ function MacBookBattery () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Battery Replacement"/>
       <MacBookBatteryRep />

@@ -11,7 +11,7 @@ function WindowsVirusRemoval () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="PC Virus Removal"/>
       <WindowsVirusRemovalRep />

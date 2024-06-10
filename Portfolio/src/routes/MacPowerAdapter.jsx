@@ -11,7 +11,7 @@ function MacPowerAdapter () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Power Adapter Replacement"/>
       <MacPowerAdapterRep />

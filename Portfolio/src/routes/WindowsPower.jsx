@@ -11,7 +11,7 @@ function WindowsPower () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Windows / PC Won’t Start Fix"/>
       <WindowsPowerUp />

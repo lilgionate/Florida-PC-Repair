@@ -11,7 +11,7 @@ function WindowsNoEmailInternet () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="No Email / Internet"/>
       <WindowsNoEmailInternetRep />

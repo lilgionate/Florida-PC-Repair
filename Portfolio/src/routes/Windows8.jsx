@@ -11,7 +11,7 @@ function Windows8 () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Windows 8 Repair"/>
       <Windows8Rep />

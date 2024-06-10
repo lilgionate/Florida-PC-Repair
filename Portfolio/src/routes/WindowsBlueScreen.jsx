@@ -11,7 +11,7 @@ function WindowsBlueScreen () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Blue Screen PC Error"/>
       <WindowsBlueScreenErr />

@@ -11,7 +11,7 @@ function WindowsVista () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Windows Vista Repair"/>
       <WindowsVistaRep />

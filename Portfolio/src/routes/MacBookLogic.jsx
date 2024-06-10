@@ -11,7 +11,7 @@ function MacBookLogic () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="MacBook Logic Board Repairs"/>
       <MacBookLogicBoardRep />

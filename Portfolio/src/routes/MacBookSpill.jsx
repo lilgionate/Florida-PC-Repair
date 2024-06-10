@@ -11,7 +11,7 @@ function MacBookSpill () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="MacBook Spill Repairs"/>
       <MacBookSpillRep />

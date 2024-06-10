@@ -56,24 +56,24 @@ const Slider = ({ data, activeSlide }) => {
   };
 
   return (
-    <div className="home-page">
+    <div className="header-slider-home-page">
       {/* carousel */}
-      <div className="slideC">
+      <div className="header-slider-slideC">
         {data.map((item, i) => (
           <React.Fragment key={item.id}>
             <div
-              className="slide"
+              className="header-slider-slide"
               style={{
                 background: item.bgColor,
                 boxShadow: `0 5px 20px ${item.bgColor}033`,
                 ...getStyles(i)
               }}
             >
-              <div className="slideImage" style={{ backgroundImage: `url(${item.src})` }}></div>
+              <div className="header-slider-slideImage" style={{ backgroundImage: `url(${item.src})` }}></div>
               <SliderContent {...item} />
             </div>
             <div
-              className="reflection"
+              className="header-slider-reflection"
               style={{
                 background: `linear-gradient(to bottom, ${item.bgColor}033, transparent)`,
                 ...getStyles(i)
@@ -106,7 +106,7 @@ const Slider = ({ data, activeSlide }) => {
 
 const SliderContent = (props) => {
   return (
-    <div className="sliderContent">
+    <div className="header-slider-sliderContent">
       {props.icon}
       <h3 className="header-slider-title">{props.title}</h3>
       <p className="header-slider-des">{props.desc}</p>

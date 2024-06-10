@@ -11,7 +11,7 @@ function MacBookPower () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="MacBook Won’t Power Up Fix"/>
       <MacBookPowerUp />

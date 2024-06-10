@@ -11,7 +11,7 @@ function WindowsShutOffOverheats () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="PC Shuts Off / Overheats"/>
       <WindowsShutOffOverheatsRep />

@@ -11,7 +11,7 @@ function WindowsUpgrade () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="PC Upgrade"/>
       <PCUpgrade />

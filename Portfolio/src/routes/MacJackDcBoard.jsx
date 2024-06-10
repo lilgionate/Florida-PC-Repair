@@ -11,7 +11,7 @@ function MacJackDc () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Jack / DC-In Board Replacement"/>
       <MacJackDcRep />

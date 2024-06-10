@@ -15,7 +15,7 @@ function WarrantyDropdown() {
         {warrantyDropdown.map((item) => {
           return (
             <li key={item.id}>
-              <Link to={item.path} className={item.cName} onClick={() => setDropdown(false)}>
+              <Link to={item.path} className={item.className} onClick={() => setDropdown(false)}>
                 {item.title}
               </Link>
             </li>

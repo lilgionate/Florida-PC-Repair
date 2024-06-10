@@ -11,7 +11,7 @@ function MacVirus () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Windows / Mac Virus Removal"/>
       <MacVirusRem />

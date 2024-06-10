@@ -46,7 +46,7 @@ export default [
     bgColor: "#333", // Dark color similar to #333
     title: "Data Recovery",
     desc:
-      "Recovering: Computers, Drives, & More"
+      "Recovering: Computers, Drives, Nas, & More"
   },
   {
     id: 6,

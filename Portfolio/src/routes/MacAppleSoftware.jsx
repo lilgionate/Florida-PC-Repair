@@ -11,7 +11,7 @@ function  MacAppleSoftware () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Apple Software Support"/>
       <MacAppleSoftwareSup />

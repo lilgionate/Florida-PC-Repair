@@ -11,7 +11,7 @@ function MacEmailAndInternet () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Email And Internet Mac Repair"/>
       <MacEmailAndInternetRep />

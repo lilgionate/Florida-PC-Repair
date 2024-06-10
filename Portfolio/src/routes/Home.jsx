@@ -21,10 +21,10 @@ function Home () {
       <Navbar />
       <NavSocial />
       <HeroTop 
-      cName="hero"
+      className="hero"
       heroImg={HomeImg}
       />
-    <div className="header-slide-show-center">
+    <div className="header-slider-show-center">
       <Slider data={data} activeSlide={2} />
     </div>
       <Featured />

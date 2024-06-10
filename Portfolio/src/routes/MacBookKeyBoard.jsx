@@ -11,7 +11,7 @@ function MacBookKeyBoard () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Keyboard Replacement"/>
       <MacBookKeyBoardRep />

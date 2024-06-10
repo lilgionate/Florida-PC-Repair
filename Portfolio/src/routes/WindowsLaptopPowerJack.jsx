@@ -11,7 +11,7 @@ function WindowsLaptopPowerJack () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Laptop Power Jack Repair"/>
       <WindowsLaptopPowerJackRep />

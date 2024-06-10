@@ -11,7 +11,7 @@ function MacBookRamMemory () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="RAM / Memory Upgrade"/>
       <MacBookRamMemoryUp />

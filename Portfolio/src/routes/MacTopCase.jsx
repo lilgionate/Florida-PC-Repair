@@ -11,7 +11,7 @@ function MacTopCase () {
     <>
       <Navbar />
       <HeroTop
-      cName="MacBookPowerHero"
+      className="MacBookPowerHero"
       heroImg={HomeImg}
       title="Top Case Replacement"/>
       <MacTopCaseRep />
