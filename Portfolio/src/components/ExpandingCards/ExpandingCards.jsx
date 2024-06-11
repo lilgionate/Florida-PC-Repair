@@ -65,20 +65,13 @@ const Slider = ({ data, activeSlide }) => {
               className="header-slider-slide"
               style={{
                 background: item.bgColor,
-                boxShadow: `0 5px 20px ${item.bgColor}033`,
+                boxShadow: `0 5px 20px ${item.bgColor}333`,
                 ...getStyles(i)
               }}
             >
               <div className="header-slider-slideImage" style={{ backgroundImage: `url(${item.src})` }}></div>
               <SliderContent {...item} />
             </div>
-            <div
-              className="header-slider-reflection"
-              style={{
-                background: `linear-gradient(to bottom, ${item.bgColor}033, transparent)`,
-                ...getStyles(i)
-              }}
-            />
           </React.Fragment>
         ))}
       </div>
