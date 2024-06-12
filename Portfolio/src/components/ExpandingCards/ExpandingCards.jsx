@@ -6,6 +6,7 @@ import './Card.scss';
 
 const Slider = ({ data, activeSlide = 0 }) => {
   const [activeSlideState, setActiveSlideState] = useState(activeSlide);
+  const [isSwiping, setIsSwiping] = useState(false);
 
   const next = () => {
     if (activeSlideState < data.length - 1) {
@@ -76,8 +77,16 @@ const Slider = ({ data, activeSlide = 0 }) => {
   };
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => next(),
-    onSwipedRight: () => prev(),
+    onSwipedLeft: () => {
+      setIsSwiping(false);
+      next();
+    },
+    onSwipedRight: () => {
+      setIsSwiping(false);
+      prev();
+    },
+    onSwipeStart: () => setIsSwiping(true),
+    onSwipeEnd: () => setIsSwiping(false),
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
@@ -88,7 +97,7 @@ const Slider = ({ data, activeSlide = 0 }) => {
         {data.map((item, i) => (
           <div
             key={item.id}
-            className="header-slider-slide"
+            className={`header-slider-slide ${isSwiping ? "grabbing" : ""}`}
             style={getStyles(i)}
           >
             <div

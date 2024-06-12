@@ -64,6 +64,10 @@
   cursor: grab;
 }
 
+.header-slider-slide.grabbing {
+  cursor: grabbing;
+}
+
 .header-slider-slideImage {
     position: absolute;
     width: 97%;
@@ -85,7 +89,6 @@
 .header-slider-sliderContent {
   display: flex;
   flex-direction: column;
-  color: white;
   padding: 30px 20px;
   align-items: flex-start;
   width: 100%;
@@ -94,17 +97,18 @@
 
 .header-slider-title {
   z-index: 1;
-  color: #fff;
+  color: #ffffff;
   text-align: start;
   font-weight: 600;
   margin-top: 13rem;
   margin-bottom: 0;
   line-height: 1;
+  font-size: 1.6rem;
 }
 
 .header-slider-des {
     z-index: 1;
-    color: #fff;
+    color: #ffffff;
     text-align: start;
   }
 

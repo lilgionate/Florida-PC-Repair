@@ -5,9 +5,9 @@ import emailjs from '@emailjs/browser';
 
 import './RemoteITAnnualPlan.scss';
 
-import ShieldCheck from '../../../assets/shield-check.png';
 import Check from '../../../assets/check.png';
 import SSLEncrypt from '../../../assets/ssl-encryption.png';
+import Logo from '../../../assets/logo.png';
 
 const CARD_OPTIONS = {
 	iconStyle: "solid",
@@ -44,21 +44,6 @@ export default function DeviceProtectionPlan() {
     const stripe = useStripe();
     const elements = useElements();
     const form = useRef();
-
-    const handleAddonsChange = (e) => {
-        setAddons({
-            ...addons,
-            [e.target.name]: e.target.checked,
-        });
-    };
-
-    const calculateTotal = () => {
-        let total = 500.00; // base price
-        if (addons.emailSpecialist) total += 1200.00;
-        if (addons.onsiteTech) total += 1800.00;
-        if (addons.websiteSpecialist) total += 1800.00;
-        return total.toFixed(2);
-    };
 
     const handleSubmitSub = async (e) => {
         e.preventDefault();
@@ -97,7 +82,6 @@ export default function DeviceProtectionPlan() {
                 email: email,
                 model: model,
                 serial: serial,
-                addons: addons,
             });
 
             const { client_secret, status } = res.data;
@@ -120,31 +104,65 @@ export default function DeviceProtectionPlan() {
     };
 
     return (
-        <div className="device-protection-tech-container">
-            <div className="device-protection-tech-info-section">
-                <div className="device-protection-tech-header">
-                    <img src={ShieldCheck} alt="shield icon" className="device-protection-tech-shield-icon" />
-                    <h2 className="device-protection-tech-title">Keep your devices safe with our tech protection plans</h2>
-                </div>
-                <ul className="device-protection-tech-benefits-list">
-                    <li className="device-protection-tech-benefit-item">
-                        <img src={Check} alt="check icon" className="device-protection-tech-check-icon" />
-                        Day 1 Fixes, No Wait Time
+        <div className="remote-IT-annual-plan-container">
+            <div className="remote-IT-annual-plan-info-section">
+                    <h2 className="remote-IT-annual-plan-title-one">Instant Tech Help.</h2>
+                    <h2 className="remote-IT-annual-plan-title">No Lines, No Waiting.</h2>
+                <ul className="remote-IT-annual-plan-benefits-list">
+                    <li className="remote-IT-annual-plan-benefit-item">
+                        <img src={Check} alt="check icon" className="remote-IT-annual-plan-check-icon" />
+                        Viruses Removal
                     </li>
-                    <li className="device-protection-tech-benefit-item">
-                        <img src={Check} alt="check icon" className="device-protection-tech-check-icon" />
-                        Unlimited Repairs & Services
+                    <li className="remote-IT-annual-plan-benefit-item">
+                        <img src={Check} alt="check icon" className="remote-IT-annual-plan-check-icon" />
+                        Install Software
                     </li>
-                    <li className="device-protection-tech-benefit-item">
-                        <img src={Check} alt="check icon" className="device-protection-tech-check-icon" />
-                        Skip The Claim Process
+                    <li className="remote-IT-annual-plan-benefit-item">
+                        <img src={Check} alt="check icon" className="remote-IT-annual-plan-check-icon" />
+                        Backup Files
+                    </li>
+                    <li className="remote-IT-annual-plan-benefit-item">
+                        <img src={Check} alt="check icon" className="remote-IT-annual-plan-check-icon" />
+                        Speed Up
+                    </li>
+                    <li className="remote-IT-annual-plan-benefit-item">
+                        <img src={Check} alt="check icon" className="remote-IT-annual-plan-check-icon" />
+                        Optimization & Maintenance
                     </li>
                 </ul>
+
+    <div className="remote-IT-annual-plan-review-container">
+      <div className="remote-IT-annual-plan-review-card">
+        <div className="remote-IT-annual-plan-review-group">
+          <span className="remote-IT-annual-plan-review-stars">
+            ★★★★★
+          </span>
+        </div>
+        <div className="remote-IT-annual-plan-review-rating">
+          1,000+ reviews
+        </div>
+      </div>
+      <div className="remote-IT-annual-plan-review-image">
+        <img src={Logo} alt="New York Computer Help Logo" className="remote-IT-annual-plan-review-img" />
+      </div>
+      <div className="remote-IT-annual-plan-review-content">
+        <p className="remote-IT-annual-plan-review-des">20+ Years Experience</p>
+        <div className="remote-IT-annual-plan-review-list">
+          <li>200,000+ repairs</li>
+          <li>150,000+ virus removed</li>
+          <li>25,000+ computers sped up</li>
+          <li>500,000+ email issues resolved</li>
+        </div>
+      </div>
+    </div>
+
+
+
             </div>
             <div className="device-protection-tech-form-section">
                 {!success ? (
                     <form className='device-protection-tech-form' ref={form} onSubmit={handleSubmitSub}>
-                        <h2 className='device-protection-tech-payment-title'>Sign Up Now To Get Day 1 Protection For Your Devices</h2>
+                        <h2 className='device-protection-tech-payment-title'>Please enter your details to sign up for our Remote Support Plan</h2>
                         <div className="device-protection-tech-form-group">
                             <label htmlFor="name" className="device-protection-tech-label">Name *</label>
                             <input
@@ -193,61 +211,17 @@ export default function DeviceProtectionPlan() {
                             />
                         </div>
                         <div className="device-protection-tech-form-group">
-                            <label htmlFor="warranty" className="device-protection-tech-label">Full Computer Warranty - Protection Plan (Monthly)*</label>
+                            <label htmlFor="warranty" className="device-protection-tech-label">Remote Support (Annual) *</label>
                             <div className="device-protection-tech-input-group">
                                 <span className="device-protection-tech-text">Price</span>
-                                <input type="text" id="warranty" value="$420.00" className="device-protection-tech-input-price" readOnly />
+                                <span className="device-protection-tech-input-price" readOnly>$500.00</span>
                             </div>
                             <p className='device-protection-tech-terms-text'>All terms are listed on this site page.</p>
                         </div>
                         <div className="device-protection-tech-form-group">
-                            <label className="device-protection-tech-label">Add-ons (Monthly)</label>
-                            <div className="device-protection-tech-addons">
-                                <div className="device-protection-tech-addon-item">
-                                    <input
-                                        type="checkbox"
-                                        id="email-specialist"
-                                        name="emailSpecialist"
-                                        className="device-protection-tech-checkbox"
-                                        checked={addons.emailSpecialist}
-                                        onChange={handleAddonsChange}
-                                    />
-                                    <label htmlFor="email-specialist" className="device-protection-tech-addon-label">
-                                        Email Specialist <span className='device-protection-tech-addon-price'> +$1,200.00</span>
-                                    </label>
-                                </div>
-                                <div className="device-protection-tech-addon-item">
-                                    <input
-                                        type="checkbox"
-                                        id="onsite-tech"
-                                        name="onsiteTech"
-                                        className="device-protection-tech-checkbox"
-                                        checked={addons.onsiteTech}
-                                        onChange={handleAddonsChange}
-                                    />
-                                    <label htmlFor="onsite-tech" className="device-protection-tech-addon-label">
-                                        Onsite Tech Maintenance <span className='device-protection-tech-addon-price'> +$1,800.00</span>
-                                    </label>
-                                </div>
-                                <div className="device-protection-tech-addon-item">
-                                    <input
-                                        type="checkbox"
-                                        id="website-specialist"
-                                        name="websiteSpecialist"
-                                        className="device-protection-tech-checkbox"
-                                        checked={addons.websiteSpecialist}
-                                        onChange={handleAddonsChange}
-                                    />
-                                    <label htmlFor="website-specialist" className="device-protection-tech-addon-label">
-                                        Website Specialist <span className='device-protection-tech-addon-price'> +$1,800.00</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="device-protection-tech-form-group">
                             <label htmlFor="total" className="device-protection-tech-label">Total</label>
                             <div className="device-protection-tech-input-group">
-                                <span className="device-protection-tech-text">${calculateTotal()}</span>
+                                <span className="device-protection-tech-text">$500.00</span>
                             </div>
                         </div>
                         <label htmlFor="creditcard" className="device-protection-tech-label">Credit Card *</label>
