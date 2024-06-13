@@ -76,7 +76,7 @@ export default function DeviceProtectionPlan() {
         if (result.error) {
             console.log(result.error.message);
         } else {
-            const res = await axios.post('http://localhost:3000/sub8', {
+            const res = await axios.post('http://localhost:3000/sub11', {
                 payment_method: result.paymentMethod.id,
                 name: name,
                 email: email,
@@ -130,34 +130,30 @@ export default function DeviceProtectionPlan() {
                         Optimization & Maintenance
                     </li>
                 </ul>
-
-    <div className="remote-IT-annual-plan-review-container">
-      <div className="remote-IT-annual-plan-review-card">
-        <div className="remote-IT-annual-plan-review-group">
-          <span className="remote-IT-annual-plan-review-stars">
-            ★★★★★
-          </span>
-        </div>
-        <div className="remote-IT-annual-plan-review-rating">
-          1,000+ reviews
-        </div>
-      </div>
-      <div className="remote-IT-annual-plan-review-image">
-        <img src={Logo} alt="New York Computer Help Logo" className="remote-IT-annual-plan-review-img" />
-      </div>
-      <div className="remote-IT-annual-plan-review-content">
-        <p className="remote-IT-annual-plan-review-des">20+ Years Experience</p>
-        <div className="remote-IT-annual-plan-review-list">
-          <li>200,000+ repairs</li>
-          <li>150,000+ virus removed</li>
-          <li>25,000+ computers sped up</li>
-          <li>500,000+ email issues resolved</li>
-        </div>
-      </div>
-    </div>
-
-
-
+            <div className="remote-IT-annual-plan-review-container">
+              <div className="remote-IT-annual-plan-review-card">
+                <div className="remote-IT-annual-plan-review-group">
+                  <span className="remote-IT-annual-plan-review-stars">
+                    ★★★★★
+                  </span>
+                </div>
+                <div className="remote-IT-annual-plan-review-rating">
+                  1,000+ reviews
+                </div>
+              </div>
+              <div className="remote-IT-annual-plan-review-image">
+                <img src={Logo} alt="New York Computer Help Logo" className="remote-IT-annual-plan-review-img" />
+              </div>
+              <div className="remote-IT-annual-plan-review-content">
+                <p className="remote-IT-annual-plan-review-des">20+ Years Experience</p>
+                <div className="remote-IT-annual-plan-review-list">
+                  <li>200,000+ repairs</li>
+                  <li>150,000+ virus removed</li>
+                  <li>25,000+ computers sped up</li>
+                  <li>500,000+ email issues resolved</li>
+                </div>
+              </div>
+            </div>
             </div>
             <div className="device-protection-tech-form-section">
                 {!success ? (
