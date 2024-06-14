@@ -35,11 +35,6 @@ export default function DeviceProtectionPlan() {
     const [model, setModel] = useState('');
     const [serial, setSerial] = useState('');
     const [success, setSuccess] = useState(false);
-    const [addons, setAddons] = useState({
-        emailSpecialist: false,
-        onsiteTech: false,
-        websiteSpecialist: false,
-    });
 
     const stripe = useStripe();
     const elements = useElements();

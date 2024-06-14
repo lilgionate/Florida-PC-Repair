@@ -6,6 +6,7 @@ import About from './routes/About'
 import Services from './routes/Services'
 import Contact from './routes/Contact'
 import DataRecovery from './routes/DataRecovery'
+import DataRecoveryShipping from './routes/DataRecoveryShipping'
 
 import MacAppleSoftware from './routes/MacAppleSoftware'
 import MacPhysicalDamage from './routes/MacPhysicalDamage'
@@ -89,6 +90,7 @@ function App() {
         <Route path="/services" element={<Services/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/data-recovery" element={<DataRecovery/>}/>
+        <Route path='/data-recovery-mail-in-request/' element={<DataRecoveryShipping/>}/>
         <Route path="/mac-apple-software-support" element={<MacAppleSoftware/>}/>
         <Route path="/mac-physical-damage-repair" element={<MacPhysicalDamage/>}/>
         <Route path="/mac-upgrade" element={<MacUpgrade/>}/>

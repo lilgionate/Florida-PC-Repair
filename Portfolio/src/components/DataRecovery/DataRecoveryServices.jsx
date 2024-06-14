@@ -176,8 +176,12 @@ const DataRecoveryComponent = () => {
                         <li className="list">✔ Emergency Data Recovery Service Options</li>
                     
                     <div className="flex">
+                      <a href="/data-recovery-mail-in-request/">
                         <button className="primaryButtonClass buttonClass">Make A Shipping Request</button>
-                        <button className="secondaryButtonClass buttonClass">Visit Us Now!</button> 
+                      </a>
+                      <a href="/WalkIn">
+                        <button className="secondaryButtonClass buttonClass">Visit Us Now!</button>
+                      </a> 
                     </div>
                 </div>
             </div>
