@@ -28,9 +28,9 @@ function Home () {
       <Slider data={data} activeSlide={2} />
     </div>
       <Featured />
-      <Builds />
       <OurServices />
       <Repairs />  
+      <Builds />
       <Supported />
       <Passion />
       <Footer />

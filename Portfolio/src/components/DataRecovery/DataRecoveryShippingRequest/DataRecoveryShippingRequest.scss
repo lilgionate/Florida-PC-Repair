@@ -6,12 +6,15 @@
 .data-shipping-title {
     font-size: 3.15rem;
     font-weight: 700;
-    margin-right: 21rem;
+    display: flex;
+    justify-content: start;
+    padding-bottom: 9.5rem;
+    padding-left: 7.2rem;
 }
 
 .data-shipping-request-container {
   width: 67%;
-  margin: 3.5rem auto;
+  margin: 3.3rem auto;
   padding: 5.5rem 3.5rem;
   background-color: white;
   box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
