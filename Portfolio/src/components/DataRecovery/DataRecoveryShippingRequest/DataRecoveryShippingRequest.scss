@@ -1,0 +1,74 @@
+.DataShippingHero{
+    height: 311px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.data-shipping-title {
+    font-size: 3.15rem;
+    font-weight: 700;
+    margin-right: 21rem;
+}
+
+.data-shipping-request-container {
+  width: 67%;
+  margin: 3.5rem auto;
+  padding: 5.5rem 3.5rem;
+  background-color: white;
+  box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
+  border: 1px solid rgba(126, 126, 126, 0.37);
+  border: 1px solid #f1f1f1; /* Zinc-300 */
+  border-radius: 0.3rem;
+}
+
+.data-shipping-request-flex-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.data-shipping-request-text {
+  color: #333; 
+  font-weight: 300;
+  font-size: 0.97rem;
+}
+
+.data-shipping-request-steps {
+  font-weight: 500;
+}
+
+.data-dotted-border {
+  border-top: 1px dotted rgb(211, 211, 211); 
+  margin: 0.9rem 0;
+}
+
+.data-shipping-request-des {
+  color: #333;
+  line-height: 1.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.data-shipping-request-des-select {
+  color: #333; 
+  font-weight: 600;
+  padding-top: 0.3rem;
+}
+
+.data-shipping-request-select {
+  width: 50%;
+  padding: 0.5rem;
+  border: 1px solid #D1D5DB; 
+  border-radius: 0.3rem;
+}
+
+.data-shipping-request-button {
+  display: flex;
+  background-color: #2b6cb0; /* Blue-600 */
+  border: #2b6cb0;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3rem;
+  transition: ease-in-out 0.3s;
+  &:hover {
+    background-color: #1b436e; /* Blue-700 */
+  }
+}

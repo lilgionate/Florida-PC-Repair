@@ -11,17 +11,17 @@
 
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
 }
 
 .hero-text h1 {
     font-size: 3rem;
     font-weight: 800;
-    background: #fff;
+    background-color: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 15rem;
