@@ -32,6 +32,15 @@
   color: #333; 
   font-weight: 300;
   font-size: 0.97rem;
+  margin-right: 1rem;
+}
+
+.data-shipping-request-text.inactive {
+  opacity: 0.3;
+}
+
+.data-shipping-request-text.active {
+  opacity: 1;
 }
 
 .data-shipping-request-steps {

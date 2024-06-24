@@ -48,9 +48,9 @@ export default function DataRecoveryShippingRequest() {
   return (
     <div className="data-shipping-request-container">
       <div className="data-shipping-request-flex-container">
-        <div className={`data-shipping-request-text ${step === 1 ? 'active' : ''}`}><span className='data-shipping-request-steps'>1</span> Device Type</div>
-        <div className={`data-shipping-request-text ${step === 2 ? 'active' : ''}`}><span className='data-shipping-request-steps'>2</span> Data Loss Reason</div>
-        <div className={`data-shipping-request-text ${step === 3 ? 'active' : ''}`}><span className='data-shipping-request-steps'>3</span> Your details</div>
+        <div className={`data-shipping-request-text ${step === 1 ? 'active' : 'inactive'}`}><span className='data-shipping-request-steps'>1</span> Device Type</div>
+        <div className={`data-shipping-request-text ${step === 2 ? 'active' : 'inactive'}`}><span className='data-shipping-request-steps'>2</span> Data Loss Reason</div>
+        <div className={`data-shipping-request-text ${step === 3 ? 'active' : 'inactive'}`}><span className='data-shipping-request-steps'>3</span> Your details</div>
       </div>
       <div className='data-dotted-border'></div>
       <form onSubmit={handleSubmit}>
