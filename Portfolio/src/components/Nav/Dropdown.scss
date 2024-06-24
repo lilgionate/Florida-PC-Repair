@@ -4,10 +4,12 @@
   top: 80px;
   list-style: none;
   text-align: start;
-  line-height: 1;
+  line-height: 0.9;
   z-index: 1;
-  background-color: rgba(63, 63, 63, 0.8);
+  background-color: rgba(31, 31, 31, 0.8);
   box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
   border-radius: 5px;
 }
 
@@ -16,8 +18,10 @@
   position: absolute;
   top: -10px;
   border-width: 0 13px 10px 13px;
-  border-color: transparent transparent rgba(64, 64, 64, 0.8) transparent;
+  border-color: transparent transparent rgba(31, 31, 31, 0.8) transparent;
   border-style: solid;
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
 }
 
 .submenu li {

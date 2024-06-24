@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { warrantyDropdown } from "./NavItems";
 import { Link } from "react-router-dom";
-import "./Dropdown.css";
+import "./Dropdown.scss";
 
 function WarrantyDropdown() {
   const [dropdown, setDropdown] = useState(false);

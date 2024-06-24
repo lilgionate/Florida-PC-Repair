@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { mailInDropdown } from "./NavItems";
 import { Link } from "react-router-dom";
-import "./Dropdown.css";
+import "./Dropdown.scss";
 
 function MailInDropdown() {
   const [dropdown, setDropdown] = useState(false);

@@ -10,7 +10,7 @@ export const walkInDropdown = [
   { id: 2, title: "Mac Repairs", path: "/mac-repairs", className: "submenu-item" },
   { id: 3, title: "PC Repairs", path: "/pc-repairs", className: "submenu-item" },
   { id: 4, title: "Custom PC Repairs", path: "/custom-pc-build", className: "submenu-item" },
-  
+  { id: 5, title: "Phone/Tablet Repairs", path: "/phone-tablet-repairs", className: "submenu-item" },
 ];
 
 export const mailInDropdown = [
