@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
           <div className="socials flex">
             <a href="/">
-              <i class="fa-solid fa-envelope icon"></i>
+              <i className="fa-solid fa-envelope icon"></i>
             </a>
             <a href="/">
               <i className="fa-solid fa-phone icon"></i>

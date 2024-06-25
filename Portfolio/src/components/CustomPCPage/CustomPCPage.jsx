@@ -26,9 +26,9 @@ const CustomPCPage = () => {
                 </div>
         </div>
 
-        <div class="customPCSectionContainer">
-            <h1 class="customPCSectionTitle">Who is this for?</h1>
-            <p class="customPCSectionParagraph">
+        <div className="customPCSectionContainer">
+            <h1 className="customPCSectionTitle">Who is this for?</h1>
+            <p className="customPCSectionParagraph">
                Create your own customized gaming experience with us! We will provide recommendations
                and set it up for your exact requirement. Our gaming solutions are ideal for:
             </p>

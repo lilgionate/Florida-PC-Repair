@@ -1,0 +1,219 @@
+.PhoneRepairContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.PhoneRepairsContent {
+    width: 50%;
+    padding: 5rem 3.5rem 1.5rem 3.5rem;
+    margin-top: 1rem;
+    
+}
+
+.PhoneRepairsImg{
+  width: 50%;
+}
+
+.PhoneImg {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 4rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.PhoneRepairsTitle {
+  font-size: 3.2rem; /* 36px */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1b436e;
+}
+
+.PhoneRepairsDes {
+    font-size: 1.05rem; /* 18px */
+    font-weight: 300;
+    line-height: 1.75rem; /* 28px */
+   
+}
+
+.PhoneRepairsButton {
+    background-color: #2b6cb0;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #2b6cb0;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+}
+
+.PhoneRepairsButton:hover {
+    background-color: #1b436e; 
+    border: 1px solid #1b436e;
+}
+
+/*Phone Service Cards*/
+
+.phone-header {
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1b436e;
+}
+
+.phone-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+  }
+  
+  .phone-card {
+    width: 41.8%;
+    background-color: white;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    overflow: hidden;
+  }
+  
+  .phone-card-image {
+    width: 100%;
+    height: 24.5rem;
+    object-fit: cover;
+  }
+  
+  .phone-card-content {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .phone-card-title {
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #1b436e;
+    padding-top: 1rem;
+  }
+  
+  .phone-card-text {
+    color: #333;
+    width: 95%;
+    margin: 1rem auto;
+  }
+  
+  .phone-card-button {
+    padding: 0.5rem 1.4rem;
+    background-color: #ffffff;
+    border: 1.5px solid #2b6cb0;
+    color: #333;
+    text-decoration: underline;
+    border-radius: 0.9rem;
+    transition: ease-in-out 0.2s;
+    margin-bottom: 1rem;
+}
+  
+.phone-card-button:hover {
+    background-color: #2b6cb0;
+    border: 1.5px solid #2b6cb0;
+    color: #ffffff;
+}
+  
+
+/* PCSupportedIssuesList */
+
+.phone-support-container {
+    background-color: #f5f5f5;
+    padding-bottom: 4rem;
+}
+
+.phone-supported-header {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1b436e;
+  }
+  
+
+.phone-supported-issues-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    font-size: 1.1rem;
+    font-weight: 400; /* Adjust font size as needed */
+    place-items: center;
+    padding: 0 20rem;
+    line-height: 1; 
+    color: #1b436e;
+  }
+  
+  @media (min-width: 768px) {
+    .phone-supported-issues-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+.phone-check {
+  height: 23px;
+  margin-right: 0.2rem;
+  
+}
+
+
+/*hero bottom*/
+
+.phone-repair-bottom-container {
+  position: relative;
+  color: #ffffff; /* White text */
+}
+
+
+.phone-repair-img {
+  width: 100%;
+  height: 475px;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.phone-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.phone-overlay-text {
+  text-align: center;
+ 
+}
+
+.phone-overlay-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.phone-overlay-text a {
+  background-color: #ffffff; /* Blue color */
+  color: rgba(0, 0, 0, 0.5); /* White text */
+  font-weight: 400;
+  padding: 0.55rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
