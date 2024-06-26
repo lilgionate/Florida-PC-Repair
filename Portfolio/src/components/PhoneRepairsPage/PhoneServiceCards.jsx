@@ -6,7 +6,7 @@ import Ipad from '../../assets/ipad.avif';
 import SurfacePro from '../../assets/surface.avif';
 import Others from '../../assets/others.webp';
 
-const RepairCard = ({ title, description, imageUrl, isSpecial }) => {
+const RepairCard = ({ title, description, imageUrl, isSpecial, link }) => {
   return (
     <div className="phone-card">
       <div className="phone-card-image-container">
@@ -16,9 +16,9 @@ const RepairCard = ({ title, description, imageUrl, isSpecial }) => {
         <h3 className="phone-card-title">{title}</h3>
         <p className="phone-card-text">{description}</p>
         {isSpecial ? (
-          <button className="phone-card-button">Schedule a Free Diagnostic</button>
+         <a href={link}><button className="phone-card-button">Schedule a Free Diagnostic</button></a>
         ) : (
-          <button className="phone-card-button">Learn More</button>
+          <a href={link}><button className="phone-card-button">Learn More</button></a>
         )}
       </div>
     </div>
@@ -33,11 +33,13 @@ const RepairCardsContainer = () => {
         title="iPhone Repair"
         description="Trustworthy Out-of-Warranty iPhone Repair"
         imageUrl={Iphone}
+        link="/iphone-repair-services/"
       />
       <RepairCard
         title="iPad Repair"
         description="Cracked iPad Screen?"
         imageUrl={Ipad}
+        link="/ipad-repair-services/"
       />
       <RepairCard
         title="Microsoft Surface"

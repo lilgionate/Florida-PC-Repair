@@ -1,0 +1,111 @@
+.IPhoneRepairContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.IPhoneRepairsContent {
+    width: 50%;
+    padding: 6rem 4rem 1.5rem 3.5rem;
+    margin-top: 1rem;
+    
+}
+
+.IPhoneRepairsImg{
+  width: 50%;
+}
+
+.IPhoneImg {
+  height: 120vh;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 4rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.IPhoneRepairsTitle {
+  font-size: 3.2rem; /* 36px */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1b436e;
+}
+
+.IPhoneRepairsDes {
+    font-size: 1.05rem; /* 18px */
+    font-weight: 300;
+    line-height: 1.8rem; /* 28px */
+    padding-bottom: 1rem;
+}
+
+.IPhoneRepairsDesBold {
+    font-weight: 600;
+}
+
+.IPhoneRepairsButton {
+    background-color: #2b6cb0;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid #2b6cb0;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+}
+
+.IPhoneRepairsButton:hover {
+    background-color: #1b436e; 
+    border: 1px solid #1b436e;
+}
+
+/*Scenarios*/
+
+.IPhone-card-container {
+    background-color: #fff;
+    border: 1px solid rgba(98, 98, 98, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 2.5rem;
+  }
+  
+  .IPhone-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1b436e;
+  }
+  
+  .IPhone-text {
+    color: #333;
+    line-height: 1.95rem;
+  }
+
+  .IPhone-service-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 0 3rem 0;
+  }
+
+  .IPhone-title-header {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 4rem 0 3rem 0;
+    color: #1b436e;
+  }
+  
+  .IPhone-service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .IPhone-service-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
