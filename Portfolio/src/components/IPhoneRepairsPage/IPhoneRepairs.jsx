@@ -1,6 +1,7 @@
 import React from 'react'
 import './IPhoneRepairs.scss'
 import IPhoneServiceCard from './IPhoneServiceCards'
+import IPhoneDataSearch from './IPhoneDataSearch'
 
 import MacBookCenter from '../../assets/brokenIphone.webp'
 
@@ -37,6 +38,7 @@ export default function IPhoneRepairs() {
         </div>
 
         <IPhoneServiceCard />
+        <IPhoneDataSearch />
     </>
   )
 }

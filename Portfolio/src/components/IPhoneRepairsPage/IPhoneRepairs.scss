@@ -11,7 +11,6 @@
     width: 50%;
     padding: 6rem 4rem 1.5rem 3.5rem;
     margin-top: 1rem;
-    
 }
 
 .IPhoneRepairsImg{
@@ -108,4 +107,53 @@
     .IPhone-service-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+  }
+
+  /*IPhone Search*/
+
+.IPhone-pricing-container {
+  box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
+  border: 1px solid #2b6cb0;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  border-radius: 4px;
+}
+
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.IPhone-custom-text-filter {
+    display: block; /* Display our custom search input */
+    width: 270px;
+    color: #333 !important;
+    margin: 1rem 0 !important;
+    margin-left: 1rem !important;
+}
+
+
+  .custom-cell {
+    color: #333;
+    font-size: 14px;
+  }
+
+  .custom-header {
+    background-color: #2b6cb0;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .custom-text-field {
+    border-color: #2b6cb0 !important;
+  }
+  
+  .custom-text-input {
+    color: #333 !important;
+    font-weight: 700  !important;
   }
