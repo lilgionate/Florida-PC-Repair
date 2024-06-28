@@ -1,0 +1,107 @@
+.water-spill-repair-info-container {
+    width: 70%;
+    margin: 4rem auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+  }
+
+.water-spill-repair-content{
+    width: 80%; /* Setting width for the content */
+    margin: 0 auto; /* Centering the content */
+    padding: 5rem 0 5rem 0;
+}
+  
+  .water-spill-repair-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #a9a9a9;
+  }
+  
+  .water-spill-repair-info-table-row {
+    border: 1px solid #a9a9a9;
+  }
+  
+  .water-spill-repair-info-table-header-cell {
+    padding: 1rem;
+    border: 1px solid #d1d1d1;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .water-spill-repair-info-table-cell {
+    padding: 1rem 0.5rem;
+    border: 1px solid #d1d1d1;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .water-spill-repair-info-description {
+    margin-top: 1.5rem;
+  }
+  
+  .water-spill-repair-info-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1b436e;
+    padding-top: 1.5rem;
+  }
+  
+  .water-spill-repair-info-text {
+    margin-top: 0.5rem;
+    color: #333;
+  }
+  
+ /*IPhone Search*/
+
+ .IPhone-battery-pricing-container {
+  border: 0.5px solid rgb(184, 184, 184);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  border-radius: 4px;
+}
+
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.IPhone-custom-text-filter {
+    display: block; /* Display our custom search input */
+    width: 270px;
+    color: #333 !important;
+    margin: 1rem 0 !important;
+    margin-left: 1rem !important;
+}
+
+
+  .custom-cell {
+    color: #333;
+    font-size: 14px;
+  }
+
+  .custom-header {
+    background-color: #2b6cb0;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .custom-text-field {
+    border-color: rgb(184, 184, 184) !important;
+  }
+  
+  .custom-text-input {
+    color: #333 !important;
+    font-weight: 700  !important;
+  }
+
+  .iphone-battery-repair-info-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1b436e;
+  }
