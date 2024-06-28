@@ -3,9 +3,9 @@ import { DataGrid } from '@mui/x-data-grid';
 import { TextField, Box, InputAdornment } from '@mui/material';
 import './IPhoneRepairs.scss';
 
-import BatteryImage from '../../assets/battery-image.png'; // Replace with your actual image path
-import ScreenImage from '../../assets/screen-image.png'; // Replace with your actual image path
-import ModelImage from '../../assets/model-image.png'; // Replace with your actual image path
+import BatteryImage from '../../assets/battery-image.png';
+import ScreenImage from '../../assets/screen-image.png'; 
+import ModelImage from '../../assets/model-image.png'; 
 
 
 
@@ -37,7 +37,7 @@ const columns = [
   {
     field: 'model',
     headerName: 'iPhone Model',
-    width: 380,
+    width: 379.2,
     headerClassName: 'custom-header',
     cellClassName: 'custom-cell',
     renderHeader: () => (
@@ -55,7 +55,7 @@ const columns = [
   {
     field: 'batteryReplacement',
     headerName: 'Battery Replacement',
-    width: 380,
+    width: 379.2,
     headerClassName: 'custom-header',
     cellClassName: 'custom-cell',
     renderHeader: () => (
