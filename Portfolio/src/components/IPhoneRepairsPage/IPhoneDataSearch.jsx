@@ -37,7 +37,7 @@ const columns = [
   {
     field: 'model',
     headerName: 'iPhone Model',
-    width: 379.2,
+    width: 379.8,
     headerClassName: 'custom-header',
     cellClassName: 'custom-cell',
     renderHeader: () => (
@@ -55,7 +55,7 @@ const columns = [
   {
     field: 'batteryReplacement',
     headerName: 'Battery Replacement',
-    width: 379.2,
+    width: 379.8,
     headerClassName: 'custom-header',
     cellClassName: 'custom-cell',
     renderHeader: () => (
@@ -68,7 +68,7 @@ const columns = [
   {
     field: 'screenReplacement',
     headerName: 'Screen Replacement',
-    width: 379,
+    width: 379.8,
     headerClassName: 'custom-header',
     cellClassName: 'custom-cell',
     renderHeader: () => (

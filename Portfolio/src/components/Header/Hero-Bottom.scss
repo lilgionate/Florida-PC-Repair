@@ -34,23 +34,23 @@
     color: #ffffff;
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     margin-top: 9rem;
   }
   
   .hero-bottom-button {
-    background-color: #3490dc;
+    background-color: #2b6cb0;
     color: #ffffff;
     font-weight: 400;
     font-size: 1.3rem;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-    border: 1px solid #ffffff;
-    height: 5rem;
-    width: 20rem;
+    padding: 1.2rem 2.7rem;
+    border-radius: 0.8rem;
+    border: 1px solid #2b6cb0;
+    transition: ease-in-out 0.3s;
   }
   
   .hero-bottom-button:hover {
-    background-color: #2779bd;
+    background-color: #1b436e;
+    border: 1px solid #1b436e;
   }
   

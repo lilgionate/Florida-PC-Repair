@@ -112,8 +112,8 @@
   /*IPhone Search*/
 
 .IPhone-pricing-container {
-  box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
-  border: 1.3px solid #2b6cb0;
+  border: 0.5px solid rgb(184, 184, 184);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   width: 85%;
   margin: 0 auto;
   margin-top: 2rem;
@@ -150,7 +150,7 @@
   }
 
   .custom-text-field {
-    border-color: #2b6cb0 !important;
+    border-color: rgb(184, 184, 184) !important;
   }
   
   .custom-text-input {
@@ -168,6 +168,12 @@
   width: 40.8%;
   display: flex;
   align-items: stretch;
+  transition: ease-in-out 0.3s;
+}
+
+.IPhone-price-repair-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.57);
+  transform: translateY(-5px);
 }
 
 .IPhone-price-repair-card-content {
@@ -234,5 +240,87 @@
   justify-content: center;
   gap: 1.7rem;
   margin-bottom: 4rem;
+}
+
+/*iphone footer*/
+
+.iphone-footer-repair-card {
+  background-image: url('../../assets/iphone-footer.webp'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.iphone-footer-repair-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(50%);
+  z-index: 1;
+}
+
+.iphone-footer-background-blur {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  width: 86.5%;
+  padding: 2rem;
+  border-radius: 5px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.iphone-footer-repair-card-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.iphone-footer-repair-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  justify-content: center; 
+  width: 90%;
+  margin: 0 auto;
+}
+
+.iphone-footer-repair-option {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.iphone-footer-repair-option-icon {
+  margin-right: 0.5rem;
+  height: 2.5rem;
+}
+
+.iphone-footer-repair-card-button-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.iphone-footer-repair-card-button {
+  background-color: #ffffff;
+  border: 1.5px solid #333;
+  color: #333;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
 }
 

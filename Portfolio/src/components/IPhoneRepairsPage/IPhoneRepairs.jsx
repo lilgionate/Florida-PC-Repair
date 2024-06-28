@@ -3,6 +3,7 @@ import './IPhoneRepairs.scss'
 import IPhoneServiceCard from './IPhoneServiceCards'
 import IPhoneDataSearch from './IPhoneDataSearch'
 import IPhonePriceCards from './IPhonePriceCards'
+import IPhoneFooter from './IPhoneFooter'
 
 import MacBookCenter from '../../assets/brokenIphone.webp'
 
@@ -41,6 +42,7 @@ export default function IPhoneRepairs() {
         <IPhoneServiceCard />
         <IPhoneDataSearch />
         <IPhonePriceCards />
+        <IPhoneFooter />
     </>
   )
 }

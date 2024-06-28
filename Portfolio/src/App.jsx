@@ -58,6 +58,8 @@ import WindowsShutOffOverheats from './routes/WindowsShutOffOverheats'
 import WindowsLaptopKeyboard from './routes/WindowsLaptopKeyboard'
 import WindowsVirusRemoval from './routes/WindowsVirusRemoval'
 
+import IPhoneWaterSpill from './routes/IPhoneWaterSpill'
+
 
 import MacRepairsPage from './routes/MacRepairsPage'
 import PcRepairPage from './routes/PcRepairsPage'
@@ -146,6 +148,7 @@ function App() {
         <Route path="/custom-pc-build" element={<CustomPCBuild/>}/>
         <Route path="/phone-tablet-repairs" element={<PhoneRepair/>}/>
         <Route path='/iphone-repair-services/' element={<IPhoneRepairServices/>}/>
+        <Route path="/iphone-repair-services/water-spill-repair/" element={<IPhoneWaterSpill/>}/>
         <Route path="/custom-pc-build-annual-warranty" element={<CustomPCAnnual/>}/>
         <Route path="/mail-in-to-florida-pc-support" element={<MailinService/>}/>
         <Route path="/device-pick-messenger-service" element={<MessengerService/>}/>

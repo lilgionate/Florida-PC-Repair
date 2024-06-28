@@ -3,10 +3,10 @@ import './IPhoneRepairs.scss';
 
 import PhoneSpill from '../../assets/phone-water-spill.webp';
 import PhoneBattery from '../../assets/iphone-battery.webp';
-import PhoneScreen from '../../assets/brokenIphone.webp'
+import PhoneScreen from '../../assets/brokenIphone.webp';
 import PhoneData from '../../assets/Iphone-data-recovery.jpg';
 
-const RepairCard = ({ title, imageUrl, issue, causes, solution, parts, repairTime }) => {
+const RepairCard = ({ title, imageUrl, issue, causes, solution, parts, repairTime, link }) => {
   return (
     <div className="IPhone-price-repair-card">
       <div className="IPhone-price-repair-card-content">
@@ -16,7 +16,7 @@ const RepairCard = ({ title, imageUrl, issue, causes, solution, parts, repairTim
           <p className="IPhone-price-repair-card-text">
             {issue} {causes} {solution} {parts} {repairTime}
           </p>
-          <button className="IPhone-price-repair-card-button">Learn More</button>
+          <a href={link} className="IPhone-price-repair-card-button">Learn More</a>
         </div>
       </div>
     </div>
@@ -34,6 +34,7 @@ const RepairCards = () => {
         solution="Solution: Diagnose and replace affected parts"
         parts="Parts: OEM"
         repairTime="Repair time:"
+        link="/iphone-repair-services/water-spill-repair/"
       />
       <RepairCard
         title="Battery Replacement"
@@ -42,12 +43,14 @@ const RepairCards = () => {
         causes="Causes: Heavy usage / Defective"
         solution="Solution: Replace battery"
         parts="Parts: OEM"
-        repairTime="Battery Replacement Walk-in Service Support  "
+        repairTime="Battery Replacement Walk-in Service Support"
+        link="/iphone-repair-services/battery-replacement/"
       />
       <RepairCard
         title="Screen Replacement"
         imageUrl={PhoneScreen}
         issue="Best iPhone repair in FL! Bring your iPhone to our FL iPhone repair shop. Experience perfection – qualified iPhone techs, and guaranteed service. Transparent Disclaimer: Since"
+        link="/iphone-repair-services/screen-replacement/"
       />
       <RepairCard
         title="Data Recovery"
@@ -55,10 +58,10 @@ const RepairCards = () => {
         issue="Issue: Need to recover photos, videos and/or files"
         causes="Causes: iPhone won’t start or work properly"
         solution="Solution: Recover files to media or another phone or"
+        link="/iphone-repair-services/data-recovery/"
       />
     </div>
   );
 };
 
 export default RepairCards;
-
