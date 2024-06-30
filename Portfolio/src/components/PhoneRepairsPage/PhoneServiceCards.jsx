@@ -51,6 +51,7 @@ const RepairCardsContainer = () => {
         description="If you have any other devices not listed here, simply bring it to our repair center for a free diagnostic"
         imageUrl={Others}
         isSpecial
+        link="/WalkIn/"
       />
     </div>
   );
