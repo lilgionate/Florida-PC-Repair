@@ -14,7 +14,7 @@ export default function IPhoneRepairs() {
             <div className="IPhoneRepairsContent">
                 <h1 className="IPhoneRepairsTitle">iPhone Repairs</h1>
                 <p className="IPhoneRepairsDes">
-               <span className='IPhoneRepairsDesBold'>Best iPhone repair in FL! </span>  
+               <span className='IPhoneRepairsDesBold-I'>Best iPhone repair in FL! </span>  
                Bring your iPhone to our Florida iPhone repair shop. Experience perfection – 
                qualified iPhone techs, and guaranteed service.
                 </p>

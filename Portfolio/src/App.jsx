@@ -60,6 +60,7 @@ import WindowsVirusRemoval from './routes/WindowsVirusRemoval'
 
 import IPhoneWaterSpill from './routes/IPhoneWaterSpill'
 import IPhoneBattery from './routes/IPhoneBattery'
+import IPhoneScreen from './routes/IPhoneScreen'
 
 
 import MacRepairsPage from './routes/MacRepairsPage'
@@ -151,6 +152,7 @@ function App() {
         <Route path='/iphone-repair-services/' element={<IPhoneRepairServices/>}/>
         <Route path="/iphone-repair-services/water-spill-repair/" element={<IPhoneWaterSpill/>}/>
         <Route path="/iphone-repair-services/battery-replacement/" element={<IPhoneBattery/>}/>
+        <Route path="/iphone-repair-services/screen-replacement/" element={<IPhoneScreen/>}/>
         <Route path="/custom-pc-build-annual-warranty" element={<CustomPCAnnual/>}/>
         <Route path="/mail-in-to-florida-pc-support" element={<MailinService/>}/>
         <Route path="/device-pick-messenger-service" element={<MessengerService/>}/>

@@ -1,52 +1,52 @@
-.water-spill-repair-info-container {
+.IPhone-battery-repair-info-container {
     width: 70%;
     margin: 4rem auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
   }
 
-.water-spill-repair-content{
+.IPhone-battery-repair-content{
     width: 80%; /* Setting width for the content */
     margin: 0 auto; /* Centering the content */
-    padding: 5rem 0 5rem 0;
+    padding: 6.5rem 0 9rem 0;
 }
   
-  .water-spill-repair-info-table {
+  .IPhone-battery-repair-info-table {
     width: 100%;
     border-collapse: collapse;
     border: 1px solid #a9a9a9;
   }
   
-  .water-spill-repair-info-table-row {
+  .IPhone-battery-repair-info-table-row {
     border: 1px solid #a9a9a9;
   }
   
-  .water-spill-repair-info-table-header-cell {
+  .IPhone-battery-repair-info-table-header-cell {
     padding: 1rem;
     border: 1px solid #d1d1d1;
     color: #333;
     font-size: 0.9rem;
   }
   
-  .water-spill-repair-info-table-cell {
+  .IPhone-battery-repair-info-table-cell {
     padding: 1rem 0.5rem;
     border: 1px solid #d1d1d1;
     color: #333;
     font-size: 0.9rem;
   }
   
-  .water-spill-repair-info-description {
+  .IPhone-battery-repair-info-description {
     margin-top: 1.5rem;
   }
   
-  .water-spill-repair-info-title {
+  .IPhone-battery-repair-info-title {
     font-size: 1.6rem;
     font-weight: 600;
     color: #1b436e;
     padding-top: 1.5rem;
   }
   
-  .water-spill-repair-info-text {
+  .IPhone-battery-repair-info-text {
     margin-top: 0.5rem;
     color: #333;
   }
@@ -54,23 +54,22 @@
  /*IPhone Search*/
 
  .IPhone-battery-pricing-container {
-  border: 0.5px solid rgb(184, 184, 184);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border: 0.5px solid #d1d1d1;
   width: 100%;
   margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
   border-radius: 4px;
 }
 
 
-.table-header {
+.IPhone-battery-table-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.IPhone-custom-text-filter {
+.IPhone-battery-text-filter {
     display: block; /* Display our custom search input */
     width: 270px;
     color: #333 !important;
@@ -79,28 +78,27 @@
 }
 
 
-  .custom-cell {
+  .IPhone-battery-custom-cell {
     color: #333;
     font-size: 14px;
   }
 
-  .custom-header {
-    background-color: #2b6cb0;
-    color: white;
+  .IPhone-battery-custom-header {
+    color: #333;
     font-weight: 700;
     font-size: 16px;
   }
 
-  .custom-text-field {
+  .IPhone-battery-custom-text-field {
     border-color: rgb(184, 184, 184) !important;
   }
   
-  .custom-text-input {
+  .IPhone-battery-custom-text-input {
     color: #333 !important;
     font-weight: 700  !important;
   }
 
-  .iphone-battery-repair-info-title {
+  .Iphone-battery-repair-info-title {
     font-size: 1.6rem;
     font-weight: 600;
     color: #1b436e;
