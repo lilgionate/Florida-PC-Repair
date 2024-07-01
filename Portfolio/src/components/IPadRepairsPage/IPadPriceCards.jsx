@@ -43,7 +43,7 @@ const RepairCards = () => {
         solution="Solution: Replace battery"
         parts="Parts: Only original and brand new"
         repairTime="Repair time:"
-        link=""
+        link="/ipad-repair-services/ipad-battery-replacement"
       />
       <RepairCard
         title="Water Spill Repair"
