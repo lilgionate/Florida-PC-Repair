@@ -44,8 +44,8 @@ const columns = [
     field: 'model',
     headerName: 'iPad Model',
     width: 379.8,
-    headerClassName: 'custom-header',
-    cellClassName: 'custom-cell',
+    headerClassName: 'IPad-custom-header',
+    cellClassName: 'IPad-custom-cell',
     renderHeader: () => (
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <img src={ModelImage} alt="Model" style={{ marginRight: 5, height: 40 }} />
@@ -62,8 +62,8 @@ const columns = [
     field: 'batteryReplacement',
     headerName: 'Battery Replacement',
     width: 379.8,
-    headerClassName: 'custom-header',
-    cellClassName: 'custom-cell',
+    headerClassName: 'IPad-custom-header',
+    cellClassName: 'IPad-custom-cell',
     renderHeader: () => (
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <img src={BatteryImage} alt="Battery" style={{ marginRight: 5, height: 40 }} />
@@ -75,8 +75,8 @@ const columns = [
     field: 'screenReplacement',
     headerName: 'Screen Replacement',
     width: 379.8,
-    headerClassName: 'custom-header',
-    cellClassName: 'custom-cell',
+    headerClassName: 'IPad-custom-header',
+    cellClassName: 'IPad-custom-cell',
     renderHeader: () => (
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <img src={ScreenImage} alt="Screen" style={{ marginRight: 5, height: 43 }} />
@@ -103,16 +103,16 @@ const TableWithSearchAndPagination = () => {
   };
 
   return (
-    <div className='IPhone-pricing-container'>
-    <Box className="IPhone-container">
-      <Box className="table-header">
+    <div className='IPad-pricing-container'>
+    <Box className="IPad-container">
+      <Box className="IPad-table-header">
         <TextField
           variant="outlined"
           size='small'
           placeholder="Search"
           value={searchText}
           onChange={handleSearch}
-          className="IPhone-custom-text-filter"
+          className="IPad-custom-text-filter"
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -120,8 +120,8 @@ const TableWithSearchAndPagination = () => {
               </InputAdornment>
             ),
             classes: {
-              notchedOutline: 'custom-text-field',
-              input: 'custom-text-input',
+              notchedOutline: 'IPad-custom-text-field',
+              input: 'IPad-custom-text-input',
             },
           }}
         />

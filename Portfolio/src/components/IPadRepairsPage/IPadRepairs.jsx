@@ -11,9 +11,9 @@ export default function IPhoneRepairs() {
   return (
     <>
     <div className="IPadRepairContainer">
-            <div className="IPhoneRepairsContent">
-                <h1 className="IPhoneRepairsTitle">iPad Repairs</h1>
-                  <p className="IPhoneRepairsDes">
+            <div className="IPadRepairsContent">
+                <h1 className="IPadRepairsTitle">iPad Repairs</h1>
+                  <p className="IPadRepairsDes">
                     We’ve been repairing iPads since the first model. Not only do we 
                     have the experience, but our affordable rates, quick service, and 
                     quality parts are unmatchable. All models of iPads and types of 
@@ -23,11 +23,11 @@ export default function IPhoneRepairs() {
                     of qualified iPad technicians.
                   </p>
 
-                <button className="IPhoneRepairsButton">
+                <button className="IPadRepairsButton">
                     Get a free diagnostic
                 </button>
             </div>
-            <div className="IPhoneRepairsImg">
+            <div className="IPadRepairsImg">
                 <img src={MacBookCenter} alt="Pc Repair Image" className='IPadImg'/>
             </div>
         </div>

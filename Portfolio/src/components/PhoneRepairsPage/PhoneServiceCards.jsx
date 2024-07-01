@@ -45,6 +45,7 @@ const RepairCardsContainer = () => {
         title="Microsoft Surface"
         description="All Repairs are Proudly Done In-House"
         imageUrl={SurfacePro}
+        link="/microsoft-surface-repair-services/"
       />
       <RepairCard
         title="Other Devices"

@@ -24,7 +24,8 @@
   -webkit-backdrop-filter: blur( 7.5px );
 }
 
-.submenu li {
+.submenu li a {
+  font-weight: 500;
   cursor: pointer;
 }
 

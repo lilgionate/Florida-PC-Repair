@@ -1,4 +1,4 @@
-.IPadRepairContainer {
+.MicrosoftRepairContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,17 +7,17 @@
     width: 100%;
 }
 
-.IPadRepairsContent {
+.MicrosoftRepairsContent {
     width: 50%;
     padding: 6rem 4rem 1.5rem 3.5rem;
     margin-top: 1rem;
 }
 
-.IPadRepairsImg{
+.MicrosoftRepairsImg{
   width: 50%;
 }
 
-.IPadImg {
+.MicrosoftImg {
   height: 89.49vh;
   width: 100%;
   object-fit: cover;
@@ -25,30 +25,30 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
-.IPadRepairsTitle {
+.MicrosoftRepairsTitle {
   font-size: 3.2rem; /* 36px */
   font-weight: 700;
   margin-bottom: 1rem;
   color: #1b436e;
 }
 
-.IPadRepairsDes {
+.MicrosoftRepairsDes {
     font-size: 1.05rem; /* 18px */
     font-weight: 300;
     line-height: 1.8rem; /* 28px */
     padding-bottom: 1rem;
 }
 
-.IPadRepairsDesBold-I {
+.MicrosoftRepairsDesBold-I {
     font-weight: 600;
     font-style: italic;
 }
 
-.IPadRepairsDesBold {
+.MicrosoftRepairsDesBold {
   font-weight: 600;
 }
 
-.IPadRepairsButton {
+.MicrosoftRepairsButton {
     background-color: #2b6cb0;
     color: #fff;
     font-weight: 400;
@@ -60,14 +60,14 @@
 
 }
 
-.IPadRepairsButton:hover {
+.MicrosoftRepairsButton:hover {
     background-color: #1b436e; 
     border: 1px solid #1b436e;
 }
 
 /*Scenarios*/
 
-.IPad-card-container {
+.Microsoft-card-container {
     background-color: #fff;
     border: 1px solid rgba(98, 98, 98, 0.15);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -76,64 +76,72 @@
     padding: 2.5rem;
   }
   
-  .IPad-title {
+  .Microsoft-title {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #1b436e;
   }
   
-  .IPad-text {
+  .Microsoft-text {
     color: #333;
     line-height: 1.95rem;
   }
 
-  .IPad-service-container {
+  .Microsoft-service-container {
     width: 70%;
     margin: 0 auto;
     padding: 2rem 0 3rem 0;
   }
 
-  .IPad-title-header {
+  .Microsoft-title-header {
     font-size: 1.8rem;
     text-align: center;
     font-weight: 700;
     margin: 4rem 0 3rem 0;
     color: #1b436e;
   }
+
+.Microsoft-title-header-middle {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 4.7rem;
+  color: #1b436e;
+}
   
-  .IPad-service-grid {
+  .Microsoft-service-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
   }
   
   @media (max-width: 768px) {
-    .IPad-service-grid {
+    .Microsoft-service-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 
   /*IPhone Search*/
 
-.IPad-pricing-container {
+.Microsoft-pricing-container {
   border: 0.5px solid rgb(184, 184, 184);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   width: 85%;
   margin: 0 auto;
   margin-top: 2rem;
-  margin-bottom: 6rem;
+  margin-bottom: 5.5rem;
   border-radius: 4px;
 }
 
 
-.IPad-table-header {
+.Microsoft-table-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.IPad-custom-text-filter {
+.Microsoft-custom-text-filter {
     display: block; /* Display our custom search input */
     width: 270px;
     color: #333 !important;
@@ -142,51 +150,51 @@
 }
 
 
-  .IPad-custom-cell {
+  .Microsoft-custom-cell {
     color: #333;
     font-size: 14px;
   }
 
-  .IPad-custom-header {
+  .Microsoft-custom-header {
     background-color: #2b6cb0;
     color: white;
     font-weight: 700;
     font-size: 16px;
   }
 
-  .IPad-custom-text-field {
+  .Microsoft-custom-text-field {
     border-color: rgb(184, 184, 184) !important;
   }
   
-  .IPad-custom-text-input {
+  .Microsoft-custom-text-input {
     color: #333 !important;
     font-weight: 700  !important;
   }
 
 
 /*Iphone price cards*/
-.IPad-price-repair-card {
+.Microsoft-price-repair-card {
   background-color: #ffffff;
   border-radius: 4px;
   border: 1px solid rgba(98, 98, 98, 0.15);
   box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
-  width: 40.8%;
+  width: 47.4%;
   display: flex;
   align-items: stretch;
   transition: ease-in-out 0.3s;
 }
 
-.IPad-price-repair-card:hover {
+.Microsoft-price-repair-card:hover {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.57);
   transform: translateY(-5px);
 }
 
-.IPad-price-repair-card-content {
+.Microsoft-price-repair-card-content {
   display: flex;
   align-items: stretch; 
 }
 
-.IPad-price-repair-card-image {
+.Microsoft-price-repair-card-image {
   flex: 1;
   height: 100%;
   width: 50%;
@@ -194,7 +202,7 @@
  
 }
 
-.IPad-price-repair-content {
+.Microsoft-price-repair-content {
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -203,14 +211,14 @@
   padding: 1rem;
 }
 
-.IPad-price-repair-card-title {
+.Microsoft-price-repair-card-title {
   font-size: 1.7rem;
   font-weight: 500;
   margin: 0.5rem 0 1rem 0;
   color: #1b436e;
 }
 
-.IPad-price-repair-card-text {
+.Microsoft-price-repair-card-text {
   color: #333;
   line-height: 1.8rem;
   font-size: 1.02rem;
@@ -218,7 +226,7 @@
   margin: 0 auto;
 }
 
-.IPad-price-repair-card-button {
+.Microsoft-price-repair-card-button {
   background-color: #ffffff;
   color: #333;
   padding: 0.4rem 0;
@@ -233,13 +241,13 @@
   width: 60%;
 }
 
-.IPad-price-repair-card-button:hover {
+.Microsoft-price-repair-card-button:hover {
   border: 1.5px solid #2b6cb0;
   background-color: #2b6cb0;
   color: #ffffff;
 }
 
-.IPad-price-repair-cards-container {
+.Microsoft-price-repair-cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -249,7 +257,7 @@
 
 /*iphone footer*/
 
-.IPad-footer-repair-card {
+.Microsoft-footer-repair-card {
   background-image: url('../../assets/iphone-footer.webp'); /* Path to your image */
   background-size: cover;
   background-position: center;
@@ -258,7 +266,7 @@
   overflow: hidden;
 }
 
-.IPad-footer-repair-card::before {
+.Microsoft-footer-repair-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -270,7 +278,7 @@
   z-index: 1;
 }
 
-.IPad-footer-background-blur {
+.Microsoft-footer-background-blur {
   position: relative;
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
@@ -283,7 +291,7 @@
   z-index: 2;
 }
 
-.IPad-footer-repair-card-title {
+.Microsoft-footer-repair-card-title {
   font-size: 1.9rem;
   font-weight: 700;
   color: #ffffff;
@@ -291,7 +299,7 @@
   text-align: center;
 }
 
-.IPad-footer-repair-options {
+.Microsoft-footer-repair-options {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -302,23 +310,23 @@
   margin: 0 auto;
 }
 
-.IPad-footer-repair-option {
+.Microsoft-footer-repair-option {
   display: flex;
   align-items: center;
   color: #ffffff;
 }
 
-.IPad-footer-repair-option-icon {
+.Microsoft-footer-repair-option-icon {
   margin-right: 0.5rem;
   height: 2.5rem;
 }
 
-.IPad-footer-repair-card-button-container {
+.Microsoft-footer-repair-card-button-container {
   margin-top: 1.5rem;
   text-align: center;
 }
 
-.IPad-footer-repair-card-button {
+.Microsoft-footer-repair-card-button {
   background-color: #ffffff;
   border: 1.5px solid #333;
   color: #333;

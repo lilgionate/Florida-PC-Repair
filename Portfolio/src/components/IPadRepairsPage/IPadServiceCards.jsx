@@ -4,9 +4,9 @@ import './IPadRepairs.scss';
 
 const IPhoneScenarios = ({ title, description }) => {
     return (
-        <div className="IPhone-card-container">
-            <h2 className="IPhone-title">{title}</h2>
-            <p className="IPhone-text">{description}</p>
+        <div className="IPad-card-container">
+            <h2 className="IPad-title">{title}</h2>
+            <p className="IPad-text">{description}</p>
         </div>
     );
 };
@@ -14,9 +14,9 @@ const IPhoneScenarios = ({ title, description }) => {
 
 export default function IPhoneServiceCards() {
   return (
-    <div className="IPhone-service-container">
-            <h2 className="IPhone-title-header">Why are we better than your typical iPad repair FL shop?</h2>
-            <div className="IPhone-service-grid">
+    <div className="IPad-service-container">
+            <h2 className="IPad-title-header">Why are we better than your typical iPad repair FL shop?</h2>
+            <div className="IPad-service-grid">
                 <IPhoneScenarios
                     title="Quick turn-around iPad repairs"
                     description="You need your iPad fixed ASAP. We get that and will start the process right away."

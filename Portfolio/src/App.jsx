@@ -65,6 +65,8 @@ import IPhoneDataRecovery from './routes/IPhoneDataRecovery'
 
 import IPadRepairServices from './routes/IPadRepairServices'
 
+import MicrosoftSurface from './routes/MicrosoftSurface'
+
 
 import MacRepairsPage from './routes/MacRepairsPage'
 import PcRepairPage from './routes/PcRepairsPage'
@@ -158,6 +160,7 @@ function App() {
         <Route path="/iphone-repair-services/screen-replacement/" element={<IPhoneScreen/>}/>
         <Route path="/iphone-repair-services/data-recovery/" element={<IPhoneDataRecovery/>}/>
         <Route path="/ipad-repair-services/" element={<IPadRepairServices/>}/>
+        <Route path="/microsoft-surface-repair-services/" element={<MicrosoftSurface/>}/>
         <Route path="/custom-pc-build-annual-warranty" element={<CustomPCAnnual/>}/>
         <Route path="/mail-in-to-florida-pc-support" element={<MailinService/>}/>
         <Route path="/device-pick-messenger-service" element={<MessengerService/>}/>
