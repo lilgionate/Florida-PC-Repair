@@ -33,7 +33,7 @@ const RepairCards = () => {
         causes="Causes: Drop, fall, impact, defective screen / digitizer"
         solution="Solution: Replace iPad full glass digitizer"
         parts="Parts:"
-        link=""
+        link="/ipad-repair-services/ipad-screen-replacement"
       />
       <RepairCard
         title="Battery Replacement"

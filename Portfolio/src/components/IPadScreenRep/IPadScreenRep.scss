@@ -1,0 +1,131 @@
+
+.IPad-screen-repair-info-container {
+    width: 70%;
+    margin: 4rem auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+  }
+
+.IPad-screen-repair-content{
+    width: 80%; /* Setting width for the content */
+    margin: 0 auto; /* Centering the content */
+    padding: 5rem 0 8rem 0;
+}
+
+.IPad-screen-Des {
+    font-size: 1rem; /* 18px */
+    font-weight: 300;
+    line-height: 1.8rem; /* 28px */
+    padding-bottom: 1rem;
+}
+
+.IPad-screen-DesBold-I {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.IPad-screen-DesBold {
+    font-weight: 600;
+}
+
+  
+  .IPad-screen-repair-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #a9a9a9;
+    margin-top: 2rem;
+  }
+  
+  .IPad-screen-repair-info-table-row {
+    border: 1px solid #a9a9a9;
+  }
+  
+  .IPad-screen-repair-info-table-header-cell {
+    padding: 1rem;
+    border: 1px solid #d1d1d1;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .IPad-screen-repair-info-table-cell {
+    padding: 1rem 0.5rem;
+    border: 1px solid #d1d1d1;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .IPad-screen-repair-info-description {
+    margin-top: 1.5rem;
+  }
+  
+  .IPad-screen-repair-info-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1b436e;
+    padding-top: 1.5rem;
+  }
+  
+  .IPad-screen-repair-info-text {
+    margin-top: 0.5rem;
+    color: #333;
+  }
+
+ 
+ /*IPhone Search*/
+
+ .IPad-screen-pricing-container {
+    border: 0.5px solid #d1d1d1;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    border-radius: 4px;
+  }
+  
+  
+  .IPad-screen-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .IPad-screen-text-filter {
+      display: block; /* Display our custom search input */
+      width: 270px;
+      color: #333 !important;
+      margin: 1rem 0 !important;
+      margin-left: 1rem !important;
+  }
+  
+  
+    .IPad-screen-custom-cell {
+      color: #333;
+      font-size: 14px;
+    }
+  
+    .IPad-screen-custom-header {
+      color: #333;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  
+    .IPad-screen-custom-text-field {
+      border-color: rgb(184, 184, 184) !important;
+    }
+    
+    .IPad-screen-custom-text-input {
+      color: #333 !important;
+      font-weight: 700  !important;
+    }
+  
+    .IPad-screen-repair-info-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #1b436e;
+    }
+  
+    .IPad-screen-repair-info-text {
+        margin-top: 0.5rem;
+        color: #333;
+        font-weight: 400;
+      }
