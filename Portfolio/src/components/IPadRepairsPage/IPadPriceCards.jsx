@@ -52,7 +52,7 @@ const RepairCards = () => {
         causes="Causes: No power / no screen picture"
         solution="Solution: Diagnose and replaced affected parts"
         parts="Parts: Only original and"
-        link=""
+        link="/ipad-repair-services/ipad-water-spill-repair/"
       />
       <RepairCard
         title="Data Recovery"
@@ -61,7 +61,7 @@ const RepairCards = () => {
         causes="Causes: Drop, fall, impact, or usage over time"
         solution="Solution: Recover files to media or another iPad"
         parts="Parts:"
-        link=""
+        link="/ipad-repair-services/ipad-data-recovery/"
       />
     </div>
   );
