@@ -50,7 +50,7 @@ const RepairCards = () => {
         causes="Causes: Water or other liquid spill"
         solution="Solution: Fix Microsoft Surface or recover files"
         parts="Parts: Only original and"
-        link=""
+        link="/microsoft-surface-repair-services/water-spill-repair/"
       />
       <RepairCard
         title="Microsoft Surface Data Recovery"
@@ -59,7 +59,7 @@ const RepairCards = () => {
         causes="Causes: Drop, fall, impact, defective screen / digitizer"
         solution="Solution: Recover files"
         parts="Parts: Only new"
-        link=""
+        link="/microsoft-surface-repair-services/data-recovery/"
       />
     </div>
   );
