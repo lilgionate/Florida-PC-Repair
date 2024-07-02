@@ -70,6 +70,8 @@ import IPadWaterSpill from './routes/IPadWaterSpill'
 import IPadDataRecovery from './routes/IPadDataRecovery'
 
 import MicrosoftSurface from './routes/MicrosoftSurface'
+import MicrosoftScreen from './routes/MicrosoftScreen'
+import MicrosoftBattery from './routes/MicrosoftBattery'
 
 
 import MacRepairsPage from './routes/MacRepairsPage'
@@ -169,6 +171,8 @@ function App() {
         <Route path="/ipad-repair-services/ipad-water-spill-repair/" element={<IPadWaterSpill/>}/>
         <Route path="/ipad-repair-services/ipad-data-recovery/" element={<IPadDataRecovery/>}/>
         <Route path="/microsoft-surface-repair-services/" element={<MicrosoftSurface/>}/>
+        <Route path="/microsoft-surface-repair-services/screen-repair-replacement" element={<MicrosoftScreen/>}/>
+        <Route path="//microsoft-surface-repair-services/battery-replacement" element={<MicrosoftBattery/>}/>
         <Route path="/custom-pc-build-annual-warranty" element={<CustomPCAnnual/>}/>
         <Route path="/mail-in-to-florida-pc-support" element={<MailinService/>}/>
         <Route path="/device-pick-messenger-service" element={<MessengerService/>}/>

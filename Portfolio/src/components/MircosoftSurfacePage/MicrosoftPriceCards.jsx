@@ -33,7 +33,7 @@ const RepairCards = () => {
         causes="Causes: Drop, fall, impact, defective screen / digitizer"
         solution="Solution: Replace Microsoft Surface LCD screen"
         parts="Parts:"
-        link=""
+        link="/microsoft-surface-repair-services/screen-repair-replacement/"
       />
       <RepairCard
         title="Microsoft Surface Battery Replacement"
@@ -41,7 +41,7 @@ const RepairCards = () => {
         issue="Battery not lasting like it used to? Not charging? No power light? 
         No worries! Our Surface experts are experienced at replacing Microsoft 
         Surface batteries."
-        link=""
+        link="/microsoft-surface-repair-services/battery-replacement/"
       />
       <RepairCard
         title="Microsoft Surface Water Spill Repair"
