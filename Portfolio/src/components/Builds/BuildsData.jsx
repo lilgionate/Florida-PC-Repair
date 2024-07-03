@@ -17,7 +17,7 @@ export const Data = [
         progress: [60, 30, 70, 90],
         price: {
             title: "Starting at:",
-            amount: "$1000",
+            amount: "$999",
             description: "Or as low as $77.41 monthly*",
             finance: "*Subject to approval of credit application. Rates range from 0 to 29.99% APR, resulting in, for example, 36 monthly payments of $32.26 at 9.99% APR, per $1,000 borrowed. APRs will vary depending on credit qualifications, loan amount, and term. Bread Pay™ loans are made by Comenity Capital Bank, a Bread Financial™ company.",
           },

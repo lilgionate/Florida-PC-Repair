@@ -51,21 +51,24 @@ const Builds = () => {
               <img src={images} alt="" className="testimonial__img" />
               </div>
               <h3 className="testimonial__name">{title}</h3>
-              <div className="progress-bars">
-                {progress.map((value, index) => (
-                <ProgressBar key={index} title={progressTitle[index]} done={value} image={progressImages[index]} />
-                ))}
-              </div>
               <div className="price-section">
                 <h4 className="price-section__title">{price.title}</h4>
                 <p className="price-section__price">{price.amount}</p>
+                <div>
                 <p onMouseEnter={() => handleDescriptionHover(price.finance)}
                 className="price-section__description"
               >
                 {price.description}</p>
                 <Modal description={modalDescription} />
+                </div>
 
              </div>
+              <div className="progress-bars">
+                {progress.map((value, index) => (
+                <ProgressBar key={index} title={progressTitle[index]} done={value} image={progressImages[index]} />
+                ))}
+              </div>
+              
              <button className="button button-view-build">View Build</button>
             </SwiperSlide>
           );
