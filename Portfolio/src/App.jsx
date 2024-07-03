@@ -1,7 +1,7 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import WalkIn from './routes/WalkIn'
-import Home from './routes/Home'
+import HomePage from './routes/HomePage'
 import About from './routes/About'
 import Services from './routes/Services'
 import Contact from './routes/Contact'
@@ -104,7 +104,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/WalkIn" element={<WalkIn/>}/>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<HomePage/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/services" element={<Services/>}/>
         <Route path="/contact" element={<Contact/>}/>

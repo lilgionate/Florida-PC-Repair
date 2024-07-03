@@ -1,6 +1,6 @@
 
 .featured-header {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-weight: 600; 
     color: #333; 
     text-align: center; 
@@ -8,7 +8,7 @@
     padding-bottom: 1rem;
   }
 
-.logos {
+.featured-logos {
     overflow: hidden;
     padding-bottom: 6rem;
     background: white;
@@ -18,8 +18,8 @@
     margin: 0 auto;
   }
   
-  .logos:before,
-  .logos:after {
+  .featured-logos:before,
+  .featured-logos:after {
     position: absolute;
     top: 0;
     width: 250px;
@@ -28,26 +28,26 @@
     z-index: 2;
   }
   
-  .logos:before {
+  .featured-logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
   }
   
-  .logos:after {
+  .featured-logos:after {
     right: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
   }
   
-  .logos:hover .logos-slide {
+  .featured-logos:hover .logos-slide {
     animation-play-state: paused;
   }
   
-  .logos-slide {
+  .featured-logos-slide {
     display: inline-block;
     animation: 35s slide infinite linear;
   }
   
-  .logos-slide img {
+  .featured-logos-slide img {
     height: 55px;
     margin: 0 40px;
     width: 107px;

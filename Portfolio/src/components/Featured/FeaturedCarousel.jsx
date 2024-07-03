@@ -21,8 +21,8 @@ const LogosSlider = () => {
   return (
     <>
     <h2 className="featured-header">Trusted Partnerships</h2>
-    <div className="logos">
-      <div className="logos-slide" ref={logosContainerRef}>
+    <div className="featured-logos">
+      <div className="featured-logos-slide" ref={logosContainerRef}>
         <img src={img7} alt="3M" />
         <img src={img8} alt="Barstool Store" />
         <img src={img9} alt="Budweiser" />
