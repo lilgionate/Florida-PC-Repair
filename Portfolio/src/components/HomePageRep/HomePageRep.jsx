@@ -8,15 +8,12 @@ import Supported from '../Supported/SupportedCarousel';
 import OurServices from '../OurServices/OurServices';
 
 import Slider from '../ExpandingCards/ExpandingCards'; 
-import data from '../ExpandingCards/Card'; 
 import '../ExpandingCards/Card.scss'; 
 
 export default function HomePageRep() {
   return (
     <>
-    <div className="header-slider-show-center">
-      <Slider data={data} activeSlide={2} />
-    </div>
+      <Slider />
       <Featured />
       <OurServices />
       <Repairs />  

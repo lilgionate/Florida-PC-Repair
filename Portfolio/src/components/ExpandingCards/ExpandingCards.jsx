@@ -1,141 +1,41 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { useSwipeable } from "react-swipeable";
+import React from 'react';
 import './Card.scss';
 
-const Slider = ({ data, activeSlide = 0 }) => {
-  const [activeSlideState, setActiveSlideState] = useState(activeSlide);
-  const [isSwiping, setIsSwiping] = useState(false);
+import img1 from '../../assets/warranty.jpeg';
+import img2 from '../../assets/IT-Support.jpg';
+import img3 from '../../assets/onsite.jpg';
+import img4 from '../../assets/custom.jpg';
+import img5 from '../../assets/data-recovery.jpg';
+import img6 from '../../assets/warranty1.jpg';
 
-  const next = () => {
-    if (activeSlideState < data.length - 1) {
-      setActiveSlideState(activeSlideState + 1);
-    }
-  };
+const ServiceCard = ({ imageUrl, altText, title }) => (
+  <div className="service-card-background">
+  <div className="service-card">
+    <img src={imageUrl} alt={altText} className="service-card-image" />
+    <div className="service-card-content">
+      <h3 className="service-card-title">{title}</h3>
+    </div>
+    </div>
+  </div>
+);
 
-  const prev = () => {
-    if (activeSlideState > 0) {
-      setActiveSlideState(activeSlideState - 1);
-    }
-  };
+const ServicesGrid = () => (
+  <div className="services-grid">
+    <ServiceCard imageUrl={img1} altText="Repair Centers" title="Repair Center" />
+    <ServiceCard imageUrl={img2} altText="Remote IT Support" title="Remote IT Support" />
+    <ServiceCard imageUrl={img3} altText="Onsite Tech Visit" title="Onsite Tech Visit" />
+    <ServiceCard imageUrl={img4} altText="Custom PC Build & Repair" title="Custom PC Build & Repair" />
+    <ServiceCard imageUrl={img5} altText="Data Recovery" title="Data Recovery" />
+    <ServiceCard imageUrl={img6} altText="Tech Protection Warranty" title="Tech Protection Warranty" />
+  </div>
+);
 
-  const getStyles = (index) => {
-    let style = {
-      opacity: 0,
-      transform: "",
-      zIndex: 7,
-    };
-
-    if (activeSlideState === index) {
-      style = {
-        opacity: 1,
-        transform: "translateX(0px) translateZ(0px) rotateY(0deg)",
-        zIndex: 10,
-        backdropFilter: "blur(7.5px)",
-        WebkitBackdropFilter: "blur(7.5px)",
-      };
-    } else if (activeSlideState - 1 === index) {
-      style = {
-        opacity: 1,
-        transform: "translateX(-240px) translateZ(-400px) rotateY(35deg)",
-        zIndex: 9,
-      };
-    } else if (activeSlideState + 1 === index) {
-      style = {
-        opacity: 1,
-        transform: "translateX(240px) translateZ(-400px) rotateY(-35deg)",
-        zIndex: 9,
-      };
-    } else if (activeSlideState - 2 === index) {
-      style = {
-        opacity: 1,
-        transform: "translateX(-480px) translateZ(-500px) rotateY(35deg)",
-        zIndex: 8,
-      };
-    } else if (activeSlideState + 2 === index) {
-      style = {
-        opacity: 1,
-        transform: "translateX(480px) translateZ(-500px) rotateY(-35deg)",
-        zIndex: 8,
-      };
-    } else if (index < activeSlideState - 2) {
-      style = {
-        opacity: 0,
-        transform: "translateX(-480px) translateZ(-500px) rotateY(35deg)",
-        zIndex: 7,
-      };
-    } else if (index > activeSlideState + 2) {
-      style = {
-        opacity: 0,
-        transform: "translateX(480px) translateZ(-500px) rotateY(-35deg)",
-        zIndex: 7,
-      };
-    }
-
-    return style;
-  };
-
-  const handlers = useSwipeable({
-    onSwipedLeft: () => {
-      setIsSwiping(false);
-      next();
-    },
-    onSwipedRight: () => {
-      setIsSwiping(false);
-      prev();
-    },
-    onSwipeStart: () => setIsSwiping(true),
-    onSwipeEnd: () => setIsSwiping(false),
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true,
-  });
-
+const App = () => {
   return (
-    <div className="header-slider-home-page" {...handlers}>
-      <div className="header-slider-slideC">
-        {data.map((item, i) => (
-          <div
-            key={item.id}
-            className={`header-slider-slide ${isSwiping ? "grabbing" : ""}`}
-            style={getStyles(i)}
-          >
-            <div
-              className="header-slider-slideImage"
-              style={{ backgroundImage: `url(${item.src})` }}
-            ></div>
-            <SliderContent {...item} />
-          </div>
-        ))}
-      </div>
-      <div className="btns">
-        <FontAwesomeIcon
-          className="btn"
-          onClick={prev}
-          icon={faChevronLeft}
-          color="#fff"
-          size="2x"
-        />
-        <FontAwesomeIcon
-          className="btn"
-          onClick={next}
-          icon={faChevronRight}
-          color="#fff"
-          size="2x"
-        />
-      </div>
+    <div>
+      <ServicesGrid />
     </div>
   );
 };
 
-const SliderContent = (props) => {
-  return (
-    <div className="header-slider-sliderContent">
-      {props.icon}
-      <h3 className="header-slider-title">{props.title}</h3>
-      <p className="header-slider-des">{props.desc}</p>
-    </div>
-  );
-};
-
-export default Slider;
+export default App;

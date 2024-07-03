@@ -21,7 +21,7 @@ const Builds = () => {
   };
 
   return (
-    <section className="testimonial container section">
+    <section className="testimonial">
       <h1 className="section__title">POPULAR BUILDS</h1>
       <p className="section__subtitle">Discover top-performing builds crafted for every need, from gaming to content creation, offering unparalleled performance and style.</p>
 
@@ -47,7 +47,9 @@ const Builds = () => {
         {Data.map(({ id, images, title, progress, progressImages, progressTitle, price }) => {
           return (
             <SwiperSlide className="testimonial__card" key={id}>
+              <div className="testimonial__img-container">
               <img src={images} alt="" className="testimonial__img" />
+              </div>
               <h3 className="testimonial__name">{title}</h3>
               <div className="progress-bars">
                 {progress.map((value, index) => (
