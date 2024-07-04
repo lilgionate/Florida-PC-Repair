@@ -165,7 +165,6 @@ const DataRecoveryComponent = () => {
         <div className="data-recovery-container">
           <div className='data-hero-top'>
             <img className='dataimg' src={bgImage} alt="" />
-            <div className="containerClass">
                 <div className="textClass">
                     <h1 className="dataheader mb-4">Data Recovery Services</h1>
                     
@@ -184,16 +183,17 @@ const DataRecoveryComponent = () => {
                       </a> 
                     </div>
                 </div>
-            </div>
           </div>
 
-            <div className="containerClasses">
+            <div className="data-recovery-brands-container">
+              <div className='data-recovery-brands-content'>
                 <h2 className="headingClasses">Brands We Work With</h2>
                 <div className="gridClasses gap-1">
                     {brands.map((brand, index) => (
                         <img key={index} src={`${brand}`} alt={brand} className="imageClasses" />
                     ))}
                 </div>
+              </div>
             </div>
 
             <div className="sectionClasses">

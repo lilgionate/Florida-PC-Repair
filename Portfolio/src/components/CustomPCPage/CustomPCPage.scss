@@ -35,14 +35,15 @@
 }
 
 .customPCHeading {
-    font-size: 3.3rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: 800;
     margin-bottom: 1rem;
 }
 
 .customPCParagraph {
     margin-bottom: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     width: 85%;
 }
 
@@ -55,9 +56,9 @@
     background-color: #2b6cb0;
     color: #fff;
     font-weight: 400;
-    line-height: 1.35rem;
     margin-top: 2rem;
     padding: 0.5rem 1rem;
+    width: 90%;
     border-radius: 1rem;
     border: 1px solid #2b6cb0;
     transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;

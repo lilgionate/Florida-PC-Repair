@@ -1,23 +1,23 @@
-.testimonial {
+.builds-main-container {
     padding: 5rem 0 0 0;
-    .section__title {
+    .builds-section__title {
     text-align: center;
     font-weight: 600;
     font-size: 2.1rem;
     color: #333;
     }
 
-    .section__subtitle {
+    .builds-section__subtitle {
     text-align: center;
     margin-bottom: 1.5rem;
     }
 }
 
-.testimonial__container {
-    width: 799px;
+.builds-swiper {
+    width: 798px;
 }
 
-.testimonial__card {
+.builds-card {
     background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 1), /* White */
@@ -36,19 +36,20 @@
     text-align: center;
 }
 
-.testimonial__img-container {
+.builds-img-container {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
-.testimonial__img {
-    width: 80%;
+.builds-img {
+    width: 79%;
     object-fit: cover;
 }
 
 @import url('https://fonts.cdnfonts.com/css/evogria?styles=15178');
 
-.testimonial__name {
+.builds-name {
     font-weight: 600;
     padding: 0 0.5rem;
     text-align: center;
@@ -60,30 +61,37 @@
 }
 
 
-.price-section__title {
+.builds-price-section__title {
     font-weight: 700;
     font-size: 1.2rem;
     color: #333;
-    padding-bottom: 0.5rem;
     width: 100%;
     text-align: center;
     margin: 0;
 }
   
-  .price-section__price {
+  .builds-price-section__price {
     font-size: 1.7rem;
     color: #333;
     font-family: 'Evogria', sans-serif; 
     font-weight: 600;
   }
   
-  .price-section__description {
-    font-size: 1rem;
+  .builds-price-section-description {
+    font-size: 0.93rem;
     color: #333;
     padding-bottom: 8px;
+    span {
+        font-weight: 700; // Ensure span elements inside are bold
+      }
+  }
+
+
+  .builds-progress-bars {
+    margin: 0 0 2rem 0;
   }
   
-.button.button-view-build {
+.builds-button.builds-button-view-build {
     padding: 0.5rem 1rem;
     background-color: #2b6cb0;
     color: white;
@@ -99,7 +107,7 @@
     transform: translate(-50%, -10%);
 }
   
-.button.button-view-build:hover {
+.builds-button.builds-button-view-build:hover {
     background-color: #1b436e;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
@@ -113,14 +121,4 @@
     background-color: black !important;
 }
 
-/* BREAKPOINTS */
-/* For large devices */
-@media screen and (max-width: 992px) {
-    .testimonial__container {
-        width: initial;
-    }
 
-    .testimonial__card {
-        padding: 1.25rem 1.5rem;
-    }
-  }

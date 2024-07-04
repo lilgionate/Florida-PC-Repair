@@ -10,8 +10,8 @@ const Progress = ({ done }) => {
   };
 
   return (
-    <div className="progress">
-      <div className="progress-done" style={style}>
+    <div className="builds-progress">
+      <div className="builds-progress-done" style={style}>
       </div>
     </div>
   );
@@ -19,12 +19,12 @@ const Progress = ({ done }) => {
 
 const ProgressBar = ({ title, image, done }) => {
   return (
-      <div className="progress-bar-container">
-        <div className='progress-bar-image'>
+      <div className="builds-progress-bar-container">
+        <div className='builds-progress-bar-image'>
          <img src={image} alt=""/>
         </div>
-        <div className='progress-bar-info'>
-        <div className="progress-title">{title}</div>
+        <div className='builds-progress-bar-info'>
+        <div className="builds-progress-title">{title}</div>
           <Progress done={done} />
         </div>
     </div>

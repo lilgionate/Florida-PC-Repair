@@ -3,12 +3,9 @@
 .data-hero-top {
   position: relative;
   z-index: 2;
+
 }
 
-.containerClass {
-    display: flex;
-    margin: 0 auto;
-}
 
 .dataimg {
     height: 90vh;
@@ -24,7 +21,7 @@
   }
 
   .textClass {
-    margin-top: 8.5rem;
+    margin-top: 9rem;
     padding-left: 6rem; 
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
@@ -105,22 +102,19 @@
   margin: 0 auto ;
 }
 
-.containerClasses {
-  max-width: 85rem; 
-  margin: 0 auto;
-  padding-top: 2.5rem; 
-  padding-bottom: 2.5rem;
+.data-recovery-brands-container {
   background-color: white; 
   position: relative;
   z-index: 2;
 }
 
-@media (min-width: 640px) {
-  .containerClasses {
-    padding-left: 1.5rem; /* sm:px-6 */
-    padding-right: 1.5rem; /* sm:px-6 */
-  }
+.data-recovery-brands-content {
+  max-width: 85rem; 
+  margin: 0 auto;
+  padding-top: 2.5rem; 
+  padding-bottom: 2.5rem;
 }
+
 
 @media (min-width: 1024px) {
   .containerClasses {

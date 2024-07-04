@@ -1,4 +1,4 @@
-.progress {
+.builds-progress {
 	background-color: #ffffff;
     border: 1px solid #dcdcdc;
 	border-radius: 20px;
@@ -8,7 +8,7 @@
 	width: 100%;
 }
 
-.progress-done {
+.builds-progress-done {
 	background: linear-gradient(to left, #191970, #ADD8E6); /* Baby blue to dark blue */
 	box-shadow: 0 3px 3px -5px #ADD8E6, 0 2px 5px #ADD8E6;
 	border-radius: 20px;
@@ -35,19 +35,19 @@
 	}
   }
 
-  .progress-bar-container {
+  .builds-progress-bar-container {
 	display: flex;
 	align-items: center; /* Align items vertically */
   }
   
-  .progress-bar-info {
+  .builds-progress-bar-info {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column; /* Align items vertically */
 	padding-left: 10px;
   }
   
-  .progress-bar-image img {
+  .builds-progress-bar-image img {
 	width: 50px;
 	height: auto;
 	border-radius: 50px;
@@ -55,19 +55,21 @@
 	flex-shrink: 0; 
   }
   
-  .progress-title {
+  .builds-progress-title {
 	font-size: 16px;
 	font-weight: 600;
 	text-align: start;
+	line-height: 0.8;
+	margin-top: 20px;
   }
   
-  .progress {
+  .builds-progress {
 	height: 10px;
 	background-color: #f0f0f0;
 	border-radius: 5px;
   }
   
-  .progress-done {
+  .builds-progress-done {
 	height: 100%;
 	border-radius: 5px;
   }

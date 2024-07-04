@@ -27,8 +27,9 @@ const RepairCard = ({ title, description, imageUrl, isSpecial, link }) => {
 
 const RepairCardsContainer = () => {
   return (
-    <div className="phone-card-container">
-      <h2 className="phone-header">Servicing Apple devices, Microsoft tablets, and more</h2>
+    <div  className="phone-card-container">
+    <h2 className="phone-header">Servicing Apple devices, Microsoft tablets, and more</h2>
+    <div className="phone-card-content">
       <RepairCard
         title="iPhone Repair"
         description="Trustworthy Out-of-Warranty iPhone Repair"
@@ -54,6 +55,7 @@ const RepairCardsContainer = () => {
         isSpecial
         link="/WalkIn/"
       />
+    </div>
     </div>
   );
 };

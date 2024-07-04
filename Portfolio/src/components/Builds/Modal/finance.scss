@@ -1,27 +1,28 @@
 .modal {
   position: absolute;
-  top: 236px; /* Adjust the distance from the price description */
+  top: 190px; /* Adjust the distance from the price description */
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1000; /* Ensure modal appears above other elements */
   background-color: rgba(0, 0, 0, 1); /* semi-transparent background */
   padding: 20px;
   border-radius: 20px;
   display: hidden; /* Initially hidden */
-  height: 25rem;
+  height: 36.5rem;
+  width: 95%;
 }
 
 .price-section:hover .modal {
-  display: block; /* Show modal on hover */
+  display: block; /* Display when active */
 }
 
 .modal-content {
-  padding: 10px ;
-  width: 100%; /* Adjust width as needed */
-  height: 300px;
+  padding-top: 20px;
+  width: 88%;
   color: #fff;
   background-color: rgba(0, 0, 0, 1); 
   text-align: center;
+  margin: 0 auto;
+  line-height: 1.8rem;
 }
 
 .price-section__description {
@@ -31,19 +32,11 @@
 }
 
 .modal-btn {
-  padding: 0.5rem 1rem;
-  background-color: #5f96f6;
-  color: white;
   font-size: 1rem;
-  border: none;
-  border-radius: 4px;
-  border: 1px solid rgba(98, 98, 98, 0.15);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.30);
   cursor: pointer;
-  transition: background-color 0.3s ease; 
-  margin-top: 2rem;
+  transition: ease-in-out 0.3s; 
 }
 
 .modal-btn:hover {
-  background-color: #038ddc;
+  color: #2b6cb0;
 }
