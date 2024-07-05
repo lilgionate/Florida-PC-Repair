@@ -1,10 +1,10 @@
 import Image1 from "../../assets/good.webp";
 import Image2 from "../../assets/better.webp";
 import Image3 from "../../assets/best.webp";
-import Image4 from "../../assets/graphicscard.jpg";
-import Image5 from "../../assets/processor.jpg";
-import Image6 from "../../assets/memory.webp";
-import Image7 from "../../assets/storage.jpg";
+import Image4 from "../../assets/graphic-card.png";
+import Image5 from "../../assets/intel.png";
+import Image6 from "../../assets/memory.png";
+import Image7 from "../../assets/storage.png";
 import Image8 from "../../assets/ultimate.webp";
 
 export const Data = [
@@ -14,7 +14,7 @@ export const Data = [
         title: "GOOD",
         progressImages: [Image4, Image5, Image6, Image7],
         progressTitle: ["NVIDIA RTX 4060", "AMD Ryzen 5 Series", "16GB System Memory", "1TB NVMe Storage"],
-        progress: [60, 30, 70, 90],
+        progress: [80, 85, 60, 80],
         price: {
             title: "Starting at:",
             amount: "$999",
@@ -28,7 +28,7 @@ export const Data = [
         title: "BETTER",
         progressImages: [Image4, Image5, Image6, Image7],
         progressTitle: ["NVIDIA RTX 4070 SUPER", "Intel Core i7 Series", "32GB System Memory", "1TB NVMe Storage"],
-        progress: [50, 30, 70, 100],
+        progress: [86, 90, 90, 80],
         price: {
             title: "Starting at:",
             amount: "$1,740",
@@ -42,7 +42,7 @@ export const Data = [
         title: "BEST",
         progressImages: [Image4, Image5, Image6, Image7],
         progressTitle: ["NVIDIA RTX 4080 SUPER", "Intel Core i7 Series", "32GB System Memory", "1TB NVMe Storage"],
-        progress: [50, 30, 70, 90],
+        progress: [95, 90, 90, 80],
         price: {
             title: "Starting at:",
             amount: "$2,530",
@@ -56,7 +56,7 @@ export const Data = [
         title: "ULTIMATE",
         progressImages: [Image4, Image5, Image6, Image7],
         progressTitle: ["NVIDIA RTX 4090", "Intel Core i9 Series", "32GB System Memory", "2TB NVMe Storage"],
-        progress: [50, 30, 70, 90],
+        progress: [100, 100, 90, 83],
         price: {
             title: "Starting at:",
             amount: "$3,770",

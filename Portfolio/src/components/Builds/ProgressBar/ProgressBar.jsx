@@ -21,7 +21,7 @@ const ProgressBar = ({ title, image, done }) => {
   return (
       <div className="builds-progress-bar-container">
         <div className='builds-progress-bar-image'>
-         <img src={image} alt=""/>
+         <img src={image} alt="" className='builds-progress-img'/>
         </div>
         <div className='builds-progress-bar-info'>
         <div className="builds-progress-title">{title}</div>

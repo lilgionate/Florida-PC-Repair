@@ -47,13 +47,23 @@
 	padding-left: 10px;
   }
   
-  .builds-progress-bar-image img {
+  .builds-progress-bar-image {
 	width: 50px;
-	height: auto;
+	height: 50px;
 	border-radius: 50px;
 	border: 1px solid #e0e0e0;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
 	flex-shrink: 0; 
   }
+  
+  .builds-progress-img {
+	width: 34px;
+	height: 34px; 
+  }
+  
+  
   
   .builds-progress-title {
 	font-size: 16px;
