@@ -3,11 +3,13 @@
   background: linear-gradient(to bottom right, rgba(71, 71, 71, 0.35), rgba(0, 0, 0, 0.35));
   box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
   border: 1px solid rgba(126, 126, 126, 0.37);
-
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
   border-radius: 6px;
   height: 100%;
   width: 100%;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 
@@ -33,6 +35,8 @@
   background: rgba(0, 0, 0, 0.35);
   box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
   border: 1px solid rgba(126, 126, 126, 0.37);
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
   border-radius: 12px;
   display: grid;
   flex-direction: column;

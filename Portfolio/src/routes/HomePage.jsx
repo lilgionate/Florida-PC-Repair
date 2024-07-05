@@ -10,9 +10,7 @@ function Home () {
     <>
       <Navbar />
       <NavSocial />
-      <HomeHeader 
-      className="hero"
-      />
+      <HomeHeader />
       <HomePageRep />
       <Footer />
     </>
