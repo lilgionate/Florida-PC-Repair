@@ -16,6 +16,7 @@ function HeroTop() {
               <li></li>
               <li></li>
               <li></li>
+              <li></li>
       </ul>
 </div >
     )
