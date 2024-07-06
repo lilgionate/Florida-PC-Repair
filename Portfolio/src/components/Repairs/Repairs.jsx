@@ -4,7 +4,7 @@ import "./repairs.scss";
 
 function Repairs() {
   return (
-    <div className="repairs-container">
+    <div className="office-it-repairs-container">
       <div className="repairs-content">
         <h2 className="officeIT-title">Office IT Support</h2>
         <p className="officeIT-des">Outsourced & Onsite Solutions</p>

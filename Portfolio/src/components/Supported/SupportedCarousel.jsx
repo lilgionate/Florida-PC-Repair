@@ -21,10 +21,10 @@ const LogosSlider = () => {
   }, []);
 
   return (
-    <>
-    <h2 className="supported-header">Supported Equipment</h2>
-    <div className="logos">
-      <div className="logos-slide" ref={logosContainerRef}>
+    <div className="supported-equip-container">
+    <h2 className="supported-equip-title">Supported Equipment</h2>
+    <div className="supported-equip-logos">
+      <div className="supported-equip-logos-slide" ref={logosContainerRef}>
         <img src={img7} alt="Acer" />
         <img src={img8} alt="Windows" />
         <img src={img9} alt="Lenovo" />
@@ -38,7 +38,7 @@ const LogosSlider = () => {
       </div>
     </div>
 
-    </>
+    </div>
   );
 };
 

@@ -1,15 +1,28 @@
 .builds-main-container {
-    padding: 5rem 0 0 0;
+    padding-top: 2rem;
+    background: linear-gradient(
+        to bottom,
+        #1b436e,
+        #000000 /* White */
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#ffffff', /* White */
+        endColorstr='#f0f0f0', /* Dark White */
+        GradientType=0 /* Vertical gradient */
+    );
+    
     .builds-section__title {
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2.1rem;
-    color: #333;
+    color: #ffffff;
     }
 
     .builds-section__subtitle {
     text-align: center;
+    font-size: 1.05rem;
     margin-bottom: 1.5rem;
+    color: #ffffff;
     }
 }
 
@@ -21,7 +34,7 @@
     background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 1), /* White */
-        #f2f9ff /* Dark White */
+        #ebf5ff /* Dark White */
     );
     filter: progid:DXImageTransform.Microsoft.gradient(
         startColorstr='#ffffff', /* White */
@@ -80,7 +93,6 @@
   .builds-price-section-description {
     font-size: 0.93rem;
     color: #333;
-    padding-bottom: 8px;
     span {
         font-weight: 700; // Ensure span elements inside are bold
       }
@@ -88,7 +100,7 @@
 
 
   .builds-progress-bars {
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
   }
   
 .builds-button.builds-button-view-build {
@@ -114,11 +126,11 @@
 
 /* Swiper Class */
 .swiper-pagination-bullet {
-    background-color: rgb(138, 138, 138) !important;
+    background-color: rgb(209, 209, 209) !important;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: black !important;
+    background-color: rgb(255, 255, 255) !important;
 }
 
 

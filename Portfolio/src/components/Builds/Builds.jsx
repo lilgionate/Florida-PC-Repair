@@ -3,6 +3,7 @@ import { Data } from "./BuildsData";
 import ProgressBar from "./ProgressBar/ProgressBar";
 import Modal from './Modal/finance'; 
 import React, { useState } from "react";
+
 // Import Swiper React components and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -23,7 +24,7 @@ const Builds = () => {
   return (
     <section className="builds-main-container">
       <h1 className="builds-section__title">POPULAR BUILDS</h1>
-      <p className="builds-section__subtitle">Discover top-performing builds crafted for every need, from gaming to content creation, offering unparalleled performance and style.</p>
+      <p className="builds-section__subtitle">Builds crafted for every need, from gaming to content creation, offering unparalleled performance and style.</p>
 
       <Swiper
         className="builds-swiper"

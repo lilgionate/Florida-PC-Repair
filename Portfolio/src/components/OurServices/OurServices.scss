@@ -1,7 +1,6 @@
 .mac-repair-container {
-  background-color: var(--background);
-  color: var(--foreground);
-  padding: 2rem;
+  background-color: #ffffff;
+  padding: 3rem 2rem;
 }
 
 .mac-repair-header {
@@ -11,50 +10,54 @@
 
 .mac-repair-title {
   font-size: 2rem;
-  font-weight: bold;
-  color: var(--primary);
+  font-weight: 700;
+  color: #333;
 }
 
 .mac-repair-subtitle {
-  color: var(--muted-foreground);
+  color: #333;
+  font-size: 1.1rem;
 }
 
 .mac-repair-cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 }
 
 .mac-repair-card {
-  background-color: var(--card);
-  padding: 1rem;
+  background-color: #ffffff;
+  padding: 1rem 1rem 0 1rem;
   border-radius: 0.5rem;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
   text-align: center;
 }
 
 .mac-repair-card-image {
   display: block;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   border-radius: 0.25rem;
+  object-fit: cover;
+  width: 100%;
+  height: 15.5rem;
 }
 
 .mac-repair-card-title {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: var(--foreground);
+  color: #333;
+  padding-top: 0.8rem;
 }
 
 /*Windows Services*/
 
 .windows-services-container {
-  background-color: var(--background);
-  color: var(--foreground);
-  padding: 2rem;
+  background-color: #ffffff;
+  padding: 3rem 2rem;
 }
 
 .windows-services-header {
@@ -64,40 +67,45 @@
 
 .windows-services-title {
   font-size: 2rem;
-  font-weight: bold;
-  color: var(--primary);
+  font-weight: 700;
+  color: #333;
 }
 
 .windows-services-subtitle {
-  color: var(--muted-foreground);
+  color: #333;
+  font-size: 1.1rem;
 }
 
 .windows-services-cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
 }
 
 .windows-services-card {
-  background-color: var(--card);
-  padding: 1rem;
+  background-color: #ffffff;
+  padding: 1rem 1rem 0 1rem;
   border-radius: 0.5rem;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 8px 32px 0 rgba(126, 126, 126, 0.37);
   text-align: center;
 }
 
 .windows-services-card-image {
   display: block;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   border-radius: 0.25rem;
+  object-fit: cover;
+  width: 100%;
+  height: 15.5rem;
 }
 
 .windows-services-card-title {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: var(--foreground);
+  color: #333;
+  padding-top: 0.8rem;
 }

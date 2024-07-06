@@ -1,6 +1,13 @@
 import React from 'react';
 import './OurServices.scss';
 
+import MacNoPower from '../../assets/macbook-pro-black-screen-repair.jpg';
+import MacBookScreenRep from '../../assets/macbook-screen-replacement.png';
+import MacSpillDamage from '../../assets/SpillDamageRepair.jpg';
+import MacBatteryRep from '../../assets/Macbook-battery-replacement.png';
+import MacLogicBoard from '../../assets/logic-board-macbook-repair-service.jpg';
+import MacDataRecovery from '../../assets/DataRecovery.jpg';
+
 const MacRepairComponent = () => {
   return (
     <div className="mac-repair-container">
@@ -9,12 +16,12 @@ const MacRepairComponent = () => {
         <p className="mac-repair-subtitle">Directly repairing logic boards and all MacBook, iMac, and Mac Pro issues, saving you time and money.</p>
       </div>
       <div className="mac-repair-cards">
-        <MacRepairCard image="https://placehold.co/300x200" alt="MacBook Won't Power Up" title="MacBook Won't Power Up" />
-        <MacRepairCard image="https://placehold.co/300x200" alt="MacBook Screen Replacement" title="MacBook Screen Replacement" />
-        <MacRepairCard image="https://placehold.co/300x200" alt="MacBook Spill Repair" title="MacBook Spill Repair" />
-        <MacRepairCard image="https://placehold.co/300x200" alt="MacBook Won't Power Up" title="MacBook Won't Power Up" />
-        <MacRepairCard image="https://placehold.co/300x200" alt="MacBook Screen Replacement" title="MacBook Screen Replacement" />
-        <MacRepairCard image="https://placehold.co/300x200" alt="MacBook Spill Repair" title="MacBook Spill Repair" />
+        <MacRepairCard image={MacNoPower} alt="MacBook Won't Power Up" title="MacBook Won't Power Up" />
+        <MacRepairCard image={MacBookScreenRep} alt="MacBook Screen Replacement" title="MacBook Screen Replacement" />
+        <MacRepairCard image={MacSpillDamage} alt="MacBook Spill Repair" title="MacBook Spill Repair" />
+        <MacRepairCard image={MacBatteryRep} alt="MacBook Won't Power Up" title="MacBook Won't Power Up" />
+        <MacRepairCard image={MacLogicBoard} alt="MacBook Screen Replacement" title="MacBook Screen Replacement" />
+        <MacRepairCard image={MacDataRecovery} alt="MacBook Spill Repair" title="MacBook Spill Repair" />
       </div>
     </div>
   );
