@@ -2,7 +2,7 @@ import React from 'react'
 
 import Builds from '../Builds/Builds';
 import Repairs from '../Repairs/Repairs';
-import Passion from '../OurPassion/OurPassion';
+import HomeFooterSlider from '../HomeFooterSlider/HomeFooterSlider';
 import Supported from '../Supported/SupportedCarousel';
 import OurServices from '../OurServices/OurServices';
 import Slider from '../ExpandingCards/ExpandingCards'; 
@@ -17,7 +17,7 @@ export default function HomePageRep() {
       <Repairs />
       </div>  
       <Builds />
-      <Passion />
+      <HomeFooterSlider />
     </>
   )
 }

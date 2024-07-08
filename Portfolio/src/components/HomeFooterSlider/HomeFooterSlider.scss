@@ -1,0 +1,155 @@
+
+:root {
+  --heights: 75vh;
+  --widths: 100%;
+}
+
+.slider-container {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 10rem;
+  background-color: rgb(6, 6, 6);
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slides {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.slider-title,
+.slider-text {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  text-align: center;
+  top: 28%;
+  z-index: 10;
+}
+
+.slider-text {
+  top: 43%;
+  font-size: 2rem;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  color: white;
+}
+
+.prev,
+.next {
+  color: white;
+  cursor: pointer;
+  z-index: 200;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.slider-container:hover .prev,.slider-container:hover .next {
+  color: black
+}
+
+.slider-container:hover .prev:hover,
+.slider-container:hover .next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.all-dots {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  top: 94%;
+  left: 0%;
+  justify-content: center;
+  z-index: 200;
+  
+}
+
+.dot {
+  cursor: pointer;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0px 3px;
+  background-color: transparent;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slider-container:hover .dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* .active-dot {
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+
+.slider-container:hover .dot{
+  background-color: rgba(0, 0, 0, 0.51);
+}
+.slider-container:hover .active-dot{
+  background-color: rgba(255, 255, 255, 0.707);
+}
+
+.play-pause {
+  color: black;
+}
+
+.slider-arrows {
+  position: absolute;
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  z-index: 10;
+  color: white;
+  cursor: pointer;
+}
+
+.slider-arrow-left {
+  margin-right: 35.1rem;
+}
+
+.slider-arrow-right {
+  margin-left: 35.5rem;
+}
