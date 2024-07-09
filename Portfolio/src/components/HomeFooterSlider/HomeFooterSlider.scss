@@ -23,7 +23,10 @@
   height: var(--heights);
   width: var(--widths);
   position: relative;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .slider-image {
@@ -31,38 +34,36 @@
   height: 100%;
   position: absolute;
   object-fit: cover;
-  filter: brightness(60%);
+  filter: brightness(50%);
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slide-up 1.6s ease-in-out;
 }
 
 .slider-title {
-  width: 100%;
-  height: 100%;
   color: white;
   font-size: 2.5rem;
   font-weight: 700;
-  position: absolute;
   text-align: center;
-  top: 36%;
   z-index: 10;
+  margin-bottom: 1rem;
 }
 
 .slider-text {
-  top: 50%;
   font-size: 1.2rem;
-  width: 100%;
-  height: 100%;
   color: white;
-  position: absolute;
   text-align: center;
   z-index: 10;
+  margin-bottom: 2rem;
 }
 
 .slider-btn {
-  position: absolute;
-  top: 64%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 200;
+  z-index: 10;
   color: white;
   background-color: #2b6cb0;
   padding: 0.5rem 1.5rem;
@@ -77,6 +78,18 @@
   border: 1px solid white;
 }
 
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
 .prev,
 .next {
   color: white;
@@ -86,7 +99,6 @@
   top: 50%;
   width: auto;
   padding: 1rem;
-  margin-top: -3rem;
   font-size: 40px;
   font-weight: bold;
   border-radius: 0px 5px 5px 0px;
@@ -139,20 +151,16 @@
   background-color: rgba(255, 255, 255, 0.5);
 } */
 
-.slider-container:hover .dot{
+.slider-container .dot{
   background-color: rgba(0, 0, 0, 0.51);
 }
-.slider-container:hover .active-dot{
+.slider-container .active-dot{
   background-color: rgba(255, 255, 255, 0.707);
-}
-
-.play-pause {
-  color: black;
 }
 
 .slider-arrows {
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   position: absolute;
   text-align: center;
   top: 50%;
@@ -162,11 +170,11 @@
 }
 
 .slider-arrow-left {
-  margin-right: 44.42rem;
+  margin-right: 44.7rem;
   margin-left: 1rem;
 }
 
 .slider-arrow-right {
-  margin-left: 44.5rem;
+  margin-left: 44.6rem;
   margin-right: 1rem;
 }

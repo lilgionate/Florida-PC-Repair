@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="secContainer container">
+      <div className="secContainer">
         <div className="logoDiv">
           <div className="footerLogo">
             <a href="http://localhost:5173/" className="home">

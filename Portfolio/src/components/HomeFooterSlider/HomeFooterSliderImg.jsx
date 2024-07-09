@@ -1,6 +1,6 @@
-import img1 from '../../assets/Tablet-repair.jpg';
-import img2 from '../../assets/cracked-apple-watch.avif';
-import img3 from '../../assets/iphone-repair.jpeg';
+import img1 from '../../assets/Tablet-repair.webp';
+import img2 from '../../assets/apple-watch.avif';
+import img3 from '../../assets/iphone-repair.avif';
 import img4 from '../../assets/Surface-Laptop.jpg';
 
 export const HomeFooterSliderImg = [
