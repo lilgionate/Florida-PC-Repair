@@ -5,26 +5,26 @@ import img4 from '../../assets/Surface-Laptop.jpg';
 
 export const HomeFooterSliderImg = [
     {
-        title: "First",
-        text: "This is the first image",
+        title: "iPad Repair",
+        text: "No need to buy a new iPad when you can fix your current one!",
         image: img1,
         button: ""
     },
     {
-        title: "Second",
-        text: "This is the second image",
+        title: "Apple Watch Repair",
+        text: "Broken watch? We'll turn back time for you!",
         image: img2,
         button: ""
     },
     {
-        title: "Third",
-        text: "This is the third image",
+        title: "iPhone Repair",
+        text: "Genius Bar? Nah. Were better, faster, and cheaper!",
         image: img3,
         button: ""
     },
     {
-        title: "Fourth",
-        text: "This is the fourth image",
+        title: "Microsoft Surface Repair",
+        text: "Professional Repairs all proudly done in-house!",
         image: img4,
         button: ""
     }
