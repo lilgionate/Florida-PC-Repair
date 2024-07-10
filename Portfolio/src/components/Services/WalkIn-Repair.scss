@@ -1,16 +1,36 @@
+.walkin-background {
+  background: linear-gradient(-45deg, #ffffff, #f5f5f5, #2b6cb0, #1b436e);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+   
+      50% {
+          background-position: 100% 50%;
+      }
+   
+      100% {
+          background-position: 0% 50%;
+      }
+    }
+}
+
+
 .WalkIn-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f4f4f4;
 
     .WalkIn-wrapper {
       display: flex;
       width: 100%;
       width: 1200px;
       justify-content: space-between;
-      margin-top: 6rem;
+      margin-top: 3rem;
     }
 
     .location-map-wrapper {
@@ -27,14 +47,11 @@
       text-align: center;
       width: 100%;
       padding-top: 10rem;
-      padding-bottom: 3rem;
-      background-color: #1b436e;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   
       .WalkIn-title {
         font-size: 3.5rem;
         font-weight: 700;
-        color: #ffffff;
+        color: #333;
         margin-bottom: 0.5rem;
       }
 
@@ -42,8 +59,8 @@
 
     .WalkIn-Card {
       border-radius: 8px;
-      background-color: rgba(0, 0, 0, 0.8);
-      box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 10px 20px -6px rgba(184, 184, 184, 0.8);
       backdrop-filter: blur( 7.5px );
       -webkit-backdrop-filter: blur( 7.5px );
       padding: 2rem;
@@ -54,7 +71,7 @@
       .card-header{
           font-size: 2rem;
           font-weight: bold;
-          color: #ffffff;
+          color: #333;
           margin-bottom: 0.5rem;
       }
     
@@ -66,7 +83,7 @@
 
         p {
           font-size: 1rem;
-          color: #ffffff;
+          color: #333;
           margin-bottom: 1rem;
           margin-top: 2.5rem;
         }
@@ -86,7 +103,7 @@
     
       .acuity-embed-button {
         background-color: #2b6cb0 !important;
-        color: #fff;
+        color: #ffffff;
         padding: 0.8rem 1.2rem;
         border: 0;
         box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
@@ -108,7 +125,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #ffffff;
+      color: #333;
   }
   
   .fa-person-walking {
@@ -193,8 +210,8 @@
       text-align: center;
       width: 75rem;
       height: 22rem;
-      background-color: rgba(0, 0, 0, 0.8);
-      box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 10px 20px -6px rgba(184, 184, 184, 0.8);
       backdrop-filter: blur( 7.5px );
       -webkit-backdrop-filter: blur( 7.5px );
       padding: 3rem 2rem;
@@ -203,20 +220,20 @@
       .mailin-title {
         font-size: 2.5rem;
         font-weight: bold;
-        color: #ffffff;
+        color: #333;
         margin-bottom: 1rem;
         margin-top: 1.5rem;
       }
   
       .mailin-des {
         font-size: 1.2rem;
-        color: #ffffff;
+        color: #333;
         margin-bottom: 2rem;
       }
   
       .mailin-btn {
         background-color: #2b6cb0;
-        color: #fff;
+        color: #ffffff;
         border: none;
         border-radius: 25px;
         padding: 1rem 2rem;
