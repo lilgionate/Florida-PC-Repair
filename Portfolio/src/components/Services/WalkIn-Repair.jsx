@@ -75,9 +75,7 @@ const WalkInRepair = () => {
   </div>
   <div className='WalkIn-wrapper'>
     <div className='WalkIn-Card'>
-      <div className="card-header">
-        <h2>Florida PC Support</h2>
-      </div>
+        <h2 className="card-header">Florida PC Support</h2>
       <div className="card-info">
         <p className='address'>3750 Inverrary Dr, Lauderhill, FL 33319</p>
         <p className={`store-status ${isStoreOpen ? 'open' : 'closed'}`}>
@@ -89,9 +87,10 @@ const WalkInRepair = () => {
         <i className="fa-solid fa-person-walking"> Walk-in</i>
         <div className="spacer"></div>
         <a href="https://app.acuityscheduling.com/schedule.php?owner=32003116&appointmentType=61346932" 
-           target="_blank" 
-           className="acuity-embed-button">
+           target="_blank"> 
+          <button className="acuity-embed-button">
           Schedule Drop-off
+        </button>
         </a>
         <link rel="stylesheet" 
               href="https://embed.acuityscheduling.com/embed/button/32003116.css" 
@@ -112,7 +111,6 @@ const WalkInRepair = () => {
   </div>
 </div>
 
-         <div>
             <div className="MailIn-container">
                 <div className="MailIn-content">
                     <h2 className='mailin-title'>Mail-In Repair</h2>
@@ -120,7 +118,6 @@ const WalkInRepair = () => {
                     <button className='mailin-btn'>Mail in your device</button>
                 </div>
             </div>
-        </div>
         </>
     );
 };

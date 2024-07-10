@@ -4,7 +4,7 @@ import './Card.scss';
 import img1 from '../../assets/warranty.jpeg';
 import img2 from '../../assets/IT-Support.jpg';
 import img3 from '../../assets/onsite.jpg';
-import img4 from '../../assets/custom.jpg';
+import img4 from '../../assets/custom.webp';
 import img5 from '../../assets/data-recovery.jpg';
 import img6 from '../../assets/warranty1.jpg';
 

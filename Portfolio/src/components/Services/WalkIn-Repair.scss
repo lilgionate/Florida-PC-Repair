@@ -3,15 +3,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem 1rem;
   background-color: #f4f4f4;
 
     .WalkIn-wrapper {
       display: flex;
       width: 100%;
-      max-width: 1200px;
+      width: 1200px;
       justify-content: space-between;
-      margin-top: 2rem;
+      margin-top: 6rem;
     }
 
     .location-map-wrapper {
@@ -26,34 +25,37 @@
   
     .WalkIn-header {
       text-align: center;
-      margin-top: 8rem;
-      margin-bottom: 2rem;
+      width: 100%;
+      padding-top: 10rem;
+      padding-bottom: 3rem;
+      background-color: #1b436e;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   
       .WalkIn-title {
         font-size: 3.5rem;
         font-weight: 700;
-        color: #333;
+        color: #ffffff;
         margin-bottom: 0.5rem;
       }
 
     }
 
     .WalkIn-Card {
-      background-color: #fff;
       border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur( 7.5px );
+      -webkit-backdrop-filter: blur( 7.5px );
       padding: 2rem;
       text-align: center;
       max-width: 500px;
       margin-right: 2rem;
 
-      .card-header {
-        h2 {
+      .card-header{
           font-size: 2rem;
           font-weight: bold;
-          color: #333;
+          color: #ffffff;
           margin-bottom: 0.5rem;
-        }
       }
     
       .card-info {
@@ -64,7 +66,7 @@
 
         p {
           font-size: 1rem;
-          color: #666;
+          color: #ffffff;
           margin-bottom: 1rem;
           margin-top: 2.5rem;
         }
@@ -83,21 +85,21 @@
       }
     
       .acuity-embed-button {
-        background-color: #2f80ed;
+        background-color: #2b6cb0 !important;
         color: #fff;
         padding: 0.8rem 1.2rem;
         border: 0;
         box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset;
-        border-radius: 4px;
+        border-radius: 1rem;
         margin-top: 1.5rem;
         text-decoration: none;
         display: inline-block;
         font-size: 1.1rem;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: 0.3s ease-in-out;
     
         &:hover {
-          background-color: #004793;
+          background-color: #1b436e !important;
         }
       }
     }
@@ -106,6 +108,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #ffffff;
   }
   
   .fa-person-walking {
@@ -179,7 +182,7 @@
   }
 
   .MailIn-container {
-    background-color: #f4f4f4;
+    
     padding: 4rem 2rem;
     display: flex;
     justify-content: center;
@@ -190,27 +193,29 @@
       text-align: center;
       width: 75rem;
       height: 22rem;
-      background-color: #fff;
+      background-color: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 10px 20px -6px rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur( 7.5px );
+      -webkit-backdrop-filter: blur( 7.5px );
       padding: 3rem 2rem;
       border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   
       .mailin-title {
         font-size: 2.5rem;
         font-weight: bold;
-        color: #333;
+        color: #ffffff;
         margin-bottom: 1rem;
         margin-top: 1.5rem;
       }
   
       .mailin-des {
         font-size: 1.2rem;
-        color: #666;
+        color: #ffffff;
         margin-bottom: 2rem;
       }
   
       .mailin-btn {
-        background-color: #007bff;
+        background-color: #2b6cb0;
         color: #fff;
         border: none;
         border-radius: 25px;
@@ -220,7 +225,7 @@
         transition: background-color 0.3s ease;
   
         &:hover {
-          background-color: #0056b3;
+          background-color: #1b436e;
         }
       }
     }
