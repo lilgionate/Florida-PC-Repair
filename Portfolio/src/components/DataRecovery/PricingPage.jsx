@@ -32,10 +32,10 @@ const PricingPage = () => {
         <div className="dataPricingContainer">
         <h2 className="dataPricingTitle">Data Recovery Pricing</h2>
         <div className="cardDataContainerClasses">
-            <PricingCard title="Hard Drive" services={hardDriveServices} />
-            <PricingCard title="USB Thumb Drive" services={thumbDriveServices} />
-            <PricingCard title="RAID - Server - NAS - SSD" services={RaidServerServices} />
-            <PricingCard title="Phone - Tablet" services={phoneServices} />
+            <PricingCard title="Hard Drive" prices={hardDriveServices} />
+            <PricingCard title="USB Thumb Drive" prices={thumbDriveServices} />
+            <PricingCard title="RAID - Server - NAS - SSD" prices={RaidServerServices} />
+            <PricingCard title="Phone - Tablet" prices={phoneServices} />
         </div>
         </div>
     );

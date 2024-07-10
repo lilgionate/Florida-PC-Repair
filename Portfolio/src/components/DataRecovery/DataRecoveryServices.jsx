@@ -45,9 +45,6 @@ import Raid from '../../assets/raid-server.jpg';
 import DataServices from '../../assets/DataRecovery-2.jpg';
 import DataLab from '../../assets/data-lab.jpg';
 
-// Import data for reviews
-import { Data } from "./DataReview";
-
 // Import Swiper components and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -64,12 +61,36 @@ import PricingPage from './PricingPage';
 import DataItem from './DataItemNumbers';
 import DataBottomButtons from './DataBottom-Buttons';
 
+import Image1 from "../../assets/testimonial1.jpeg";
+import Image2 from "../../assets/testimonial2.jpeg";
+import Image3 from "../../assets/testimonial3.jpeg";
 
 // Array of brand images
 const brands = [
     western, toshiba, synology, sony, seagate, samsung, lacie, lexar,
     maxtar, ocz, pny, quantum, kingston, intel, ibm, hp, hitachi, gtech,
     apple, asus, drobo, buffalo, fujitsu, sandisk,
+];
+
+const Data = [
+  {
+      id: 1,
+      images: Image1,
+      title: "John Doe",
+      description: "A really good job, all aspects of the project were followed step by step and with good results."
+  },
+  {
+      id: 2,
+      images: Image2,
+      title: "Chris Doe",
+      description: "A really good job, all aspects of the project were followed step by step and with good results."
+  },
+  {
+      id: 3,
+      images: Image3,
+      title: "Kelvin Doe",
+      description: "A really good job, all aspects of the project were followed step by step and with good results."
+  }
 ];
 
 // Array of service data
@@ -159,117 +180,113 @@ const DataRecoveryComponent = () => {
       setDropdownStates(newDropdownStates);
   };
 
-
-    return (
-        <>
-        <div className="data-recovery-container">
-          <div className='data-hero-top'>
-            <img className='dataimg' src={bgImage} alt="" />
-                <div className="textClass">
-                    <h1 className="dataheader mb-4">Data Recovery Services</h1>
-                    
-                        <li className="list">✔ We Provide Data Recoveries For Hard Drives, SSDs, Memory Cards, USB Drives, Phones & Tablets</li>
-                        <li className="list">✔ Managed By Experts In The Industry</li>
-                        <li className="list">✔ FREE In-Depth Diagnosis And Evaluation</li>
-                        <li className="list">✔ Mail-In Or Drop Off Your Devices</li>
-                        <li className="list">✔ Emergency Data Recovery Service Options</li>
-                    
-                    <div className="flex">
-                      <a href="/data-recovery-mail-in-request/">
-                        <button className="primaryButtonClass buttonClass">Make A Shipping Request</button>
-                      </a>
-                      <a href="/WalkIn">
-                        <button className="secondaryButtonClass buttonClass">Visit Us Now!</button>
-                      </a> 
-                    </div>
-                </div>
+  return (
+    <>
+      <div className="data-recovery-container">
+        <div className='data-hero-top'>
+          <img className='dataimg' src={bgImage} alt="" />
+            <div className="textClass">
+              <h1 className="dataheader mb-4">Data Recovery Services</h1>
+              <ul>
+                <li className="list">✔ We Provide Data Recoveries For Hard Drives, SSDs, Memory Cards, USB Drives, Phones & Tablets</li>
+                <li className="list">✔ Managed By Experts In The Industry</li>
+                <li className="list">✔ FREE In-Depth Diagnosis And Evaluation</li>
+                <li className="list">✔ Mail-In Or Drop Off Your Devices</li>
+                <li className="list">✔ Emergency Data Recovery Service Options</li>
+              </ul>
+              <div className="flex">
+                <a href="/data-recovery-mail-in-request/">
+                  <button className="primaryButtonClass buttonClass">Make A Shipping Request</button>
+                </a>
+                <a href="/WalkIn">
+                  <button className="secondaryButtonClass buttonClass">Visit Us Now!</button>
+                </a>
+              </div>
+            </div>
           </div>
 
-            <div className="data-recovery-brands-container">
-              <div className='data-recovery-brands-content'>
-                <h2 className="headingClasses">Brands We Work With</h2>
-                <div className="gridClasses gap-1">
-                    {brands.map((brand, index) => (
-                        <img key={index} src={`${brand}`} alt={brand} className="imageClasses" />
-                    ))}
-                </div>
+          <div className="data-recovery-brands-container">
+            <div className='data-recovery-brands-content'>
+              <h2 className="headingClasses">Brands We Work With</h2>
+              <div className="gridClasses gap-1">
+                {brands.map((brand, index) => (
+                  <img key={index} src={`${brand}`} alt={brand} className="imageClasses" />
+                ))}
               </div>
             </div>
+          </div>
 
-            <div className="sectionClasses">
-              <h1 className="titleClasses">
-                Undertaking All Aspects Of Data Recovery Services
-              </h1>
-              <div className="grid">
-                <p className="textClasses">
-                  Our data recovery experts support all device types. Regardless of the type of damage, our data recovery experts specialize in recovering from drops, liquid damage, fires, and mechanical damage.
-                </p>
-                <p className="textClasses">
-                  We work with all manufacturers, mobile phone suppliers, and computer models. Most importantly, we provide a recovery guarantee. If we cannot recover your files, there is no charge.
-                </p>
-              </div>
+          <div className="sectionClasses">
+            <h1 className="titleClasses">
+              Undertaking All Aspects Of Data Recovery Services
+            </h1>
+            <div className="grid">
+              <p className="textClasses">
+                Our data recovery experts support all device types. Regardless of the type of damage, our data recovery experts specialize in recovering from drops, liquid damage, fires, and mechanical damage.
+              </p>
+              <p className="textClasses">
+                We work with all manufacturers, mobile phone suppliers, and computer models. Most importantly, we provide a recovery guarantee. If we cannot recover your files, there is no charge.
+              </p>
             </div>
+          </div>
 
-            <div className="section2Classes">
-                <h2 className="heading2Classes">Our Data Recovery Services Cover All Device Types</h2>
-                <div className="dataGrid">
-                    {services.map((service, index) => (
-                        <ServiceCard key={index} {...service} />
-                    ))}
-                </div>
+          <div className="section2Classes">
+            <h2 className="heading2Classes">Our Data Recovery Services Cover All Device Types</h2>
+            <div className="dataGrid">
+              {services.map((service, index) => (
+                <ServiceCard key={index} {...service} />
+              ))}
             </div>
-        
+          </div>
 
-        <div className="flex-middle">
+          <div className="flex-middle">
             <button className="primaryButtonClass buttonClass">Make A Shipping Request</button>
-            <button className="secondaryButtonClass buttonClass">Visit Us Now!</button> 
-        </div>
+            <button className="secondaryButtonClass buttonClass">Visit Us Now!</button>
+          </div>
 
-    <section className="review-container">
-      <h2 className="review__title">5* Star Reviews For Our Data Recovery Services</h2>
-      <Swiper
-        className="review__container"
-        loop={true}
-        grabCursor={true}
-        spaceBetween={24}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          576: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 48,
-          },
-        }}
-        modules={[Pagination]}
-      >
-        {Data.map(({ id, images, title, description }) => {
-          return (
-            <SwiperSlide className="review__card" key={id}>
-                <div className="review-content">
-                <div className="review-header">
-              <img src={images} alt="" className="review__img" />
-              <div className="review-details">
-                  <h3 className="review__name">{title}</h3>
-                  <div className='stars'>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
+          <section className="review-container">
+            <h2 className="review__title">5* Star Reviews For Our Data Recovery Services</h2>
+            <Swiper
+              className="review__container"
+              loop={true}
+              grabCursor={true}
+              spaceBetween={24}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                576: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 48,
+                },
+              }}
+              modules={[Pagination]}
+            >
+              {Data.map(({ id, images, title, description }) => (
+                <SwiperSlide className="review__card" key={id}>
+                  <div className="review-content">
+                    <div className="review-header">
+                      <img src={images} alt="" className="review__img" />
+                      <div className="review-details">
+                        <h3 className="review__name">{title}</h3>
+                        <div className='stars'>
+                          <span>&#9733;</span>
+                          <span>&#9733;</span>
+                          <span>&#9733;</span>
+                          <span>&#9733;</span>
+                          <span>&#9733;</span>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="review__description">{description}</p>
                   </div>
-              </div>
-              </div>
-              <p className="review__description">{description}</p>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </section>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </section>
 
     <div className="process-step-container">
     <h2 className="process-step-title">Here's our simple 4-step process</h2>

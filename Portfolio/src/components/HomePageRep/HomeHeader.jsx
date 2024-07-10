@@ -3,8 +3,8 @@ import "./HomeHeader.scss";
 
 function HeroTop() {
     return (
-      <div class="area" >
-      <ul class="circles">
+      <div className="area" >
+      <ul className="circles">
               <li></li>
               <li></li>
               <li></li>
