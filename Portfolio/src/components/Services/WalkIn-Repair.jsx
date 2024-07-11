@@ -75,7 +75,7 @@ const WalkInRepair = () => {
       </div>
       <div className='WalkIn-wrapper'>
         <div className='WalkIn-Card'>
-        <h2 className="card-header">Florida PC Support</h2>
+        <p className="card-header">Florida PC Support</p>
         <div className="card-info">
         <p className='address'>3750 Inverrary Dr, Lauderhill, FL 33319</p>
         <p className={`store-status ${isStoreOpen ? 'open' : 'closed'}`}>
