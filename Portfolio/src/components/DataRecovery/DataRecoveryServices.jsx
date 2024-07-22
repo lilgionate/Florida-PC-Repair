@@ -16,7 +16,7 @@ import ocz from '../../assets/ocz.png';
 import pny from '../../assets/pny.png';
 import quantum from '../../assets/quantum.png';
 import kingston from '../../assets/kingston.png';
-import intel from '../../assets/intel.png';
+import intel from '../../assets/intel-2.png';
 import ibm from '../../assets/ibm.png';
 import hp from '../../assets/hp.png';
 import hitachi from '../../assets/hitachi.png';

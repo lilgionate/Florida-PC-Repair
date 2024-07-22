@@ -74,33 +74,25 @@ const WalkInRepair = () => {
         <h1 className='WalkIn-title'>Repair Center</h1>
       </div>
       <div className='WalkIn-wrapper'>
-        <div className='WalkIn-Card'>
-        <p className="card-header">Florida PC Support</p>
-        <div className="card-info">
-        <p className='address'>3750 Inverrary Dr, Lauderhill, FL 33319</p>
-        <p className={`store-status ${isStoreOpen ? 'open' : 'closed'}`}>
-          {isStoreOpen ? 'Store is currently: Open' : 'Store is currently: Closed'}
-        </p>
-        <p>{nextOpeningTime}</p>
-      </div>
-      <div className="walkin-button">
-        <i className="fa-solid fa-person-walking"> Walk-in</i>
-        <div className="spacer"></div>
-        <a href="https://app.acuityscheduling.com/schedule.php?owner=32003116&appointmentType=61346932" 
-           target="_blank"> 
-          <button className="acuity-embed-button">
-          Schedule Drop-off
-        </button>
-        </a>
-        <link rel="stylesheet" 
-              href="https://embed.acuityscheduling.com/embed/button/32003116.css" 
-              id="acuity-button-styles" 
-        />
-        <script src="https://embed.acuityscheduling.com/embed/button/32003116.js" 
-                async>
-        </script>
-      </div>
-        </div>
+      <div className="walkin-card-container">
+      <h2 className="walkin-card-title">FLORIDA PC SUPPORT</h2>
+      <p className="walkin-card-address">
+        972 SW 143rd Ave Pembroke Pines, FL 33027
+      </p>
+      <p className="walkin-schedule-info">
+        <strong>Open Today</strong> 11AM - 6PM
+      </p>
+      <p className="walkin-schedule-info">
+        <strong>Open Tomorrow</strong> 11AM - 2PM
+      </p>
+      <a href="#" className="walkin-next-7-days-link" aria-label="Next 7 days schedule">
+        Next 7 days...
+      </a>
+      <p className="walkin-appointment-info">By Appointment Only</p>
+      <button className="walkin-schedule-button" aria-label="Schedule Drop-off">
+        Schedule Drop-off
+      </button>
+    </div>
         <div className='location-map-wrapper'>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1551.9208405755262!2d-80.33475760737464!3d25.99977299604164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bb8e7f838ac5%3A0x6340ed004188d429!2sfloridapcsupport!5e0!3m2!1sen!2sus!4v1712463650391!5m2!1sen!2sus" 
                   className='location-map' 
