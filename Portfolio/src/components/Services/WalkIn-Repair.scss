@@ -78,10 +78,24 @@
       text-decoration: underline;
       margin-top: 1.5rem;
       display: block;
+      cursor: pointer;
+    }
+
+    .schedule-dropdown {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .scheduler-check{
+      width: 19px;
+      margin-right: 5px;
     }
     
     .walkin-appointment-info {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       font-weight: 600;
       text-align: center;
     }
@@ -89,10 +103,10 @@
     .walkin-schedule-button {
       background-color: #1b436e;
       color: #ffffff;
-      margin-top: 0.5rem;
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
       width: 100%;
+      margin-bottom: 2rem;
     }
     
       
