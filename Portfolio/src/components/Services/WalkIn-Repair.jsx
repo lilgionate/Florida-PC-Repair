@@ -77,11 +77,11 @@ const WalkInRepair = () => {
               Next 7 days...
             </p>
             {showDropdown && (
-              <div className="schedule-dropdown">
+              <div className="walkin-schedule-dropdown">
                 {next7DaysSchedule.map((dayInfo, index) => (
                   <p key={index}>
                     <img
-                      className='scheduler-check'
+                      className='walkin-scheduler-check'
                       src={dayInfo.day === 'Sunday' ? redX : greenCheck}
                       alt={dayInfo.day === 'Sunday' ? 'red X' : 'green check'}
                     />
@@ -95,10 +95,10 @@ const WalkInRepair = () => {
               Schedule Drop-off
             </button>
           </div>
-          <div className='location-map-wrapper'>
+          <div className='walkin-location-map-wrapper'>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1551.9208405755262!2d-80.33475760737464!3d25.99977299604164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9bb8e7f838ac5%3A0x6340ed004188d429!2sfloridapcsupport!5e0!3m2!1sen!2sus!4v1712463650391!5m2!1sen!2sus"
-              className='location-map'
+              className='walkin-location-map'
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
