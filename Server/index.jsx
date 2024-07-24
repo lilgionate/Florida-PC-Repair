@@ -5,8 +5,6 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const port = 3000
-
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
@@ -391,6 +389,17 @@ app.post('/sub11', async (req, res) => {
     res.json({ 'client_secret': client_secret, 'status': status });
 });
 
+app.get("/", function (req, res) {
+    res.sendFile(
+        path.join(__dirname, "../client/public/index.html"),
+        function (err) {
+            if (err) {
+                res.status(500).send(err);
+            }   
+        }
+    );
+});
 
+const PORT = process.env.PORT || 3000;
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
