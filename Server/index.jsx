@@ -363,7 +363,6 @@ app.post('/sub10', async (req, res) => {
 
   
 /* Remote IT Support Annual */
-
 app.post('/sub11', async (req, res) => {
     const { name, email, model, serial, payment_method } = req.body;
   
@@ -390,7 +389,7 @@ app.post('/sub11', async (req, res) => {
     const client_secret = subscription['latest_invoice']['payment_intent']['client_secret'];
   
     res.json({ 'client_secret': client_secret, 'status': status });
-  });
+});
 
 
 
