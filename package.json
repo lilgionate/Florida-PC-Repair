@@ -2,7 +2,7 @@
   "name": "florida-pc-repair",
   "version": "1.0.0",
   "description": "Repair Center for Florida PC Support",
-  "main": "index.js",
+  "main": "main.jsx",
   "scripts": {
     "start": "node server/index.jsx",
     "start-client": "npm run start --prefix client",
