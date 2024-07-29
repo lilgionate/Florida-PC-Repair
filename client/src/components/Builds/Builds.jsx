@@ -2,7 +2,7 @@ import "./builds.scss";
 import { Data } from "./BuildsData";
 import ProgressBar from "./ProgressBar/ProgressBar";
 import Modal from './Modal/finance'; 
-import React, { useState } from "react";
+import { useState } from "react";
 
 // Import Swiper React components and required modules
 import { Swiper, SwiperSlide } from "swiper/react";

@@ -1,7 +1,8 @@
-import React from 'react';
+
+import PropTypes from 'prop-types';
 import "./finance.scss";
 
-const Modal = ({ description}) => {
+const Modal = ({ description }) => {
   return (
     <div className="modal">
       <div className="modal-content">
@@ -10,6 +11,10 @@ const Modal = ({ description}) => {
       </div>
     </div>
   );
+};
+
+Modal.propTypes = {
+  description: PropTypes.string.isRequired
 };
 
 export default Modal;
