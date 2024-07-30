@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./navbar.scss";
@@ -59,7 +59,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="http://localhost:5173/" className="navbar-logo">
+          <Link to="http://localhost:3000/" className="navbar-logo">
             <img src={logo} alt="" />
           </Link>
           <div className="menu-icons" onClick={handleClick}>
