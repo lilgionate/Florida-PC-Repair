@@ -4,7 +4,7 @@
   "description": "Repair Center for Florida PC Support",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.jsx",
+    "start": "node server/index.js",
     "start-client": "npm run start --prefix client",
     "build": "npm run build --prefix client && (cd server && npm install)",
     "test": "echo \"Error: no test specified\" && exit 1",
