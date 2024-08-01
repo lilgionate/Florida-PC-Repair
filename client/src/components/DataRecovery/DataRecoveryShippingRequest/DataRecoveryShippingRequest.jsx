@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 import './DataRecoveryShippingRequest.scss';
 
 export default function DataRecoveryShippingRequest() {
@@ -35,15 +34,6 @@ export default function DataRecoveryShippingRequest() {
   const handleNext = () => setStep(step + 1);
   const handlePrevious = () => setStep(step - 1);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-  };
 
   return (
     <div className="data-shipping-request-container">
