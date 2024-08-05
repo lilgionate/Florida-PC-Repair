@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 import ComputerWarrantyHeader from './ComputerWarrantyHeader';
 import ComputerWarrantyPrice from './ComputerWarrantyPrice';

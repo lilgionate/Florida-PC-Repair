@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './ComputerWarrantyPage.scss';
 
 import Tech1 from '../../assets/Frame-18.png';

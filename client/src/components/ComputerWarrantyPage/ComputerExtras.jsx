@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./ComputerWarrantyPage.scss"
 import ComputerExtraCards from "./ComputerExtraCards";
 

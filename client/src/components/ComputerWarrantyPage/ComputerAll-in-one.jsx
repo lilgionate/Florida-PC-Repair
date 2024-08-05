@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './ComputerWarrantyPage.scss';
 
 import CPUUpgrade from '../../assets/cpuUpgrade.jpg';

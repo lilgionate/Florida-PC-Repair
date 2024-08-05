@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './ComputerWarrantyPage.scss';
 
 import GoogleIcon from '../../assets/google-icon.png';
