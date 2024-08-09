@@ -1,5 +1,5 @@
-import React from 'react';
 import './CyberSecurityPage.scss';
+import PropTypes from 'prop-types';
 
 const PricingTable = () => {
   const rowsData = [
@@ -18,29 +18,29 @@ const PricingTable = () => {
 
   return (
     <>
-    <h2 className="cyber-table-title">Why Choose Florida PC Support?</h2>
-    <table className="cyber-table">
-      <thead>
-        <tr>
-          <th className="cyber-table-header-cell"></th>
-          <th className="cyber-table-header-cell cyber-table-active-cell cyber-table-centered-cell">FPCS</th>
-          <th className="cyber-table-header-cell cyber-table-centered-cell">Norton</th>
-          <th className="cyber-table-header-cell cyber-table-centered-cell">McAfee</th>
-          <th className="cyber-table-header-cell cyber-table-centered-cell">Best Buy</th>
-          <th className="cyber-table-header-cell cyber-table-centered-cell">Another Tech Shop</th>
-        </tr>
-      </thead>
-      <tbody>
-        {rowsData.map((row, index) => (
-          <TableRow
-            key={index}
-            title={row.title}
-            activeIndexes={row.activeIndexes}
-            isGrey={index % 2 !== 0} // Add grey background for every other row
-          />
-        ))}
-      </tbody>
-    </table>
+      <h2 className="cyber-table-title">Why Choose Florida PC Support?</h2>
+      <table className="cyber-table">
+        <thead>
+          <tr>
+            <th className="cyber-table-header-cell"></th>
+            <th className="cyber-table-header-cell cyber-table-active-cell cyber-table-centered-cell">FPCS</th>
+            <th className="cyber-table-header-cell cyber-table-centered-cell">Norton</th>
+            <th className="cyber-table-header-cell cyber-table-centered-cell">McAfee</th>
+            <th className="cyber-table-header-cell cyber-table-centered-cell">Best Buy</th>
+            <th className="cyber-table-header-cell cyber-table-centered-cell">Another Tech Shop</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rowsData.map((row, index) => (
+            <TableRow
+              key={index}
+              title={row.title}
+              activeIndexes={row.activeIndexes}
+              isGrey={index % 2 !== 0} // Add grey background for every other row
+            />
+          ))}
+        </tbody>
+      </table>
     </>
   );
 };
@@ -71,6 +71,12 @@ const TableRow = ({ title, activeIndexes, isGrey }) => {
       ))}
     </tr>
   );
+};
+
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  activeIndexes: PropTypes.arrayOf(PropTypes.number).isRequired,
+  isGrey: PropTypes.bool.isRequired,
 };
 
 export default PricingTable;

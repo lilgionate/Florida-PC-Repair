@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 import './CustomPCPage.scss'
 
 import CustomPC1 from '../../assets/custom-pc-1.webp'
@@ -22,6 +22,11 @@ const ProjectCard = ({ imageUrl, altText }) => {
     );
 };
 
+ProjectCard.propTypes = {
+    imageUrl: PropTypes.string.isRequired, // Ensure imageUrl is a required string
+    altText: PropTypes.string.isRequired   // Ensure altText is a required string
+};
+
 const Projects = () => {
     return (
         <div className="custom-project-container">
@@ -32,15 +37,15 @@ const Projects = () => {
                 <ProjectCard imageUrl={CustomPC1} altText="Project 1" />
                 <ProjectCard imageUrl={CustomPC2} altText="Project 2" />
                 <ProjectCard imageUrl={CustomPC3} altText="Project 3" />
-                <ProjectCard imageUrl={CustomPC4} altText="Project 3" />
-                <ProjectCard imageUrl={CustomPC5} altText="Project 3" />
-                <ProjectCard imageUrl={CustomPC6} altText="Project 3" />
-                <ProjectCard imageUrl={CustomPC7} altText="Project 3" />
-                <ProjectCard imageUrl={CustomPC8} altText="Project 3" />
-                <ProjectCard imageUrl={CustomPC9} altText="Project 3" />
-                <ProjectCard imageUrl={CustomPC10} altText="Project 3" />
-                <ProjectCard imageUrl={CustomPC11} altText="Project 3" />
-                <ProjectCard imageUrl={CustomPC12} altText="Project 3" />
+                <ProjectCard imageUrl={CustomPC4} altText="Project 4" />
+                <ProjectCard imageUrl={CustomPC5} altText="Project 5" />
+                <ProjectCard imageUrl={CustomPC6} altText="Project 6" />
+                <ProjectCard imageUrl={CustomPC7} altText="Project 7" />
+                <ProjectCard imageUrl={CustomPC8} altText="Project 8" />
+                <ProjectCard imageUrl={CustomPC9} altText="Project 9" />
+                <ProjectCard imageUrl={CustomPC10} altText="Project 10" />
+                <ProjectCard imageUrl={CustomPC11} altText="Project 11" />
+                <ProjectCard imageUrl={CustomPC12} altText="Project 12" />
             </div>
         </div>
     );

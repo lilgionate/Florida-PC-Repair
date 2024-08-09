@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
@@ -131,7 +131,7 @@ function ContactSection() {
                   <div className="info-wrap w-100 p-lg-5 p-4 img">
                     <h3>Contact us</h3>
                     <p className="mb-4">
-                      We're open for any suggestion!
+                      We&apos;re open for any suggestion!
                     </p>
                     <div className="dbox w-100 d-flex align-items-start py-2">
                       <div className="icon d-flex align-items-center justify-content-center">

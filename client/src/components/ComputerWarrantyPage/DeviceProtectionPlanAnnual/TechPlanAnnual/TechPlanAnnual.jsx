@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react'
-import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
-import axios from 'axios'
+import { useState, useRef } from 'react';
+import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+import axios from 'axios';
 import emailjs from '@emailjs/browser';
 
 import './TechPlanAnnual.scss';
@@ -27,7 +27,7 @@ const CARD_OPTIONS = {
 			color: "#ffc7ee"
 		}
 	}
-}
+};
 
 export default function DeviceProtectionPlan() {
     const [name, setName] = useState('');
@@ -236,7 +236,6 @@ export default function DeviceProtectionPlan() {
                                 label='Name'
                                 id='outlined-name-input'
                                 className="custom-pc-warranty-annual-name custom-placeholder-color"
-                                helpertext={`Name you'll receive updates and receipts on`}
                                 type='name'
                                 required
                                 value={name}

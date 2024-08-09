@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 import "./CyberSecurityPage.scss";
 
 const SecurityListItem = ({ text }) => {
@@ -8,6 +8,10 @@ const SecurityListItem = ({ text }) => {
         <span>{text}</span>
       </li>
     );
-  };
-  
-  export default SecurityListItem;
+};
+
+SecurityListItem.propTypes = {
+    text: PropTypes.string.isRequired, // Define the prop type for 'text'
+};
+
+export default SecurityListItem;

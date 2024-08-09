@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './CyberSecurityPage.scss';
 
 const Note = () => {
@@ -21,6 +21,10 @@ const NoteItem = ({ text }) => {
       <span className="note-text">{text}</span>
     </li>
   );
+};
+
+NoteItem.propTypes = {
+  text: PropTypes.string.isRequired, // Ensure text is a required string
 };
 
 export default Note;

@@ -1,6 +1,7 @@
-import React from 'react';
+
+import PropTypes from 'prop-types';
 import './CustomPCPage.scss';
-import cardData from './CustomPCCardData'; // Assuming cardData is in a separate file
+import cardData from './CustomPCCardData';
 
 const Card = ({ title, description, image }) => (
     <div className="custom-pc-card">
@@ -16,6 +17,13 @@ const Card = ({ title, description, image }) => (
         </div>
     </div>
 );
+
+
+Card.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+};
 
 const CardList = () => (
     <div className="custom-pc-cards">

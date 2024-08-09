@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import "./ComputerWarrantyPage.scss";
 
 const PricingCard = ({ title, services }) => {
@@ -21,6 +22,19 @@ const PricingCard = ({ title, services }) => {
       </div>
     </div>
   );
+};
+
+// Adding PropTypes validation
+PricingCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  services: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      dots: PropTypes.number.isRequired,
+      price: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default PricingCard;

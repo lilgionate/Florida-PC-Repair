@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './CustomPCPage.scss';
 
 import PCBuilds from '../../assets/pc-builds.jpg'
