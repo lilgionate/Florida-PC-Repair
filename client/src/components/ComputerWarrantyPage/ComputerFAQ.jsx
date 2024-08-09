@@ -157,7 +157,7 @@ export const RemoteITFAQ = () => {
           ) : (
             <i className="computer-faq__icon fas fa-caret-right"></i>
           )}
-          What's not included?
+          What&aposs not included?
           {dropdownStates.dropdown9 && (
             <ul className="computer-faq__dropdown computer-faq__dropdown-open">
               <p className="computer-faq__dropdown-text">

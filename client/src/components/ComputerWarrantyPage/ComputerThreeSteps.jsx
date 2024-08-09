@@ -1,5 +1,22 @@
-
+import PropTypes from 'prop-types';
 import './ComputerWarrantyPage.scss';
+
+
+const StepCard = ({ stepNumber, stepText, stepSub }) => {
+  return (
+    <div className="computer-step-card">
+      <h3 className="computer-step-card-title">STEP {stepNumber}</h3>
+      <h4 className="computer-step-card-subtitle">{stepSub}</h4>
+      <p className="computer-step-card-text">{stepText}</p>
+    </div>
+  );
+};
+
+StepCard.propTypes = {
+  stepNumber: PropTypes.string.isRequired,
+  stepText: PropTypes.string.isRequired,
+  stepSub: PropTypes.string.isRequired,
+};
 
 const EasySteps = () => {
   return (
@@ -10,16 +27,6 @@ const EasySteps = () => {
         <StepCard stepNumber="2" stepSub="Receive diagnostic" stepText="Get upfront repairs needed along with any recommendations and extra costs. " />
         <StepCard stepNumber="3" stepSub="Choose Plan" stepText="Choose from one of the Tech Protection Plans. Then, we will repair your device." />
       </div>
-    </div>
-  );
-};
-
-const StepCard = ({ stepNumber, stepText, stepSub }) => {
-  return (
-    <div className="computer-step-card">
-      <h3 className="computer-step-card-title">STEP {stepNumber}</h3>
-      <h4 className="computer-step-card-subtitle">{stepSub}</h4>
-      <p className="computer-step-card-text">{stepText}</p>
     </div>
   );
 };

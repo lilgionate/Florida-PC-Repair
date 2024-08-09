@@ -1,6 +1,5 @@
-
+import PropTypes from 'prop-types';
 import './ComputerWarrantyPage.scss';
-
 import GoogleIcon from '../../assets/google-icon.png';
 
 const ReviewCard = ({ avatarColor, name, date, content }) => {
@@ -30,6 +29,13 @@ const ReviewCard = ({ avatarColor, name, date, content }) => {
       <a href="#" className="google-review-card-link">Read More »</a>
     </div>
   );
+};
+
+ReviewCard.propTypes = {
+  avatarColor: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 const Reviews = () => {
