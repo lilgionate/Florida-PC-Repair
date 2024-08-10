@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './DataRecoveryShippingRequest.scss';
 
 export default function DataRecoveryShippingRequest() {
@@ -34,6 +34,11 @@ export default function DataRecoveryShippingRequest() {
   const handleNext = () => setStep(step + 1);
   const handlePrevious = () => setStep(step - 1);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Your form submission logic here
+    console.log('Form submitted', formData);
+  };
 
   return (
     <div className="data-shipping-request-container">
@@ -47,7 +52,7 @@ export default function DataRecoveryShippingRequest() {
         {step === 1 && (
           <>
             <p className="data-shipping-request-des">
-              Please complete the form so we'll be on the look out for your device. Then, print out the email confirmation you'll receive. Include it with your shipment. Then, you'll receive a free diagnostic including cost and timing for your approval.
+              Please complete the form so we&apos;ll be on the look out for your device. Then, print out the email confirmation you&apos;ll receive. Include it with your shipment. Then, you&apos;ll receive a free diagnostic including cost and timing for your approval.
             </p>
             <p className="data-shipping-request-des-select">What type of device do you need data recovery for?</p>
             <select name="deviceType" className="data-shipping-request-select" onChange={handleChange}>

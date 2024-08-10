@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Hero-Bottom.scss'; 
 
 import bgImage from '../../assets/keyboard.jpeg';

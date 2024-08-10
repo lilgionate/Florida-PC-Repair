@@ -1,13 +1,20 @@
-import React from 'react';
 import './CyberSecurityPage.scss';
+import PropTypes from 'prop-types';
 
 const Feature = ({ title, description, titleClass, descriptionClass }) => {
   return (
     <div>
       <h2 className={titleClass}>{title}</h2>
-      <p className= {descriptionClass}>{description}</p>
+      <p className={descriptionClass}>{description}</p>
     </div>
   );
+};
+
+Feature.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  titleClass: PropTypes.string.isRequired,
+  descriptionClass: PropTypes.string.isRequired,
 };
 
 const FeatureList = () => {

@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 
 const DataItem = ({ count, description, isLast }) => {
   const [currentCount, setCurrentCount] = useState(0);
@@ -45,6 +46,12 @@ const DataItem = ({ count, description, isLast }) => {
       <p className="data-numbers-description">{description}</p>
     </div>
   );
+};
+
+DataItem.propTypes = {
+  count: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  isLast: PropTypes.bool.isRequired,
 };
 
 export default DataItem;

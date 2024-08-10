@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './DataRecoveryServices.scss';
 
 // Import images
@@ -289,7 +289,7 @@ const DataRecoveryComponent = () => {
           </section>
 
     <div className="process-step-container">
-    <h2 className="process-step-title">Here's our simple 4-step process</h2>
+    <h2 className="process-step-title">Here&apos;s our simple 4-step process</h2>
       <div className="process-steps">
         <ProcessStep stepNumber={1} stepText="Mail-in/drop-off your device" iconClass="fa-solid fa-truck-fast" />
         <ProcessStep stepNumber={2} stepText="Full evaluation & diagnostics" iconClass="fa-brands fa-searchengin" />

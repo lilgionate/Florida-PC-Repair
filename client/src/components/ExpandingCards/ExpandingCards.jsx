@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.scss';
 
 import img1 from '../../assets/warranty.jpeg';
@@ -19,6 +20,14 @@ const ServiceCard = ({ imageUrl, altText, title, overlayText }) => (
     </div>
   </div>
 );
+
+// Define prop types for the ServiceCard component
+ServiceCard.propTypes = {
+  imageUrl: PropTypes.string.isRequired,  // `imageUrl` should be a string (URL) and is required
+  altText: PropTypes.string.isRequired,   // `altText` should be a string and is required
+  title: PropTypes.string.isRequired,     // `title` should be a string and is required
+  overlayText: PropTypes.string.isRequired // `overlayText` should be a string and is required
+};
 
 const ServicesGrid = () => (
   <div className="services-grid">

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './DataRecoveryServices.scss';
 
 export const ListItem = ({ text }) => {
@@ -7,4 +8,9 @@ export const ListItem = ({ text }) => {
             <span className="data-items-text">{text}</span>
         </li>
     );
+};
+
+// Define prop types for the component
+ListItem.propTypes = {
+    text: PropTypes.string.isRequired,  // `text` should be a string and is required
 };

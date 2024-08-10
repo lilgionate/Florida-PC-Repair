@@ -1,5 +1,5 @@
-import React from 'react';
 import './CyberSecurityPage.scss';
+import PropTypes from 'prop-types';
 
 const Step = ({ title, subtitle, description }) => {
   return (
@@ -18,6 +18,12 @@ const Step = ({ title, subtitle, description }) => {
       </div>
     </div>
   );
+};
+
+Step.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  description: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Step;
