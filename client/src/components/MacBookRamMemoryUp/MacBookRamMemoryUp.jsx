@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacBookRamMemoryUp.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Speed up your boot-up time',
@@ -17,6 +17,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="2GB RAM upgrade" cost="$50" />
@@ -27,14 +32,13 @@ const RepairCostsSection = () => (
 );
 
 const RepairCostsSectionTwo = () => (
-    <div className="price-section">
-      <TableRow title="2GB – 64GB RAM upgrade" cost="$50 and up based on model of RAM" />
-    </div>
-  );
+  <div className="price-section">
+    <TableRow title="2GB – 64GB RAM upgrade" cost="$50 and up based on model of RAM" />
+  </div>
+);
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>Just like old age, Macs get slower over time. 
@@ -43,15 +47,14 @@ const MacRepairComponent = () => {
         can upgrade to? No worries, 
         we’ll let you know the upgrade options and choices you have for your Mac.
         </p>
-        <h2>Common Mac RAM upgrade requests we take care of:
-        </h2>
+        <h2>Common Mac RAM upgrade requests we take care of:</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
+          Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
         </p>
         <div>
           <h3>MacBook / MacBook Pro / Mac Mini RAM Upgrade Costs:</h3>
@@ -63,7 +66,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

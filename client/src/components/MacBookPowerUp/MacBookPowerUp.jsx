@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacBookPowerUp.scss'; // Import SCSS file
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Repair logic board',
@@ -20,6 +20,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="Charger / Battery Replacement" cost="$65 - $150" />
@@ -31,7 +36,6 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container"> {/* Container for content */}
         <p className='power-header'>No power on your Mac? That’s a real bummer. 
@@ -39,7 +43,7 @@ const MacRepairComponent = () => {
             shop in NYC. Perhaps, you spilled liquid on your Mac? Or it took a sad fall? 
             We don’t judge. We just want to fix your Mac!
         </p>
-        <h2>Common fixes we can perform for your Mac that doesn't power up:</h2>
+        <h2>Common fixes we can perform for your Mac that doesn&apos;t power up:</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
@@ -52,7 +56,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

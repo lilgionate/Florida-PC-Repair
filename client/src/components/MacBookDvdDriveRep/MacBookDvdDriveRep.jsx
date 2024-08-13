@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacBookDvdDriveRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'DVD’s and CD’s aren’t able to load',
@@ -15,6 +15,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="MacBook / MacBook Pro / Mac Pro CD/DVD Optical Drive Replacement" cost="$125" />
@@ -24,7 +29,6 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>
@@ -34,8 +38,7 @@ const MacRepairComponent = () => {
             Mac’s failing DVD drive right away. If you need a 
             quick MAC DVD drive replacement NYC service, we can certainly help out.
         </p>
-        <h2>Common DVD drive issues we support:
-        </h2>
+        <h2>Common DVD drive issues we support:</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
@@ -50,7 +53,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

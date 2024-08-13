@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacBookScreenRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Cracked glass',
@@ -19,6 +19,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="2009 - 2012" cost="$150 - $350" />
@@ -30,12 +35,11 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container"> {/* Container for content */}
-        <p className='power-header'>Oh no!  You cracked your MacBook screen.  
-        And you need help in NYC.  Just like iPhones, MacBook screens are made of glass 
-        and can easily break.  Our Mac screen replacement technicians are happy to 
+        <p className='power-header'>Oh no! You cracked your MacBook screen.  
+        And you need help in NYC. Just like iPhones, MacBook screens are made of glass 
+        and can easily break. Our Mac screen replacement technicians are happy to 
         replace your screen to get you up and running again.  
         Your data and settings will remain intact throughout the process.
         </p>
@@ -54,7 +58,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

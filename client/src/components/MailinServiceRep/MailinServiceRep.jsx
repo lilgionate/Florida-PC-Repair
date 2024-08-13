@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import './MailinServiceRep.scss';
 import MailinRep from '../../assets/mail-in-repair.avif';
 import Step from './MailinTimeline';
@@ -12,7 +11,6 @@ const MailinService = () => {
         const winHeight = window.innerHeight;
         const halfwayPoint = winHeight * 0.7;
         const steps = document.querySelectorAll('.step-icon');
-        console.log(steps);
         let activeStepIndex = -1;
   
         steps.forEach((step, index) => {
@@ -38,8 +36,8 @@ const MailinService = () => {
     <>
       <div className="MailRepairContainer">
         <div className="MailRepairsContent">
-          <h1 className="MailRepairsTitle">Nationwide Mail-in Repair & Recycling</h1>
-          <p className="MailRepairsDes">Now, you can get Florida's best tech repair service wherever you are in the United States.</p>
+          <h1 className="MailRepairsTitle">Nationwide Mail-in Repair &amp; Recycling</h1>
+          <p className="MailRepairsDes">Now, you can get Florida&apos;s best tech repair service wherever you are in the United States.</p>
           <p className="MailRepairsDes">Best of all, we’ll ship you a free shipping box and label for your laptop, tablet, phone, hard drive, or other small device. Convenient. Easy. No out of pocket cost to you.</p>
           <button className="MailRepairsButton">Book Now</button>
         </div>
@@ -137,7 +135,7 @@ const MailinService = () => {
         />
       </div>
 
-      /* Aucity Scheduling Here */
+      {/* Aucity Scheduling Here */}
     </>
   );
 };

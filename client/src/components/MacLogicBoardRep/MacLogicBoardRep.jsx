@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacLogicBoardRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'We will repair the logic board directly if possible. You will get instant savings.',
@@ -15,6 +15,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="Mac Logic Board Replacement" cost="$250 - $750" />
@@ -23,22 +28,20 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>Is your MacBook dead?  No juice?  
-        Maybe you spilled something on it?  Maybe it’s just dead. We will 
-        provide the most cost effective logic board repair or replacement for you.
+        <p className='power-header'>Is your MacBook dead? No juice?  
+        Maybe you spilled something on it? Maybe it’s just dead. We will 
+        provide the most cost-effective logic board repair or replacement for you.
         </p>
-        <h2>How does our MacBook logic board replacement Florida service work?
-        </h2>
+        <h2>How does our MacBook logic board replacement Florida service work?</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
+          Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
         </p>
         <div>
           <h3>MacBook Logic Board Replacement Cost:</h3>
@@ -46,7 +49,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

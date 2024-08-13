@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacBookLogicBoardRep.scss'; // Import SCSS file
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Liquid spills',
@@ -21,6 +21,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="Logic board repair" cost="$250+" />
@@ -32,7 +37,6 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>If your MacBook doesn’t turn on due to a liquid 
@@ -50,7 +54,7 @@ const MacRepairComponent = () => {
         <h2>What happens if we can’t repair your logic board?</h2>
         <p className='power-header2'>No matter how old or new, and what type of Mac 
         it is, we will recover your files.  Data recovery is performed on all models, 
-        including:MacBook, MacBook Pro, MacBook Air, iMac, and Mac Pro.  It’s an easy process.  Just drop in for a free 
+        including: MacBook, MacBook Pro, MacBook Air, iMac, and Mac Pro.  It’s an easy process.  Just drop in for a free 
         data recovery diagnostic and quick recovery turn-around.  No data, no charge.
         service center when disaster strikes and we’ll be happy to recover your files.
         </p>
@@ -61,7 +65,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

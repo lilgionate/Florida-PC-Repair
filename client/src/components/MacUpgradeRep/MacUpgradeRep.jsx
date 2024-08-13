@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacUpgradeRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'RAM / Memory Speed boost',
@@ -17,6 +17,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="Mac Upgrade Cost" cost="$50 + depending on parts and labor" />
@@ -25,23 +30,21 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>You don’t need to buy a new computer if you can 
-        upgrade your current one in a cost effective manner. Consult with our Florida 
+        upgrade your current one in a cost-effective manner. Consult with our Florida 
         Mac upgrade 
         technicians who will recommend the optimal solution to maximize your system.
         </p>
-        <h2>Our Mac upgrades include:
-        </h2>
+        <h2>Our Mac upgrades include:</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
+          Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
         </p>
         <div>
           <h3>Mac Upgrade Cost:</h3>
@@ -49,7 +52,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

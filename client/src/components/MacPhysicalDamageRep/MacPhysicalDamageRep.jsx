@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacPhysicalDamageRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Cracked LCD screen',
@@ -19,6 +19,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="Mac Physical Damage Repair" cost="$85 + based on affected parts and severity" />
@@ -27,24 +32,22 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>Need some Mac body work? We will make your Mac 
-        looking like new again. Don’t worry about your damaged Mac. Whether it has 
+        look like new again. Don’t worry about your damaged Mac. Whether it has 
         fallen, been tossed around, or just gone through wear and tear, we pass no 
         judgments and are happy to fix it. 
-        Bring it in for a free diagnostic and cost effective solution.
+        Bring it in for a free diagnostic and cost-effective solution.
         </p>
-        <h2>Computer physical damage we repair:
-        </h2>
+        <h2>Computer physical damage we repair:</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
+          Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
         </p>
         <div>
           <h3>Mac Physical Damage Repair Cost:</h3>
@@ -52,7 +55,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

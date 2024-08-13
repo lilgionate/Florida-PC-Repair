@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacPowerAdapterRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Your charger isn’t working',
@@ -15,6 +15,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="MacBook / MacBook Pro / MacBook Power Adapter Replacement" cost="$65 – $85" />
@@ -23,23 +28,21 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>Can’t charge your Mac?  Or maybe your pet ate 
-        through the cord?  We will supply you with a new MacBook power adapter 
-        charger right away.  We stock all MacBook models in our Florida Apple 
+        <p className='power-header'>Can’t charge your Mac? Or maybe your pet ate 
+        through the cord? We will supply you with a new MacBook power adapter 
+        charger right away. We stock all MacBook models in our Florida Apple 
         repair shop and welcome you to stop in for your MacBook power adapter purchase.
         </p>
-        <h2>Why should you replace your MacBook power adapter?
-        </h2>
+        <h2>Why should you replace your MacBook power adapter?</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air
+          Mac models supported: MacBook, MacBook Pro, MacBook Air
         </p>
         <div>
           <h3>MacBook Power Adapter Replacement Cost:</h3>
@@ -47,7 +50,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

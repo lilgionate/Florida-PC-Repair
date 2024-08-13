@@ -1,5 +1,5 @@
-import React from 'react';
-import './MailinServiceRep.scss';
+import './MailinServiceRep.scss'; 
+import PropTypes from 'prop-types';
 
 const Step = ({ stepNumber, title, title2, subtitle, subtitle2, description }) => {
   return (
@@ -21,6 +21,20 @@ const Step = ({ stepNumber, title, title2, subtitle, subtitle2, description }) =
       </div>
     </div>
   );
+};
+
+Step.propTypes = {
+  stepNumber: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  title2: PropTypes.string,
+  subtitle: PropTypes.string.isRequired,
+  subtitle2: PropTypes.string,
+  description: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
+Step.defaultProps = {
+  title2: '',
+  subtitle2: '',
 };
 
 export default Step;

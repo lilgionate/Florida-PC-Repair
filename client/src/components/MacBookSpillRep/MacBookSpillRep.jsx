@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacBookSpillRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'We directly repair your affected parts.',
@@ -15,6 +15,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="Spill Damage Direct Repair" cost="$125 – $400" />
@@ -26,16 +31,14 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>For some reason, Macs love liquids.  
-        It's the truth!  We get tons of MacBooks in every day at our Mac repair Florida
-        shop with a serious drinking problem.  That's okay though.  We have a revolutionary 
+        It&apos;s the truth! We get tons of MacBooks in every day at our Mac repair Florida
+        shop with a serious drinking problem. That&apos;s okay though. We have a revolutionary 
         way to repair Mac spills. It costs a fraction of what Apple charges and it works.
         </p>
-        <h2>Why should you use Florida PC Support's Mac spill repair service?
-        </h2>
+        <h2>Why should you use Florida PC Support&apos;s Mac spill repair service?</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
@@ -50,7 +53,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

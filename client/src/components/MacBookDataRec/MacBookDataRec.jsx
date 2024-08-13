@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacBookDataRec.scss'; // Import SCSS file
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Spinning wheel',
@@ -20,7 +20,7 @@ const commonProcess = [
     'If you approve, we proceed with the Mac data recovery service.',
     'Expect it to be ready the same day up to 3-5 days as our typical response time.',
     'If we cannot recover your Mac hard drive files, there is no charge.'
-  ];
+];
 
 const TableRow = ({ title, cost }) => (
   <div className="flex-container">
@@ -28,6 +28,11 @@ const TableRow = ({ title, cost }) => (
     <p>{cost}</p>
   </div>
 );
+
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
 
 const RepairCostsSection = () => (
   <div className="price-section">
@@ -38,7 +43,6 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>Macs are well-built, but can still crash too.  
@@ -53,9 +57,8 @@ const MacRepairComponent = () => {
         </ul>
         <p className='power-header2'>No matter how old or new, and what type of Mac 
         it is, we will recover your files.  Data recovery is performed on all models, 
-        including:MacBook, MacBook Pro, MacBook Air, iMac, and Mac Pro.  It’s an easy process.  Just drop in for a free 
+        including: MacBook, MacBook Pro, MacBook Air, iMac, and Mac Pro.  It’s an easy process.  Just drop in for a free 
         data recovery diagnostic and quick recovery turn-around.  No data, no charge.
-        service center when disaster strikes and we’ll be happy to recover your files.
         </p>
         <h2>So what’s next?  What’s the Mac data recovery process?</h2>
         <ul className='power-ul'>
@@ -70,7 +73,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacBookPasswordRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'You cannot remember your password',
@@ -15,6 +15,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="Password reset" cost="$85" />
@@ -23,15 +28,13 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>Whoops, you forgot your Mac password. Don’t worry, 
         we can take care of that for you. We will reset your password so you can 
         access your Mac system again. Just make sure to create a Mac password you’ll remember next time.
         </p>
-        <h2>When would you need to reset your Mac password:
-        </h2>
+        <h2>When would you need to reset your Mac password:</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
@@ -46,7 +49,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

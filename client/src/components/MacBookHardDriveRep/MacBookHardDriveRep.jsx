@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacBookHardDriveRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Failing Mac hard drive',
@@ -17,6 +17,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="500GB SSD + Operating System or Clone / Back-up" cost="$150 – $300" />
@@ -27,14 +32,13 @@ const RepairCostsSection = () => (
 );
 
 const RepairCostsSectionTwo = () => (
-    <div className="price-section">
-      <TableRow title="Operating System Install / Clone Only (No hard drive)" cost="$125" />
-    </div>
-  );
+  <div className="price-section">
+    <TableRow title="Operating System Install / Clone Only (No hard drive)" cost="$125" />
+  </div>
+);
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>Got a failing hard drive? Or just want more 
@@ -42,15 +46,14 @@ const MacRepairComponent = () => {
         optimal solution for you. We are able to recover files, increase storage 
         space, upgrade to solid state drives (SSD’s) and back up important files.
         </p>
-        <h2>Common Mac hard drive requests we take care of at our Florida Mac repair center:
-        </h2>
+        <h2>Common Mac hard drive requests we take care of at our Florida Mac repair center:</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
+          Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
         </p>
         <div>
           <h3>Hard Drive Replacement / Upgrade Options:</h3>
@@ -61,13 +64,12 @@ const MacRepairComponent = () => {
           <RepairCostsSectionTwo />
         </div>
         <p className='hard-drive-note'>Please note: Apple proprietary solid state hard drives cost additional. 
-            Some newer iMacs may cost more as well.  Such costs will be provided in 
-            the free estimate first for your approval.  Also, data recovery is an 
-            additional cost.
+          Some newer iMacs may cost more as well. Such costs will be provided in 
+          the free estimate first for your approval. Also, data recovery is an 
+          additional cost.
         </p>
       </div>
     </div>
-    </>
   );
 };
 

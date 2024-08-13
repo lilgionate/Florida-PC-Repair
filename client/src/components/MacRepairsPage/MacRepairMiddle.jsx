@@ -1,14 +1,16 @@
-import React from 'react';
-
+import PropTypes from 'prop-types';
 import imageSrc from '../../assets/middle-img.avif';
 
 const Button = ({ text }) => {
-
   return (
     <button className="mac-middle-button">
       {text}
     </button>
   );
+};
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
 };
 
 const ImageWithButton = () => {

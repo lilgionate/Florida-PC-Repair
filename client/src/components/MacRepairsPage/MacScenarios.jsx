@@ -1,6 +1,5 @@
-import React from 'react';
-import './MacRepairs.scss';
-
+import './MacRepairs.scss'; 
+import PropTypes from 'prop-types';
 
 const MacScenarios = ({ title, description }) => {
     return (
@@ -9,6 +8,11 @@ const MacScenarios = ({ title, description }) => {
             <p className="scenarios-text">{description}</p>
         </div>
     );
+};
+
+MacScenarios.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
 };
 
 export default MacScenarios;

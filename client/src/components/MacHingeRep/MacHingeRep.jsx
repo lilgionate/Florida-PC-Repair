@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacHingeRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Your MacBook screen doesn’t open all the way',
@@ -15,16 +15,19 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
-    <TableRow title="
-    MacBook / MacBook Pro / MacBook Air Hinge Repair / Replacement" cost="$125 +" />
+    <TableRow title="MacBook / MacBook Pro / MacBook Air Hinge Repair / Replacement" cost="$125 +" />
   </div>
 );
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>Is your MacBook hinge falling apart?  
@@ -33,15 +36,14 @@ const MacRepairComponent = () => {
         and running smoothly again.  
         You should take care of your hinge before it gets worse.
         </p>
-        <h2>Why should you fix your MacBook hinge issue?
-        </h2>
+        <h2>Why should you fix your MacBook hinge issue?</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air
+          Mac models supported: MacBook, MacBook Pro, MacBook Air
         </p>
         <div>
           <h3>MacBook Hinge Replacement Cost:</h3>
@@ -49,7 +51,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

@@ -1,5 +1,5 @@
-import React from 'react';
-import './MessengerServiceRep.scss';
+import './MessengerServiceRep.scss'; 
+import PropTypes from 'prop-types';
 
 const Step = ({ number, description }) => (
   <div className="how-it-works-gridItem">
@@ -8,6 +8,11 @@ const Step = ({ number, description }) => (
   </div>
 );
 
+Step.propTypes = {
+  number: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
 const StepsSection = () => (
   <div className="how-it-works-container">
     <div className="how-it-works-textCenter">
@@ -15,7 +20,7 @@ const StepsSection = () => (
         Let us pick up and deliver your computer or device for you. And, of course, fix it in between.
       </h2>
       <p className="how-it-works-subHeading">
-        Here's how it works:
+        Here&apos;s how it works:
       </p>
     </div>
     <div className="how-it-works-gridContainer">

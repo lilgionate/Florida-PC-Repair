@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacInstallWindowsRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'You are only able to work with certain Windows software for your data.',
@@ -15,6 +15,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="MacBook / MacBook Pro / iMac Windows on Mac Install Cost" cost="$125" />
@@ -23,22 +28,20 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>Like the look of a Mac, but prefer to work with 
         Windows? That’s fine. We’ll install Windows on your Mac. 
         You name the operating system you’d like or we can recommend one for your Mac.
         </p>
-        <h2>Why would you want to install Windows on your Mac?
-        </h2>
+        <h2>Why would you want to install Windows on your Mac?</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
+          Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
         </p>
         <div>
           <h3>Install Windows on Mac Cost:</h3>
@@ -46,7 +49,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

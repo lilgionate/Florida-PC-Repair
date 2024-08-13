@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacFixStartUpRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Failing hard drive',
@@ -17,6 +17,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="Operating System / Software Issue" cost="$85 – $125" />
@@ -26,22 +31,20 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>Does your Mac get a question mark at startup? 
-        Blinking folder? Gray Screen? Spinning wheel?  Whatever start-up issue or 
+        Blinking folder? Gray Screen? Spinning wheel? Whatever start-up issue or 
         freezing issue you are getting, we are the Mac experts in Florida to get it fixed for you.
         </p>
-        <h2>Common Mac start-up / freezing issues we fix all the time:
-        </h2>
+        <h2>Common Mac start-up / freezing issues we fix all the time:</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
+          Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
         </p>
         <div>
           <h3>Mac Start-up / Freezing Repair Cost:</h3>
@@ -49,7 +52,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

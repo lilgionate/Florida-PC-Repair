@@ -1,5 +1,5 @@
-import React from "react";
 import './MailinServiceRep.scss';
+import PropTypes from 'prop-types';
 
 const ShippingNotes = ({ title, content }) => {
     return (
@@ -11,6 +11,11 @@ const ShippingNotes = ({ title, content }) => {
         </div>
       </li>
     );
-  };
+};
+
+ShippingNotes.propTypes = {
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+};
   
 export default ShippingNotes;

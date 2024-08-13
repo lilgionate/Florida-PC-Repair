@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './MacRepairs.scss';
 
 import MacBookCenter from '../../assets/macbook-service-center.avif';

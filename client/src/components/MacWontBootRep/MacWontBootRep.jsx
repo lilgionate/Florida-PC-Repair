@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacWontBootRep.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Freezing Spinning Wheel',
@@ -17,6 +17,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="MacBook / MacBook Pro / MacBook Air / iMac Won’t Boot Cost" 
@@ -27,23 +32,20 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>Does your Mac fail to power on?  Or Mac isn’t 
-        loading all the way?  Our Florida Mac experts will perform a free diagnostic, 
-        testing all your parts and 
-        operating system to determine the exact issue and flat fee repair cost.
+        <p className='power-header'>Does your Mac fail to power on? Or Mac isn’t 
+        loading all the way? Our Florida Mac experts will perform a free diagnostic, 
+        testing all your parts and operating system to determine the exact issue and flat fee repair cost.
         </p>
-        <h2>Common Mac start-up issues we support:
-        </h2>
+        <h2>Common Mac start-up issues we support:</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
+          Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
         </p>
         <div>
           <h3>Mac Won’t Boot / Start-up Cost:</h3>
@@ -51,7 +53,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 
