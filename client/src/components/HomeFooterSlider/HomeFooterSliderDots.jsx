@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
 function Dots({ activeIndex, onClick, sliderImage }) {
     return (
@@ -11,7 +11,20 @@ function Dots({ activeIndex, onClick, sliderImage }) {
                 ></span>
             ))}
         </div>
-    )
+    );
 }
+
+Dots.propTypes = {
+    activeIndex: PropTypes.number.isRequired,
+    onClick: PropTypes.func.isRequired,
+    sliderImage: PropTypes.arrayOf(
+        PropTypes.shape({
+            image: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+            text: PropTypes.string.isRequired,
+            button: PropTypes.string.isRequired,
+        })
+    ).isRequired,
+};
 
 export default Dots;

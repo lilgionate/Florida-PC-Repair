@@ -1,4 +1,3 @@
-import React from 'react'
 
 import Builds from '../Builds/Builds';
 import Repairs from '../Repairs/Repairs';

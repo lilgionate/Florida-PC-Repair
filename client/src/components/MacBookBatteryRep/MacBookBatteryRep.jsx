@@ -1,5 +1,5 @@
-import React from 'react';
-import './MacBookBatteryRep.scss'; // Import SCSS file
+import './MacBookBatteryRep.scss';
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Battery is dead',
@@ -15,6 +15,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="MacBook / MacBook Pro / MacBook Air Battery Replacement" cost="$100 - $175" />
@@ -23,7 +28,6 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container"> {/* Container for content */}
         <p className='power-header'>
@@ -44,7 +48,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

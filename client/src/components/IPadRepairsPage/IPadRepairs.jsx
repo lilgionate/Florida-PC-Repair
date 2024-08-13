@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './IPadRepairs.scss'
 import IPadServiceCards from './IPadServiceCards'
 import IPadDataSearch from './IPadDataSearch'

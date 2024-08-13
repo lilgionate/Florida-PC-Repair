@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SliderContent from "./HomeFooterSliderContent";
 import Dots from "./HomeFooterSliderDots";
 import Arrow from "./HomeFooterSliderArrows";
@@ -7,7 +7,7 @@ import "./HomeFooterSlider.scss";
 
 const len = sliderImage.length - 1;
 
-function Slider(props) {
+function Slider() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -21,21 +21,20 @@ function Slider(props) {
     <div className="slider-container">
       <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
       <Arrow 
-      prevSlide={() => 
-        setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-      } 
-      nextSlide={() => 
-        setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-      } 
-    />
-    <Dots
-      activeIndex={activeIndex}
-      sliderImage={sliderImage}
-      onClick={(activeIndex) => setActiveIndex(activeIndex)}
-    />
+        prevSlide={() => 
+          setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+        } 
+        nextSlide={() => 
+          setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+        } 
+      />
+      <Dots
+        activeIndex={activeIndex}
+        sliderImage={sliderImage}
+        onClick={(index) => setActiveIndex(index)}
+      />
     </div>
-
-  )
+  );
 }
 
 export default Slider;

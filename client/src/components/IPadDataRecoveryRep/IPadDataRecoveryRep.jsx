@@ -1,5 +1,4 @@
 import './IPadDataRecoveryRep.scss';
-import React from 'react';
 
 import IPadDataCard from "./IPadDataCard";
 
@@ -48,6 +47,11 @@ const TableRow = ({ header, content }) => {
       <td className="IPad-data-recovery-repair-info-table-cell">{content}</td>
     </tr>
   );
+};
+
+TableRow.propTypes = {
+  header: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 export default IPhoneDataRecoveryRep;

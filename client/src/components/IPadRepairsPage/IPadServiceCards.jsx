@@ -1,6 +1,5 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './IPadRepairs.scss';
-
 
 const IPhoneScenarios = ({ title, description }) => {
     return (
@@ -11,6 +10,10 @@ const IPhoneScenarios = ({ title, description }) => {
     );
 };
 
+IPhoneScenarios.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+};
 
 export default function IPhoneServiceCards() {
   return (
@@ -35,9 +38,9 @@ export default function IPhoneServiceCards() {
                 />
                 <IPhoneScenarios
                     title="Done right the first time"
-                    description="We’ve repaired iPads that have been fixed before from other iPad repair shops and they had screen gaps and did not pass our quality standards.  We have been repairing iPads since they first came out and will ensure it is done right."
+                    description="We’ve repaired iPads that have been fixed before from other iPad repair shops and they had screen gaps and did not pass our quality standards. We have been repairing iPads since they first came out and will ensure it is done right."
                 />
             </div>
         </div>
-  )
+  );
 }

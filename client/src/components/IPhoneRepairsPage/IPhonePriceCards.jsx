@@ -1,5 +1,5 @@
-import React from 'react';
 import './IPhoneRepairs.scss';
+import PropTypes from 'prop-types';
 
 import PhoneSpill from '../../assets/phone-water-spill.webp';
 import PhoneBattery from '../../assets/iphone-battery.webp';
@@ -21,6 +21,17 @@ const RepairCard = ({ title, imageUrl, issue, causes, solution, parts, repairTim
       </div>
     </div>
   );
+};
+
+RepairCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  issue: PropTypes.string.isRequired,
+  causes: PropTypes.string,
+  solution: PropTypes.string,
+  parts: PropTypes.string,
+  repairTime: PropTypes.string,
+  link: PropTypes.string.isRequired,
 };
 
 const RepairCards = () => {

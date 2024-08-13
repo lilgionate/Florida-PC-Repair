@@ -1,5 +1,5 @@
-import React from 'react';
 import './MacAppleSoftwareSup.scss'; 
+import PropTypes from 'prop-types';
 
 const commonFixes = [
   'Email – Entourage, Outlook, Mail, Thunderbird',
@@ -17,6 +17,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="MacBook / MacBook Pro / MacBook Air / iMac / Mac mini Apple Support Cost" cost="$85 – $150" />
@@ -25,21 +30,19 @@ const RepairCostsSection = () => (
 
 const MacRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
         <p className='power-header'>Our Florida Mac software 
         specialists will install, upgrade, configure, and repair your applications.
         </p>
-        <h2>Common Apple software we support:
-        </h2>
+        <h2>Common Apple software we support:</h2>
         <ul className='power-ul'>
           {commonFixes.map((fix, index) => (
             <li key={index}>{fix}</li>
           ))}
         </ul>
         <p className='power-des'>
-        Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
+          Mac models supported: MacBook, MacBook Pro, MacBook Air, iMac, Mac Pro, Mac mini
         </p>
         <div>
           <h3>Apple Software Support Cost:</h3>
@@ -47,7 +50,6 @@ const MacRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

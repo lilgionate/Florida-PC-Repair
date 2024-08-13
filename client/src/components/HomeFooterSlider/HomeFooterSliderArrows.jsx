@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types';
 
 function Arrows({ prevSlide, nextSlide }) {
   return (
@@ -12,5 +12,10 @@ function Arrows({ prevSlide, nextSlide }) {
     </div>
   );
 }
+
+Arrows.propTypes = {
+  prevSlide: PropTypes.func.isRequired,
+  nextSlide: PropTypes.func.isRequired,
+};
 
 export default Arrows;

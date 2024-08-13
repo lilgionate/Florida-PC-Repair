@@ -1,7 +1,8 @@
 import './IPadBatteryRep.scss';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { TextField, Box, InputAdornment } from '@mui/material';
+import PropTypes from 'prop-types';
 
 import BatteryImage from '../../assets/battery-image.png';
 import ModelImage from '../../assets/model-image.png'; 
@@ -108,7 +109,7 @@ const data = [
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <i class="fas fa-search"></i>
+                <i className="fas fa-search"></i>
               </InputAdornment>
             ),
             classes: {
@@ -143,13 +144,16 @@ const data = [
   );
 }
 
-const TableRow = ({ header, content }) => {
-  return (
-    <tr className="IPad-battery-repair-info-table-row">
+const TableRow = ({ header, content }) => (
+  <tr className="IPad-battery-repair-info-table-row">
       <td className="IPad-battery-repair-info-table-header-cell">{header}</td>
       <td className="IPad-battery-repair-info-table-cell">{content}</td>
-    </tr>
-  );
+  </tr>
+);
+
+TableRow.propTypes = {
+  header: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 export default TableWithSearchAndPagination;

@@ -1,6 +1,5 @@
-import React from 'react';
 import './IPhoneRepairs.scss';
-
+import PropTypes from 'prop-types';
 
 const IPhoneScenarios = ({ title, description }) => {
     return (
@@ -11,6 +10,10 @@ const IPhoneScenarios = ({ title, description }) => {
     );
 };
 
+IPhoneScenarios.propTypes = {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+};
 
 export default function IPhoneServiceCards() {
   return (
@@ -39,5 +42,5 @@ export default function IPhoneServiceCards() {
                 />
             </div>
         </div>
-  )
+  );
 }

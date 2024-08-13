@@ -1,8 +1,8 @@
-import React from 'react';
 import './IPhoneRepairs.scss';
 
 import FooterCheckmark from '../../assets/footer-checkmark.png';
 
+import PropTypes from 'prop-types';
 
 const RepairOption = ({ text }) => (
   <div className="iphone-footer-repair-option">
@@ -10,6 +10,10 @@ const RepairOption = ({ text }) => (
     {text}
   </div>
 );
+
+RepairOption.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 const RepairOptions = () => (
   <div className="iphone-footer-repair-options">
@@ -28,11 +32,11 @@ const RepairOptions = () => (
 const RepairCard = () => (
   <div className="iphone-footer-repair-card">
     <div className='iphone-footer-background-blur'>
-    <h2 className="iphone-footer-repair-card-title">Any other issue?</h2>
-    <RepairOptions />
-    <div className="iphone-footer-repair-card-button-container">
-      <button className="iphone-footer-repair-card-button">Get a Free Diagnostic</button>
-    </div>
+      <h2 className="iphone-footer-repair-card-title">Any other issue?</h2>
+      <RepairOptions />
+      <div className="iphone-footer-repair-card-button-container">
+        <button className="iphone-footer-repair-card-button">Get a Free Diagnostic</button>
+      </div>
     </div>
   </div>
 );

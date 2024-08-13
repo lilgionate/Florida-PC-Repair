@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { TextField, Box, InputAdornment } from '@mui/material';
 import './IPhoneScreenRep.scss';
+import PropTypes from 'prop-types';
 
 import ScreenImage from '../../assets/screen-image.png'; 
 import ModelImage from '../../assets/model-image.png'; 
@@ -123,7 +124,7 @@ const TableWithSearchAndPagination = () => {
                 InputProps={{
                     startAdornment: (
                     <InputAdornment position="start">
-                        <i class="fas fa-search"></i>
+                        <i className="fas fa-search"></i>
                     </InputAdornment>
                     ),
                     classes: {
@@ -154,13 +155,19 @@ const TableWithSearchAndPagination = () => {
 };
 
 const TableRow = ({ header, content }) => {
-    return (
-      <tr className="IPhone-screen-repair-info-table-row">
-        <td className="IPhone-screen-repair-info-table-header-cell">{header}</td>
-        <td className="IPhone-screen-repair-info-table-cell">{content}</td>
-      </tr>
-    );
-  };
+  return (
+    <tr className="IPhone-screen-repair-info-table-row">
+      <td className="IPhone-screen-repair-info-table-header-cell">{header}</td>
+      <td className="IPhone-screen-repair-info-table-cell">{content}</td>
+    </tr>
+  );
+};
+
+TableRow.propTypes = {
+  header: PropTypes.node.isRequired,
+  content: PropTypes.node.isRequired,
+};
+
 
 export default TableWithSearchAndPagination;
 

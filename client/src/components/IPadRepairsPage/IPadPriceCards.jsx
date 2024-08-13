@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './IPadRepairs.scss';
 
 import IpadSpill from '../../assets/iPad-Water-Spill.webp';
@@ -23,10 +23,21 @@ const RepairCard = ({ title, imageUrl, issue, causes, solution, parts, repairTim
   );
 };
 
+RepairCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  issue: PropTypes.string.isRequired,
+  causes: PropTypes.string.isRequired,
+  solution: PropTypes.string.isRequired,
+  parts: PropTypes.string.isRequired,
+  repairTime: PropTypes.string,
+  link: PropTypes.string.isRequired,
+};
+
 const RepairCards = () => {
   return (
     <div className="IPad-price-repair-cards-container">
-       <RepairCard
+      <RepairCard
         title="Screen Replacement"
         imageUrl={IpadScreen}
         issue="Issue: Cracked front glass and / or broken LCD"
