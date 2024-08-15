@@ -1,4 +1,3 @@
-import React from 'react';
 import './PhoneTabletRepairs.scss';
 
 import Check2 from '../../assets/check2.jpg'

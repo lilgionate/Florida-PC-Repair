@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { TextField, Box, InputAdornment } from '@mui/material';
+import PropTypes from 'prop-types';
 import './MicrosoftBatteryRep.scss';
 
 import ScreenImage from '../../assets/screen-image.png'; 
 import ModelImage from '../../assets/model-image.png'; 
-
-
 
 const data = [
   { id: 1, model: 'All Models (typically)', screenReplacement: '$350' },
@@ -91,7 +90,7 @@ const TableWithSearchAndPagination = () => {
                 InputProps={{
                     startAdornment: (
                     <InputAdornment position="start">
-                        <i class="fas fa-search"></i>
+                        <i className="fas fa-search"></i>
                     </InputAdornment>
                     ),
                     classes: {
@@ -132,5 +131,10 @@ const TableRow = ({ header, content }) => {
       </tr>
     );
   };
+
+TableRow.propTypes = {
+  header: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};
 
 export default TableWithSearchAndPagination;

@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './MicrosoftSurfaceRep.scss';
 
 import MicrosoftSpill from '../../assets/Surface-waterspill.jpg';
@@ -23,10 +23,21 @@ const RepairCard = ({ title, imageUrl, issue, causes, solution, parts, repairTim
   );
 };
 
+RepairCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  issue: PropTypes.string.isRequired,
+  causes: PropTypes.string,
+  solution: PropTypes.string,
+  parts: PropTypes.string,
+  repairTime: PropTypes.string,
+  link: PropTypes.string.isRequired,
+};
+
 const RepairCards = () => {
   return (
     <div className="Microsoft-price-repair-cards-container">
-       <RepairCard
+      <RepairCard
         title="Microsoft Surface Screen Replacement"
         imageUrl={MicrosoftScreen}
         issue="Issue: Cracked front glass and / or broken LCD"
@@ -37,7 +48,7 @@ const RepairCards = () => {
       />
       <RepairCard
         title="Microsoft Surface Battery Replacement"
-        imageUrl={MicrosoftBattery }
+        imageUrl={MicrosoftBattery}
         issue="Battery not lasting like it used to? Not charging? No power light? 
         No worries! Our Surface experts are experienced at replacing Microsoft 
         Surface batteries."

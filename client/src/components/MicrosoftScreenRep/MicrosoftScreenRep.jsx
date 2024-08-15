@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { TextField, Box, InputAdornment } from '@mui/material';
+import PropTypes from 'prop-types';
 import './MicrosoftScreenRep.scss';
 
 import ScreenImage from '../../assets/screen-image.png'; 
 import ModelImage from '../../assets/model-image.png'; 
-
-
 
 const data = [
   { id: 1, model: 'Surface Pro 8 - 9', screenReplacement: '$600' },
@@ -19,14 +18,13 @@ const data = [
   { id: 8, model: 'Surface Pro 2 - 3 - 4', screenReplacement: '$350' },
   { id: 9, model: 'Surface 1 - 2 - 3 - RT', screenReplacement: '$350' },
   { id: 10, model: 'Surface Laptop 3 - 4', screenReplacement: '$500' },
-
 ];
 
 const columns = [
   {
     field: 'model',
     headerName: 'Microsoft Surface Model',
-    width:  375,
+    width: 375,
     headerClassName: 'Microsoft-screen-custom-header',
     cellClassName: 'Microsoft-screen-custom-cell',
     renderHeader: () => (
@@ -44,7 +42,7 @@ const columns = [
   {
     field: 'screenReplacement',
     headerName: 'Screen Replacement',
-    width:  374.4,
+    width: 374.4,
     headerClassName: 'Microsoft-screen-custom-header',
     cellClassName: 'Microsoft-screen-custom-cell',
     renderHeader: () => (
@@ -97,7 +95,7 @@ const TableWithSearchAndPagination = () => {
                 InputProps={{
                     startAdornment: (
                     <InputAdornment position="start">
-                        <i class="fas fa-search"></i>
+                        <i className="fas fa-search"></i>
                     </InputAdornment>
                     ),
                     classes: {
@@ -133,7 +131,7 @@ const TableWithSearchAndPagination = () => {
             and measures to attain your happiness. And, in the end, it make us tougher Floridians!
             </p>
         </div>
-</div>
+    </div>
   );
 };
 
@@ -144,7 +142,11 @@ const TableRow = ({ header, content }) => {
         <td className="Microsoft-screen-repair-info-table-cell">{content}</td>
       </tr>
     );
-  };
+};
+
+TableRow.propTypes = {
+  header: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};
 
 export default TableWithSearchAndPagination;
-

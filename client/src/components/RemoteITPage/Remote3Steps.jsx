@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './RemoteITPage.scss';
 
 const EasySteps = () => {
@@ -21,6 +21,11 @@ const StepCard = ({ stepNumber, stepText }) => {
       <p className="easy-step-card-text">{stepText}</p>
     </div>
   );
+};
+
+StepCard.propTypes = {
+  stepNumber: PropTypes.string.isRequired,
+  stepText: PropTypes.string.isRequired,
 };
 
 export default EasySteps;

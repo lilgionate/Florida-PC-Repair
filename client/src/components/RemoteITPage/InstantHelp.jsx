@@ -1,4 +1,3 @@
-import React from 'react';
 import './RemoteITPage.scss';
 
 import ITSupport from '../../assets/remote-support-pioneer.jpeg';

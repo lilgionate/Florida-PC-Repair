@@ -1,6 +1,5 @@
-import React from 'react';
 import './MicrosoftDataRecoveryRep.scss';
-
+import PropTypes from 'prop-types';
 import MicrosoftDataCard from './MicrosoftDataCard';
 
 const MicrosoftDataRecovery = () => {
@@ -8,7 +7,7 @@ const MicrosoftDataRecovery = () => {
         { name: "File Backup", price: "$85", description: "includes no physical damage, phone fully working", dots: 135 },
         { name: "Standard Recovery", price: "$125 - $250", description: "includes software corruption, start-up issue", dots: 92 },
         { name: "Hardware Recovery", price: "$250 - $450", description: "liquid spills, drops, physical damage, repair / replace failed parts", dots: 85 },
-    ]
+    ];
 
   return (
     <div className="Microsoft-data-recovery-repair-info-container">
@@ -51,7 +50,11 @@ const TableRow = ({ header, content }) => {
         <td className="Microsoft-data-recovery-repair-info-table-cell">{content}</td>
       </tr>
     );
-  };
+};
+
+TableRow.propTypes = {
+  header: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};
 
 export default MicrosoftDataRecovery;
-

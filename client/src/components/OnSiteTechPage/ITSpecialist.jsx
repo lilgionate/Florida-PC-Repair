@@ -1,4 +1,3 @@
-import React from 'react';
 import './OnSiteTechPage.scss';
 
 import OutSourcing from '../../assets/outsourcing.jpg';

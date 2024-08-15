@@ -1,8 +1,7 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './MicrosoftSurfaceRep.scss';
 
 import FooterCheckmark from '../../assets/footer-checkmark.png';
-
 
 const RepairOption = ({ text }) => (
   <div className="Microsoft-footer-repair-option">
@@ -10,6 +9,10 @@ const RepairOption = ({ text }) => (
     {text}
   </div>
 );
+
+RepairOption.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 const RepairOptions = () => (
   <div className="Microsoft-footer-repair-options">
@@ -28,11 +31,11 @@ const RepairOptions = () => (
 const RepairCard = () => (
   <div className="Microsoft-footer-repair-card">
     <div className='Microsoft-footer-background-blur'>
-    <h2 className="Microsoft-footer-repair-card-title">Any other issue?</h2>
-    <RepairOptions />
-    <div className="Microsoft-footer-repair-card-button-container">
-      <button className="Microsoft-footer-repair-card-button">Get a Free Diagnostic</button>
-    </div>
+      <h2 className="Microsoft-footer-repair-card-title">Any other issue?</h2>
+      <RepairOptions />
+      <div className="Microsoft-footer-repair-card-button-container">
+        <button className="Microsoft-footer-repair-card-button">Get a Free Diagnostic</button>
+      </div>
     </div>
   </div>
 );

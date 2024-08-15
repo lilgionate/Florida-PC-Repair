@@ -1,5 +1,3 @@
-import React from 'react'
-
 import MacServices from './MacServices';
 import WindowsServices from './WindowsServices';
 

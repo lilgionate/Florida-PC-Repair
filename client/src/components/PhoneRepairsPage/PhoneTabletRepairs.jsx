@@ -1,5 +1,3 @@
-import React from 'react'
-
 import './PhoneTabletRepairs.scss'
 import MacBookCenter from '../../assets/phone-Repair.webp'
 import PhoneServiceCards from './PhoneServiceCards'

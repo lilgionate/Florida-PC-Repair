@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './OnSiteTechPage.scss';
 
 const OnsiteVisit = () => {
@@ -34,6 +34,10 @@ const ListItem = ({ text }) => {
       {text}
     </li>
   );
+};
+
+ListItem.propTypes = {
+  text: PropTypes.string.isRequired,
 };
 
 export default OnsiteVisit;

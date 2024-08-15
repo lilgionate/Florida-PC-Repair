@@ -1,4 +1,3 @@
-import React from 'react';
 import './PcRepairs.scss';
 
 const commonIssues = [

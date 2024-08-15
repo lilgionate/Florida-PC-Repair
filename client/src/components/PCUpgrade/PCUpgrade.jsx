@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './PCUpgrade.scss'; // Import SCSS file
 
 const commonFixes = [
@@ -10,28 +10,31 @@ const commonFixes = [
   'Software Upgrades for better stability'
 ];
 
-  const TableRow = ({ className, title, cost }) => (
-    <div className={`${className} cost`}>
-      {title && <span className="title">{title}</span>}
-      <span className="cost-value">{cost}</span>
-    </div>
-  );
+const TableRow = ({ className, title, cost }) => (
+  <div className={`${className} cost`}>
+    {title && <span className="title">{title}</span>}
+    <span className="cost-value">{cost}</span>
+  </div>
+);
+
+TableRow.propTypes = {
+  className: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  cost: PropTypes.string.isRequired,
+};
 
 const RepairCostsSection = () => (
   <div className="price-section">
-    <TableRow title="PC Upgrade" cost="$85 – $170 + parts" />
+    <TableRow className="pc-upgrade" title="PC Upgrade" cost="$85 – $170 + parts" />
   </div>
 );
 
 const WindowsRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>You don’t need to buy a new computer if you can 
-        upgrade your current one in a cost effective manner. Consult with our computer 
-        upgrade technicians who will 
-        recommend the optimal solution to provide your PC the maximum performance. cost.
+        <p className='power-header'>
+          You don’t need to buy a new computer if you can upgrade your current one in a cost-effective manner. Consult with our computer upgrade technicians who will recommend the optimal solution to provide your PC the maximum performance.
         </p>
         <p className='power-des'>Our Windows upgrades include:</p>
         <ul className='power-ul'>
@@ -40,20 +43,14 @@ const WindowsRepairComponent = () => {
           ))}
         </ul>
         <h2>Should I buy a new computer or upgrade my PC?</h2>
-        <p className='power-header'>It’s a great question. Our rule of thumb is to 
-        only upgrade your PC, along with any additional required computer issues, if 
-        it costs less than half of what it costs for a new computer. Another variable 
-        to consider is the age. If your computer is 4+ years old, it’s time to throw 
-        in the towel. Simply put, a RAM upgrade is the easiest way to double the speed 
-        of your computer. Need more space? We can mirror your current info to a larger 
-        hard drive and that takes care of that. Any PC upgrade questions, let us know.
+        <p className='power-header'>
+          It’s a great question. Our rule of thumb is to only upgrade your PC, along with any additional required computer issues, if it costs less than half of what it costs for a new computer. Another variable to consider is the age. If your computer is 4+ years old, it’s time to throw in the towel. Simply put, a RAM upgrade is the easiest way to double the speed of your computer. Need more space? We can mirror your current info to a larger hard drive and that takes care of that. Any PC upgrade questions, let us know.
         </p>
         <div>
           <RepairCostsSection />
         </div>
       </div>
     </div>
-    </>
   );
 };
 

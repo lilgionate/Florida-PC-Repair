@@ -1,4 +1,3 @@
-import React from 'react'
 import './MicrosoftSurfaceRep.scss'
 import MicrosoftServiceCards from './MicrosoftServiceCards'
 import MicrosoftDataSearch from './MicrosoftDataSearch'

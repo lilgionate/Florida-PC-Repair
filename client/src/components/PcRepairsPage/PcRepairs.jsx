@@ -1,14 +1,10 @@
-import React from 'react'; 
 import './PcRepairs.scss';
 
 import PCSplitImg from '../../assets/pc-split-img.avif';
-
 import PCFooter from '../../assets/pc-page-footer.jpg'
-
 import MacBookCenter from '../../assets/pc-service-center.jpg';
 
 import CommonIssuesList from './SupportedPcIssues';
-
 import MacServiceCard from './PcRepairCards';
 
 import PCHardDrive from '../../assets/PCHardDriveRepair.jpeg';

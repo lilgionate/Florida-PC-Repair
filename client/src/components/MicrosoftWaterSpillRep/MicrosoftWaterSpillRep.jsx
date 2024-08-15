@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './MicrosoftWaterSpillRep.scss';
 
 const MicrosoftWaterSpill = () => {
@@ -26,9 +26,9 @@ const MicrosoftWaterSpill = () => {
             make economic sense, you can still look to recover the files.  Either way, we 
             can help support your Microsoft Surface repair service.
             </p>
-            </div>
         </div>
-    );
+    </div>
+  );
 
 };
 
@@ -39,7 +39,11 @@ const TableRow = ({ header, content }) => {
         <td className="Microsoft-water-spill-repair-info-table-cell">{content}</td>
       </tr>
     );
-  };
+};
+
+TableRow.propTypes = {
+  header: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};
 
 export default MicrosoftWaterSpill;
-

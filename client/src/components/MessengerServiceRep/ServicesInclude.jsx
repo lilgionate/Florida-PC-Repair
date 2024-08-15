@@ -1,5 +1,5 @@
-import React from 'react';
 import './MessengerServiceRep.scss';
+import PropTypes from 'prop-types';
 
 const ServiceCard = ({ imageSrc, altText, description }) => {
   const isFontAwesomeIcon = imageSrc.startsWith('fa-');
@@ -14,6 +14,12 @@ const ServiceCard = ({ imageSrc, altText, description }) => {
       <p className="MessengerServicesDes">{description}</p>
     </div>
   );
+};
+
+ServiceCard.propTypes = {
+  imageSrc: PropTypes.string.isRequired,
+  altText: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 const ServiceSection = () => {

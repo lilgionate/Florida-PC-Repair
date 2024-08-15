@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { itSupportDropdown } from "./NavItems";
 import { Link } from "react-router-dom";
 import "./Dropdown.scss";

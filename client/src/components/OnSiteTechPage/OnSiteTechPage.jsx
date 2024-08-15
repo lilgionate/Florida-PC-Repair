@@ -1,4 +1,3 @@
-import React from 'react';
 import './OnSiteTechPage.scss';
 import OnSiteRep from '../../assets/OnsiteRep.jpg';
 import ITSpecialist from './ITSpecialist';

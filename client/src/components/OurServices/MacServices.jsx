@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './OurServices.scss';
 
 import MacNoPower from '../../assets/macbook-pro-black-screen-repair.jpg';
@@ -34,6 +34,12 @@ const MacRepairCard = ({ image, alt, title }) => {
       <p className="mac-repair-card-title">{title}</p>
     </div>
   );
+};
+
+MacRepairCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default MacRepairComponent;

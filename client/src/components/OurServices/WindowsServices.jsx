@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './OurServices.scss';
 
 import BrokenScreen from '../../assets/BrokenLaptopScreen.jpg';
@@ -16,12 +16,12 @@ const WindowsServices = () => {
         <p className="windows-services-subtitle">Repairing laptops, desktops, PCs, custom gaming machines, all-in-ones, and tablets.</p>
       </div>
       <div className="windows-services-cards">
-        <WindowsServicesCard image={BrokenScreen} alt="MacBook Won't Power Up" title="MacBook Won't Power Up" />
-        <WindowsServicesCard image={WindowsDataRecovery} title="MacBook Screen Replacement" />
-        <WindowsServicesCard image={PCWontStart} title="MacBook Spill Repair" />
-        <WindowsServicesCard image={SlowPCIssue} title="MacBook Won't Power Up" />
-        <WindowsServicesCard image={PCHardDriveRep} title="MacBook Screen Replacement" />
-        <WindowsServicesCard image={LaptopSpill} alt="MacBook Spill Repair" title="MacBook Spill Repair" />
+        <WindowsServicesCard image={BrokenScreen} alt="Broken Laptop Screen" title="Broken Laptop Screen" />
+        <WindowsServicesCard image={WindowsDataRecovery} alt="Windows Data Recovery" title="Windows Data Recovery" />
+        <WindowsServicesCard image={PCWontStart} alt="PC Won't Start" title="PC Won't Start" />
+        <WindowsServicesCard image={SlowPCIssue} alt="Slow PC Issues" title="Slow PC Issues" />
+        <WindowsServicesCard image={PCHardDriveRep} alt="PC Hard Drive Repair" title="PC Hard Drive Repair" />
+        <WindowsServicesCard image={LaptopSpill} alt="Laptop Spill Repair" title="Laptop Spill Repair" />
       </div>
     </div>
   );
@@ -34,6 +34,12 @@ const WindowsServicesCard = ({ image, alt, title }) => {
       <p className="windows-services-card-title">{title}</p>
     </div>
   );
+};
+
+WindowsServicesCard.propTypes = {
+  image: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default WindowsServices;

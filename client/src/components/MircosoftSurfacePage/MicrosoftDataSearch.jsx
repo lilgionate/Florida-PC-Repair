@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { TextField, Box, InputAdornment } from '@mui/material';
 import './MicrosoftSurfaceRep.scss';
@@ -113,7 +113,7 @@ const TableWithSearchAndPagination = () => {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <i class="fas fa-search"></i>
+                <i className="fas fa-search"></i>
               </InputAdornment>
             ),
             classes: {
