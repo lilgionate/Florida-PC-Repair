@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import './MailinServiceRep.scss';
 import MailinRep from '../../assets/mail-in-repair.avif';
 import Step from './MailinTimeline';

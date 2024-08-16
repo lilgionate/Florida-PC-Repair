@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './WindowsVirtualMachine.scss'; // Import SCSS file
 
 const commonFixes = [
@@ -12,12 +12,18 @@ const commonFixes = [
   'Save computer space by virtualizing machines'
 ];
 
-  const TableRow = ({ className, title, cost }) => (
-    <div className={`${className} cost`}>
-      {title && <span className="title">{title}</span>}
-      <span className="cost-value">{cost}</span>
-    </div>
-  );
+const TableRow = ({ className, title, cost }) => (
+  <div className={`${className} cost`}>
+    {title && <span className="title">{title}</span>}
+    <span className="cost-value">{cost}</span>
+  </div>
+);
+
+TableRow.propTypes = {
+  className: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
 
 const RepairCostsSection = () => (
   <div className="price-section">
@@ -27,18 +33,16 @@ const RepairCostsSection = () => (
 
 const WindowsRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>Your computer is working fine, that’s the not 
-        issue. The issue is you want to run another operating system on it. You may 
-        want to run an older Windows XP, Vista, or 7 operating system on your newer 
-        Windows 8 or 10 computer. Maybe you want to install Windows on your Mac or 
-        Mac on your PC. Yes, you can do that!
+        <p className='power-header'>
+          Your computer is working fine, that’s not the issue. The issue is you want to run another operating system on it. 
+          You may want to run an older Windows XP, Vista, or 7 operating system on your newer Windows 8 or 10 computer. 
+          Maybe you want to install Windows on your Mac or Mac on your PC. Yes, you can do that!
         </p>
-        <p className='power-header'>Stop in any go over all your options. There 
-        are a slew of different virtual software programs and we will help isolate 
-        them down to the one best solution for your needs.
+        <p className='power-header'>
+          Stop in and go over all your options. There are a slew of different virtual software programs, 
+          and we will help isolate them down to the one best solution for your needs.
         </p>
         <p className='power-des'>Common Windows Virtual Machines we set up:</p>
         <ul className='power-ul'>
@@ -51,7 +55,6 @@ const WindowsRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

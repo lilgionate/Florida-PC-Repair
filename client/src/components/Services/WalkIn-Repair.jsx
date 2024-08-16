@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './WalkIn-Repair.scss';
 
 import greenCheck from '../../assets/green-check.png';
@@ -109,7 +109,7 @@ const WalkInRepair = () => {
      <div className="MailIn-container">
          <div className="MailIn-content">
             <h2 className='mailin-title'>Mail-In Repair</h2>
-            <p className='mailin-des'>Can't find a store near you?</p>
+            <p className='mailin-des'>Can&apos;t find a store near you?</p>
             <button className='mailin-btn'>Mail in your device</button>
          </div>
     </div>

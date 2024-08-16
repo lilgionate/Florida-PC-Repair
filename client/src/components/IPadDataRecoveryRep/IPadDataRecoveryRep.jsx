@@ -1,7 +1,7 @@
+import PropTypes from 'prop-types';
 import './IPadDataRecoveryRep.scss';
 
 import IPadDataCard from "./IPadDataCard";
-
 
 const IPhoneDataRecoveryRep = () => {
 

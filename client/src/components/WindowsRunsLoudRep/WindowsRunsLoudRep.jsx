@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './WindowsRunsLoudRep.scss'; // Import SCSS file
 
 const commonFixes = [
@@ -12,11 +12,11 @@ const commonFixes = [
 ];
 
 const commonProcess = [
-    'A full diagnosis to confirm the exact reason why your laptop or desktop is noisy.',
-    'A clear, flat fee price of the repair cost for your approval to quiet down and fix your PC.',
-    'A prompt repair service fix within 1 – 2 days to fix your loud PC issue.',
-    'A service warranty of 60 days ensuring your full satisfaction.'
-  ];
+  'A full diagnosis to confirm the exact reason why your laptop or desktop is noisy.',
+  'A clear, flat fee price of the repair cost for your approval to quiet down and fix your PC.',
+  'A prompt repair service fix within 1 – 2 days to fix your loud PC issue.',
+  'A service warranty of 60 days ensuring your full satisfaction.'
+];
 
 const TableRow = ({ title, cost }) => (
   <div className="flex-container">
@@ -24,6 +24,11 @@ const TableRow = ({ title, cost }) => (
     <p>{cost}</p>
   </div>
 );
+
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
 
 const RepairCostsSection = () => (
   <div className="price-section">
@@ -33,12 +38,11 @@ const RepairCostsSection = () => (
 
 const WindowsRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>Bang bang, click click, clunkity clunk. These are 
-        all noises your Windows laptop or desktop may make. The question is, 
-        “Where is it coming from?” And more importantly, “How can it be fixed?”
+        <p className='power-header'>
+          Bang bang, click click, clunkity clunk. These are all noises your Windows laptop or desktop may make. 
+          The question is, “Where is it coming from?” And more importantly, “How can it be fixed?”
         </p>
         <p className='power-des'>PC loud, noisy sounds we support:</p>
         <ul className='power-ul'>
@@ -57,7 +61,6 @@ const WindowsRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

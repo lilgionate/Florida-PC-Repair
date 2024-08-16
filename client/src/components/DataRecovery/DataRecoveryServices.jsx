@@ -375,7 +375,7 @@ const DataRecoveryComponent = () => {
                         ) : (
                             <i className="data-icon fas fa-caret-right"></i>
                         )}
-                        Server crashed?​
+                        Server Crashed?
                         {dropdownStates.dropdown3 && (
                     <ul className="dropdown dropdown-open">
                         <p className="dropdown-text">We got that covered too. Whether you have a NAS drive, RAID server, drobo, 

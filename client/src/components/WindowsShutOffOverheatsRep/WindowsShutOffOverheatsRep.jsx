@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './WindowsShutOffOverheatsRep.scss'; // Import SCSS file
 
 const commonFixes = [
@@ -13,11 +13,11 @@ const commonFixes = [
 ];
 
 const commonProcess = [
-    'A full diagnosis to confirm the exact parts in question of causing your computer to overheat.',
-    'A clear, flat fee price of the repair cost for your approval.',
-    'A prompt overheating repair service fix within 1 – 2 days.',
-    'A service warranty of 60 days ensuring your full satisfaction.'
-  ];
+  'A full diagnosis to confirm the exact parts in question of causing your computer to overheat.',
+  'A clear, flat fee price of the repair cost for your approval.',
+  'A prompt overheating repair service fix within 1 – 2 days.',
+  'A service warranty of 60 days ensuring your full satisfaction.'
+];
 
 const TableRow = ({ title, cost }) => (
   <div className="flex-container">
@@ -25,6 +25,11 @@ const TableRow = ({ title, cost }) => (
     <p>{cost}</p>
   </div>
 );
+
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
 
 const RepairCostsSection = () => (
   <div className="price-section">
@@ -34,12 +39,11 @@ const RepairCostsSection = () => (
 
 const WindowsRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>Does your PC turn off on its own or gets very hot? 
-        That typically means it 
-        is overheating and our Florida PC specialists will be able to locate the reason why.
+        <p className='power-header'>
+          Does your PC turn off on its own or get very hot? That typically means it 
+          is overheating, and our Florida PC specialists will be able to locate the reason why.
         </p>
         <p className='power-des'>Common overheating or shutting off symptoms we support:</p>
         <ul className='power-ul'>
@@ -58,7 +62,6 @@ const WindowsRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

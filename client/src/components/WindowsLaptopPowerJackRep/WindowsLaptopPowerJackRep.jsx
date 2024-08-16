@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './WindowsLaptopPowerJackRep.scss'; // Import SCSS file
 
 const commonFixes = [
@@ -10,12 +10,18 @@ const commonFixes = [
   'Jack has come off'
 ];
 
-  const TableRow = ({ className, title, cost }) => (
-    <div className={`${className} cost`}>
-      {title && <span className="title">{title}</span>}
-      <span className="cost-value">{cost}</span>
-    </div>
-  );
+const TableRow = ({ className, title, cost }) => (
+  <div className={`${className} cost`}>
+    {title && <span className="title">{title}</span>}
+    <span className="cost-value">{cost}</span>
+  </div>
+);
+
+TableRow.propTypes = {
+  className: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
 
 const RepairCostsSection = () => (
   <div className="price-section">
@@ -25,13 +31,12 @@ const RepairCostsSection = () => (
 
 const WindowsRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>Your laptop doesn’t power on.  Your power jack is 
-        slightly bent.  That could only mean one thing:  you need to replace your power 
-        jack.  Our laptop repair 
-        technicians will replace your loose jack and ensure it will be a permanent fix.
+        <p className='power-header'>
+          Your laptop doesn’t power on. Your power jack is slightly bent. That could only mean one thing: 
+          you need to replace your power jack. Our laptop repair technicians will replace your loose jack 
+          and ensure it will be a permanent fix.
         </p>
         <p className='power-des'>Common laptop DC jack symptoms we support:</p>
         <ul className='power-ul'>
@@ -44,7 +49,6 @@ const WindowsRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

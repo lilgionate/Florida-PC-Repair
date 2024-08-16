@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import img7 from "../../assets/acer.svg";
 import img8 from "../../assets/windows.svg";
 import img9 from "../../assets/lenovo.svg";

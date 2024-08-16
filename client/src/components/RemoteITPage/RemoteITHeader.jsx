@@ -1,5 +1,5 @@
-import React from 'react';
 import './RemoteITPage.scss';
+import PropTypes from 'prop-types';
 
 const RemoteSupportFeature = ({ text }) => {
   return (
@@ -8,6 +8,10 @@ const RemoteSupportFeature = ({ text }) => {
       <span className="feature-text">{text}</span>
     </div>
   );
+};
+
+RemoteSupportFeature.propTypes = {
+  text: PropTypes.string.isRequired,
 };
 
 const RemoteSupportSection = () => {

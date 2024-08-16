@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './WindowsBlueScreenErr.scss'; // Import SCSS file
 
 const commonFixes = [
@@ -15,10 +15,10 @@ const commonFixes = [
 ];
 
 const commonProcess = [
-    'First, disconnect any cables. You never know if your USB mouse, printer, or external hard drive is causing the issue.',
-    'Reboot your computer. There may be a software conflict or overloaded Windows session that can easily be flushed out with a Windows restart.',
-    'These two easy steps typically resolve the blue screen of death error 4 out of 10 times. If you’re still having BSOD messages, you can certainly bring it to the PC blue screen error Florida experts, Florida PC Support, for a free diagnostic and speedy fix.'
-  ];
+  'First, disconnect any cables. You never know if your USB mouse, printer, or external hard drive is causing the issue.',
+  'Reboot your computer. There may be a software conflict or overloaded Windows session that can easily be flushed out with a Windows restart.',
+  'These two easy steps typically resolve the blue screen of death error 4 out of 10 times. If you’re still having BSOD messages, you can certainly bring it to the PC blue screen error Florida experts, Florida PC Support, for a free diagnostic and speedy fix.'
+];
 
 const TableRow = ({ title, cost }) => (
   <div className="flex-container">
@@ -26,6 +26,11 @@ const TableRow = ({ title, cost }) => (
     <p>{cost}</p>
   </div>
 );
+
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
 
 const RepairCostsSection = () => (
   <div className="price-section">
@@ -35,13 +40,12 @@ const RepairCostsSection = () => (
 
 const WindowsRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>Congrats – you have reached the ultimate serious 
-        hardware or software failure. Don’t worry, our PC techs take pride in finding 
-        the exact cause and quick fix. Our one-hour 
-        complimentary diagnostic test will give you the cost of repair for your approval.
+        <p className='power-header'>
+          Congrats – you have reached the ultimate serious hardware or software failure. 
+          Don’t worry, our PC techs take pride in finding the exact cause and quick fix. 
+          Our one-hour complimentary diagnostic test will give you the cost of repair for your approval.
         </p>
         <p className='power-des'>Common blue screen symptoms we support:</p>
         <ul className='power-ul'>
@@ -60,7 +64,6 @@ const WindowsRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

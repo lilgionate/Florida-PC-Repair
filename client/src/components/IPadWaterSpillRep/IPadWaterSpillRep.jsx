@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './IPadWaterSpillRep.scss';
 
 import iPadWaterSpill from '../../assets/iPad_water_spill.png';

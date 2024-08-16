@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './RemoteITPage.scss';
 
 export const RemoteITFAQ = () => {
@@ -87,7 +87,7 @@ export const RemoteITFAQ = () => {
           ) : (
             <i className="remote-it-faq__icon fas fa-caret-right"></i>
           )}
-          What if you don't fix my issue? Is this guaranteed?
+          What if you don&apos;t fix my issue? Is this guaranteed?
           {dropdownStates.dropdown5 && (
             <ul className="remote-it-faq__dropdown remote-it-faq__dropdown-open">
               <p className="remote-it-faq__dropdown-text">

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import RemoteITHeader from './RemoteITHeader';
 import RemoteITPricing from './RemoteITPricing';
 import ThreeEasySteps from './Remote3Steps';

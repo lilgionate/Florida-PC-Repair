@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './WindowsNoEmailInternetRep.scss'; // Import SCSS file
 
 const commonFixes = [
@@ -17,6 +17,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="No Email / Internet" cost="$85 – $125" />
@@ -25,12 +30,12 @@ const RepairCostsSection = () => (
 
 const WindowsRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>Our Microsoft technicians will ensure you get browse 
-        the Internet as fast as possible. We’ll make sure your emails are sending and
-        receiving correctly. You’ll be fully connected quickly and at a reasonable cost.
+        <p className='power-header'>
+          Our Microsoft technicians will ensure you can browse the Internet as fast as possible. 
+          We’ll make sure your emails are sending and receiving correctly. 
+          You’ll be fully connected quickly and at a reasonable cost.
         </p>
         <p className='power-des'>Internet / Email issues we support:</p>
         <ul className='power-ul'>
@@ -43,7 +48,6 @@ const WindowsRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

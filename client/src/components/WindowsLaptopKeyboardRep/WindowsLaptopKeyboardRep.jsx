@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import './WindowsLaptopKeyboardRep.scss'; // Import SCSS file
 
 const commonFixes = [
@@ -16,6 +16,11 @@ const TableRow = ({ title, cost }) => (
   </div>
 );
 
+TableRow.propTypes = {
+  title: PropTypes.string.isRequired,
+  cost: PropTypes.string.isRequired,
+};
+
 const RepairCostsSection = () => (
   <div className="price-section">
     <TableRow title="Laptop Keyboard replacement" cost="$85 – $250" />
@@ -24,13 +29,12 @@ const RepairCostsSection = () => (
 
 const WindowsRepairComponent = () => {
   return (
-    <>
     <div className="mac-power-container">
       <div className="content-container">
-        <p className='power-header'>Did you spill something on your laptop?  Or maybe 
-        some of your keys just mysteriously stopped working?  Either way, we don’t 
-        judge and are ready to replace 
-        your laptop keyboard for you.  Stop in for a speedy laptop replacement service.
+        <p className='power-header'>
+          Did you spill something on your laptop? Or maybe some of your keys just mysteriously stopped working? 
+          Either way, we don’t judge and are ready to replace your laptop keyboard for you. 
+          Stop in for a speedy laptop replacement service.
         </p>
         <p className='power-des'>Here are some Windows laptop keyboard replacement scenarios we support:</p>
         <ul className='power-ul'>
@@ -43,7 +47,6 @@ const WindowsRepairComponent = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

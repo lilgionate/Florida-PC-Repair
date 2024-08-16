@@ -133,7 +133,7 @@ export default function CustomPCPaymentForm() {
                                 onChange={(e) => setName(e.target.value)}
                                 placeholder='Cardholder Name'
                             />
-                            <p>Name you'll receive updates and receipts on</p> {/* Replace helpertext */}
+                            <p>Name you&apos;ll receive updates and receipts on</p> {/* Replace helpertext */}
                         </div>
                         <fieldset className="FormGroup">
                             <div className="FormRow">
