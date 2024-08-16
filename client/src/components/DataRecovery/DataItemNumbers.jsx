@@ -6,6 +6,8 @@ const DataItem = ({ count, description, isLast }) => {
   const dataItemRef = useRef(null);
 
   useEffect(() => {
+    const currentRef = dataItemRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
@@ -26,13 +28,13 @@ const DataItem = ({ count, description, isLast }) => {
       { threshold: 0.5 } // Trigger when 50% of the component is in view
     );
 
-    if (dataItemRef.current) {
-      observer.observe(dataItemRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (dataItemRef.current) {
-        observer.unobserve(dataItemRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [count]);

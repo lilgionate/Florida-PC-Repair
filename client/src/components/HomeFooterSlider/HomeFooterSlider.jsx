@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import SliderContent from "./HomeFooterSliderContent";
 import Dots from "./HomeFooterSliderDots";
 import Arrow from "./HomeFooterSliderArrows";
-import sliderImage from "./HomeFooterSliderImg";
+import { HomeFooterSliderImg as sliderImage } from "./HomeFooterSliderData"; // Update the import
 import "./HomeFooterSlider.scss";
 
 const len = sliderImage.length - 1;

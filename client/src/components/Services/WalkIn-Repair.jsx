@@ -27,10 +27,11 @@ const WalkInRepair = () => {
     const tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1);
     const tomorrowDayName = daysOfWeek[tomorrow.getDay()];
-
+  
     setTodaySchedule(schedule[todayDayName]);
     setTomorrowSchedule(schedule[tomorrowDayName]);
-  }, []);
+  }, [daysOfWeek, schedule]);
+  
 
   const getNext7DaysSchedule = () => {
     const today = new Date();
