@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import './WalkIn-Repair.scss';
 
 import greenCheck from '../../assets/green-check.png';
@@ -9,7 +9,7 @@ const WalkInRepair = () => {
   const [todaySchedule, setTodaySchedule] = useState('');
   const [tomorrowSchedule, setTomorrowSchedule] = useState('');
 
-  const schedule = {
+  const schedule = useMemo(() => ({
     Monday: '9AM - 6PM',
     Tuesday: '9AM - 6PM',
     Wednesday: '9AM - 6PM',
@@ -17,9 +17,11 @@ const WalkInRepair = () => {
     Friday: '9AM - 6PM',
     Saturday: '10AM - 3PM',
     Sunday: 'Closed'
-  };
+  }), []);
 
-  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const daysOfWeek = useMemo(() => [
+    'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
+  ], []);
 
   useEffect(() => {
     const today = new Date();
@@ -27,11 +29,10 @@ const WalkInRepair = () => {
     const tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1);
     const tomorrowDayName = daysOfWeek[tomorrow.getDay()];
-  
+
     setTodaySchedule(schedule[todayDayName]);
     setTomorrowSchedule(schedule[tomorrowDayName]);
   }, [daysOfWeek, schedule]);
-  
 
   const getNext7DaysSchedule = () => {
     const today = new Date();

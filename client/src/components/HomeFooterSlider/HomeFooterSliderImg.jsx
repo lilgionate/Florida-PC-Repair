@@ -28,6 +28,4 @@ export const HomeFooterSliderImg = [
         image: img4,
         button: ""
     }
-]
-
-export default HomeFooterSliderImg;
+];

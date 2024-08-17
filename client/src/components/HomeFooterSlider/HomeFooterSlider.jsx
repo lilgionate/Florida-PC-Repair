@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import SliderContent from "./HomeFooterSliderContent";
 import Dots from "./HomeFooterSliderDots";
 import Arrow from "./HomeFooterSliderArrows";
-import { HomeFooterSliderImg as sliderImage } from "./HomeFooterSliderData"; // Update the import
+import { HomeFooterSliderImg as sliderImage } from "./HomeFooterSliderImg"; 
 import "./HomeFooterSlider.scss";
 
 const len = sliderImage.length - 1;
@@ -16,7 +16,7 @@ function Slider() {
     }, 5000);
     return () => clearInterval(interval);
   }, [activeIndex]);
-  
+
   return (
     <div className="slider-container">
       <SliderContent activeIndex={activeIndex} sliderImage={sliderImage} />
