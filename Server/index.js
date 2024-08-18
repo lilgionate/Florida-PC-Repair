@@ -7,7 +7,7 @@ const cors = require('cors');
 const path = require('path');
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 // parse application/json
 app.use(bodyParser.json());
@@ -390,9 +390,9 @@ app.post('/sub11', async (req, res) => {
     res.json({ 'client_secret': client_secret, 'status': status });
 });
 
-app.get("/", function (req, res) {
+app.get("*", function (req, res) { // This handles all other routes
     res.sendFile(
-        path.join(__dirname, "../client/index.html"),
+        path.join(__dirname, "../client/build/index.html"),
         function (err) {
             if (err) {
                 res.status(500).send(err);
@@ -403,4 +403,4 @@ app.get("/", function (req, res) {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
+app.listen(PORT, () => console.log(`Server running on port ${PORT}!`));
