@@ -1,4 +1,4 @@
-import "./HomeHeader.css";
+import "./HomeHeader.scss";
 
 
 function HeroTop() {
