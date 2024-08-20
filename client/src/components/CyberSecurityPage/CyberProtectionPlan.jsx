@@ -63,7 +63,103 @@ const CyberSecurityProtection = () => {
                         )}
                     </h5>
 
-                    {/* Repeat similar structure for other dropdowns */}
+                    <h5 className="cyber-security-cursor-pointer" onClick={() => toggleDropdown('dropdown2')}>
+                        {dropdownStates.dropdown2 ? (
+                            <i className="cyber-security-data-icon fas fa-caret-down"></i>
+                        ) : (
+                            <i className="cyber-security-data-icon fas fa-caret-right"></i>
+                        )}
+                        <span className='cyber-security-dropdown-title'>Software Vulnerability Protection</span>
+                        {dropdownStates.dropdown2 && (
+                            <ul className="cyber-security-dropdown cyber-security-dropdown-open">
+                                <p className="cyber-security-dropdown-text">A known security threat – we will ensure your operating system and software is fully up to date and patched.</p>
+                            </ul>
+                        )}
+                    </h5>
+
+                    <h5 className="cyber-security-cursor-pointer" onClick={() => toggleDropdown('dropdown3')}>
+                        {dropdownStates.dropdown3 ? (
+                            <i className="cyber-security-data-icon fas fa-caret-down"></i>
+                        ) : (
+                            <i className="cyber-security-data-icon fas fa-caret-right"></i>
+                        )}
+                        <span className='cyber-security-dropdown-title'>Hacker Prevention</span>
+                        {dropdownStates.dropdown3 && (
+                            <ul className="cyber-security-dropdown cyber-security-dropdown-open">
+                                <p className="cyber-security-dropdown-text">Prevent malicious external traffic and black-hat users.</p>
+                            </ul>
+                        )}
+                    </h5>
+
+                    <h5 className="cyber-security-cursor-pointer" onClick={() => toggleDropdown('dropdown4')}>
+                        {dropdownStates.dropdown4 ? (
+                            <i className="cyber-security-data-icon fas fa-caret-down"></i>
+                        ) : (
+                            <i className="cyber-security-data-icon fas fa-caret-right"></i>
+                        )}
+                        <span className='cyber-security-dropdown-title'>VPN Security</span>
+                        {dropdownStates.dropdown4 && (
+                            <ul className="cyber-security-dropdown cyber-security-dropdown-open">
+                                <p className="cyber-security-dropdown-text">Hide your online activity from hackers.  Use public Wi-Fi safely with a secure connection.</p>
+                            </ul>
+                        )}
+                    </h5>
+
+                    <h5 className="cyber-security-cursor-pointer" onClick={() => toggleDropdown('dropdown5')}>
+                        {dropdownStates.dropdown5 ? (
+                            <i className="cyber-security-data-icon fas fa-caret-down"></i>
+                        ) : (
+                            <i className="cyber-security-data-icon fas fa-caret-right"></i>
+                        )}
+                        <span className='cyber-security-dropdown-title'>Patch Management</span>
+                        {dropdownStates.dropdown5 && (
+                            <ul className="cyber-security-dropdown cyber-security-dropdown-open">
+                                <p className="cyber-security-dropdown-text">Your operating system and software will be automatically updated with the latest and versions and updates.  Dated points of vulnerability will be eliminated.</p>
+                            </ul>
+                        )}
+                    </h5>
+
+                    <h5 className="cyber-security-cursor-pointer" onClick={() => toggleDropdown('dropdown6')}>
+                        {dropdownStates.dropdown6 ? (
+                            <i className="cyber-security-data-icon fas fa-caret-down"></i>
+                        ) : (
+                            <i className="cyber-security-data-icon fas fa-caret-right"></i>
+                        )}
+                        <span className='cyber-security-dropdown-title'>Content Filtering</span>
+                        {dropdownStates.dropdown6 && (
+                            <ul className="cyber-security-dropdown cyber-security-dropdown-open">
+                                <p className="cyber-security-dropdown-text">Block certain websites.  Good for child-proofing or keeping your computer focused to the tasks required.</p>
+                            </ul>
+                        )}
+                    </h5>
+
+                    <h5 className="cyber-security-cursor-pointer" onClick={() => toggleDropdown('dropdown7')}>
+                        {dropdownStates.dropdown7 ? (
+                            <i className="cyber-security-data-icon fas fa-caret-down"></i>
+                        ) : (
+                            <i className="cyber-security-data-icon fas fa-caret-right"></i>
+                        )}
+                        <span className='cyber-security-dropdown-title'>Remote Support</span>
+                        {dropdownStates.dropdown7 && (
+                            <ul className="cyber-security-dropdown cyber-security-dropdown-open">
+                                <p className="cyber-security-dropdown-text">Remote installs, security fixes, virus removals and updates will be done proactively and upon request.</p>
+                            </ul>
+                        )}
+                    </h5>
+
+                    <h5 className="cyber-security-cursor-pointer" onClick={() => toggleDropdown('dropdown8')}>
+                        {dropdownStates.dropdown8 ? (
+                            <i className="cyber-security-data-icon fas fa-caret-down"></i>
+                        ) : (
+                            <i className="cyber-security-data-icon fas fa-caret-right"></i>
+                        )}
+                        <span className='cyber-security-dropdown-title'>Monthly Reports</span>
+                        {dropdownStates.dropdown8 && (
+                            <ul className="cyber-security-dropdown cyber-security-dropdown-open">
+                                <p className="cyber-security-dropdown-text">Receive emailed reports to know if any security issues were tended to and what protection was required.</p>
+                            </ul>
+                        )}
+                    </h5>
 
                 </div>
             </div>
