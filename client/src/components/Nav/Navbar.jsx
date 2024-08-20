@@ -59,9 +59,9 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="http://localhost:3000/" className="navbar-logo">
+          <a href="/" className="navbar-logo">
             <img src={logo} alt="" />
-          </Link>
+          </a>
           <div className="menu-icons" onClick={handleClick}>
             <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
